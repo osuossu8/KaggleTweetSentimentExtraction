@@ -229,10 +229,10 @@ def run_one_fold(fold_id):
     with timer('load csv data'):
 
         debug = config.DEBUG
-        df_train = pd.read_csv(config.TRAIN_PATH)
+        df_train = pd.read_csv(config.TRAIN_PATH).dropna().reset_index(drop=True)
 
         if debug:
-            df_train = df_train.sample(1000, random_state=SEED)
+            df_train = df_train.sample(1000, random_state=SEED).dropna().reset_index(drop=True)
 
         num_folds = 5
         kf = StratifiedKFold(n_splits = num_folds, random_state = SEED)

@@ -6,8 +6,8 @@ sys.path.append("/usr/src/app/kaggle/tweet-sentiment-extraction")
 
 
 MAX_LEN = 192
-TRAIN_BATCH_SIZE = 32
-VALID_BATCH_SIZE = 16
+TRAIN_BATCH_SIZE = 16
+VALID_BATCH_SIZE = int(TRAIN_BATCH_SIZE/2)
 EPOCHS = 50
 BERT_PATH = "inputs/bert-base-uncased"
 
