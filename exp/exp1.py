@@ -18,21 +18,24 @@ import re
 import scipy.stats as stats
 import seaborn as sns
 import shutil
+import string
 import sys
 import time
 import torch
+import tokenizers
 import torch.nn as nn
 import torch.utils.data
 import torch.nn.functional as F
 import torchvision
 import torchvision.transforms as transforms
+import transformers
 from albumentations.pytorch import ToTensorV2
 from torchvision import models, transforms
 from contextlib import contextmanager
 from collections import OrderedDict
 from sklearn import metrics
 from sklearn import model_selection
-from sklearn.model_selection import KFold, GroupKFold
+from sklearn.model_selection import KFold, GroupKFold, StratifiedKFold
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import TruncatedSVD
 from sklearn.metrics import mean_squared_log_error, roc_auc_score
@@ -46,26 +49,25 @@ from torch.utils import model_zoo
 from torch.utils.data import (Dataset,DataLoader, RandomSampler, SequentialSampler,
                               TensorDataset)
 import tensorflow as tf
-import PIL
-from PIL import Image
 
-from tqdm import tqdm, tqdm_notebook, trange
+from tqdm import tqdm
 import warnings
 warnings.filterwarnings('ignore')
 # from apex import amp
 
 sys.path.append("/usr/src/app/kaggle/tweet-sentiment-extraction")
 
+import src.config as config
+import src.engine as engine
 from src.machine_learning_util import seed_everything, prepare_labels, DownSampler, timer, \
                                       to_pickle, unpickle
 from src.image_util import resize_to_square_PIL, pad_PIL, threshold_image, \
                            bbox, crop_resize, Resize, \
                            image_to_tensor, train_one_epoch, validate
 from src.scheduler import GradualWarmupScheduler
-# from src.layers import ResidualBlock, Mish, GeM
 
 
-SEED = 1129
+SEED = 718
 seed_everything(SEED)
 
 
@@ -98,128 +100,180 @@ LOGGER_PATH = f"logs/log_{EXP_ID}.txt"
 setup_logger(out_file=LOGGER_PATH)
 LOGGER.info("seed={}".format(SEED))
 
-DIR_INPUT = 'inputs/'
-OUT_DIR = 'models'
 
-RESIZE = 128
-
-# https://albumentations.readthedocs.io/en/latest/api/augmentations.html
-data_transforms = A.Compose([
-    A.ShiftScaleRotate(shift_limit=0.0625, scale_limit=0.1, rotate_limit=15, p=0.5),
-    A.Cutout(p=0.5),
-    A.Resize(RESIZE, RESIZE, p=1),
-    A.Normalize(p=1.0),
-    ToTensorV2(),
-    ])
-
-data_transforms_test = A.Compose([
-    A.Resize(RESIZE, RESIZE, p=1),
-    A.Normalize(p=1.0),
-    ToTensorV2(),
-    ])
-
-
-class PlantDataset(torch.utils.data.Dataset):
+class BERTBaseUncased(nn.Module):
+    def __init__(self):
+        super(BERTBaseUncased, self).__init__()
+        self.bert = transformers.BertModel.from_pretrained(config.BERT_PATH)
+        self.l0 = nn.Linear(768, 2)
     
-    def __init__(self, df, y=None, transform=None):
-        self.df = df
+    def forward(self, ids, mask, token_type_ids):
+        # not using sentiment at all
+        sequence_output, pooled_output = self.bert(
+            ids, 
+            attention_mask=mask,
+            token_type_ids=token_type_ids
+        )
+        # (batch_size, num_tokens, 768)
+        logits = self.l0(sequence_output)
+        # (batch_size, num_tokens, 2)
+        # (batch_size, num_tokens, 1), (batch_size, num_tokens, 1)
+        start_logits, end_logits = logits.split(1, dim=-1)
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
+        # (batch_size, num_tokens), (batch_size, num_tokens)
 
-        self.y = y
-        self.transform = transform
+        return start_logits, end_logits
 
+
+class TweetDataset:
+    def __init__(self, tweet, sentiment, selected_text):
+        self.tweet = tweet
+        self.sentiment = sentiment
+        self.selected_text = selected_text
+        self.tokenizer = config.TOKENIZER
+        self.max_len = config.MAX_LEN
+    
     def __len__(self):
-        return len(self.df)
+        return len(self.tweet)
     
-    def __getitem__(self, idx):
+    def __getitem__(self, item):
+        tweet = " ".join(str(self.tweet[item]).split())
+        selected_text = " ".join(str(self.selected_text[item]).split())
+        
+        len_st = len(selected_text)
+        idx0 = -1
+        idx1 = -1
+        for ind in (i for i, e in enumerate(tweet) if e == selected_text[0]):
+            if tweet[ind: ind+len_st] == selected_text:
+                idx0 = ind
+                idx1 = ind + len_st - 1
+                break
 
-        input_dic = {}
-        row = self.df.iloc[idx]
-
-        image_src = DIR_INPUT + '/images/' + row['image_id'] + '.jpg'
-        image = cv2.imread(image_src, cv2.IMREAD_COLOR)
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-
-        if self.transform is not None:
-            image = self.transform(image=image)['image']
+        char_targets = [0] * len(tweet)
+        if idx0 != -1 and idx1 != -1:
+            for j in range(idx0, idx1 + 1):
+                if tweet[j] != " ":
+                    char_targets[j] = 1
+        
+        tok_tweet = self.tokenizer.encode(sequence=self.sentiment[item], pair=tweet)
+        tok_tweet_tokens = tok_tweet.tokens
+        tok_tweet_ids = tok_tweet.ids
+        tok_tweet_offsets = tok_tweet.offsets[3:-1]
+        # print(tok_tweet_tokens)
+        # print(tok_tweet.offsets)
+        # ['[CLS]', 'spent', 'the', 'entire', 'morning', 'in', 'a', 'meeting', 'w', '/', 
+        # 'a', 'vendor', ',', 'and', 'my', 'boss', 'was', 'not', 'happy', 'w', '/', 'them', 
+        # '.', 'lots', 'of', 'fun', '.', 'i', 'had', 'other', 'plans', 'for', 'my', 'morning', '[SEP]']
+        targets = [0] * (len(tok_tweet_tokens) - 4)
+        if self.sentiment[item] == "positive" or self.sentiment[item] == "negative":
+            sub_minus = 8
         else:
-            pass
+            sub_minus = 7
+
+        for j, (offset1, offset2) in enumerate(tok_tweet_offsets):
+            if sum(char_targets[offset1 - sub_minus:offset2 - sub_minus]) > 0:
+                targets[j] = 1
         
-        input_dic["image"] = image
+        targets = [0] + [0] + [0] + targets + [0]
 
-        if self.y is not None:
-           
-            labels = np.array([row['healthy'], row['multiple_diseases'], row['rust'], row['scab']]).astype(np.float32)
+        # print(tweet)
+        # print(selected_text)
+        # print([x for i, x in enumerate(tok_tweet_tokens) if targets[i] == 1])
+        targets_start = [0] * len(targets)
+        targets_end = [0] * len(targets)
 
-            return input_dic, labels
-        else:
-            return input_dic
-
-
-class PlantModel(nn.Module):
-    
-    def __init__(self, num_classes=4):
-        super().__init__()
+        non_zero = np.nonzero(targets)[0]
+        if len(non_zero) > 0:
+            targets_start[non_zero[0]] = 1
+            targets_end[non_zero[-1]] = 1
         
-        self.backbone = torchvision.models.resnet18(pretrained=True)
-        
-        in_features = self.backbone.fc.in_features
+        # print(targets_start)
+        # print(targets_end)
 
-        self.logit = nn.Linear(in_features, num_classes)
-        
-    def forward(self, x):
+        mask = [1] * len(tok_tweet_ids)
+        token_type_ids = [0] * 3 + [1] * (len(tok_tweet_ids) - 3)
 
-        batch_size, C, H, W = x.shape
-        
-        x = self.backbone.conv1(x)
-        x = self.backbone.bn1(x)
-        x = self.backbone.relu(x)
-        x = self.backbone.maxpool(x)
+        padding_length = self.max_len - len(tok_tweet_ids)
+        ids = tok_tweet_ids + ([0] * padding_length)
+        mask = mask + ([0] * padding_length)
+        token_type_ids = token_type_ids + ([0] * padding_length)
+        targets = targets + ([0] * padding_length)
+        targets_start = targets_start + ([0] * padding_length)
+        targets_end = targets_end + ([0] * padding_length)
 
-        x = self.backbone.layer1(x)
-        x = self.backbone.layer2(x)
-        x = self.backbone.layer3(x)
-        x = self.backbone.layer4(x)
-        
-        x = F.adaptive_avg_pool2d(x,1).reshape(batch_size,-1)
-        x = F.dropout(x, 0.25, self.training)
+        sentiment = [1, 0, 0]
+        if self.sentiment[item] == "positive":
+            sentiment = [0, 0, 1]
+        if self.sentiment[item] == "negative":
+            sentiment = [0, 1, 0]
 
-        x = self.logit(x)
+        return {
+            'ids': torch.tensor(ids, dtype=torch.long),
+            'mask': torch.tensor(mask, dtype=torch.long),
+            'token_type_ids': torch.tensor(token_type_ids, dtype=torch.long),
+            'tweet_tokens': " ".join(tok_tweet_tokens),
+            'targets': torch.tensor(targets, dtype=torch.long),
+            'targets_start': torch.tensor(targets_start, dtype=torch.long),
+            'targets_end': torch.tensor(targets_end, dtype=torch.long),
+            'padding_len': torch.tensor(padding_length, dtype=torch.long),
+            'orig_tweet': self.tweet[item],
+            'orig_selected': self.selected_text[item],
+            'sentiment': torch.tensor(sentiment, dtype=torch.float),
+            'orig_sentiment': self.sentiment[item]
+        }
 
-        return x
 
-
-def run_one_fold(fold_id, epochs, batch_size):
+def run_one_fold(fold_id):
 
     with timer('load csv data'):
-    
-        train = pd.read_csv('inputs/train.csv')
-        y = train[["healthy", "multiple_diseases", "rust", "scab"]]
+
+        DEBUG = True
+        df_train = pd.read_csv(config.TRAIN_PATH)
+
+        if DEBUG:
+            df_train = df_train.sample(1000, random_state=SEED)
 
         num_folds = 5
-        kf = KFold(n_splits = num_folds, random_state = SEED)
-        # kf = MultilabelStratifiedKFold(n_splits = num_folds, random_state = SEED)
-        splits = list(kf.split(X=train, y=y))
+        kf = StratifiedKFold(n_splits = num_folds, random_state = SEED)
+        splits = list(kf.split(X=df_train, y=df_train[['sentiment']]))
         train_idx = splits[fold_id][0]
         val_idx = splits[fold_id][1]
 
         print(len(train_idx), len(val_idx))
 
-        print(y.head())
-
         gc.collect()
 
 
     with timer('prepare validation data'):
+        train_dataset = TweetDataset(
+            tweet=df_train.iloc[train_idx].text.values,
+            sentiment=df_train.iloc[train_idx].sentiment.values,
+            selected_text=df_train.iloc[train_idx].selected_text.values
+        )
+    
+        train_loader = torch.utils.data.DataLoader(
+            train_dataset,
+            shuffle=True,
+            batch_size=config.TRAIN_BATCH_SIZE,
+            num_workers=0, 
+            pin_memory=True
+        )
 
-        y_train = y.iloc[train_idx]
-        train_dataset = PlantDataset(train.iloc[train_idx], y=y_train, transform=data_transforms)
-        train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size*4, shuffle=True, num_workers=0, pin_memory=True)
-  
-        y_val = y.iloc[val_idx]
-
-        val_dataset = PlantDataset(train.iloc[val_idx], y=y_val, transform=data_transforms_test)
-        val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size*2, shuffle=False, num_workers=0, pin_memory=True)
-
+        val_dataset = TweetDataset(
+            tweet=df_train.iloc[val_idx].text.values,
+            sentiment=df_train.iloc[val_idx].sentiment.values,
+            selected_text=df_train.iloc[val_idx].selected_text.values
+        )
+    
+        val_loader = torch.utils.data.DataLoader(
+            val_dataset,
+            shuffle=False,
+            batch_size=config.VALID_BATCH_SIZE,
+            num_workers=0, 
+            pin_memory=True
+        )
+    
         del train_dataset, val_dataset
         gc.collect()
 
@@ -227,45 +281,52 @@ def run_one_fold(fold_id, epochs, batch_size):
     with timer('create model'):
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-        model = PlantModel()
+        model = BERTBaseUncased()
         model = model.to(device)
 
-        criterion = nn.BCEWithLogitsLoss().to(device)
-        optimizer = optim.Adam(model.parameters(), lr=1e-4)
+        # criterion = nn.BCEWithLogitsLoss().to(device)
 
-        t_max=10
-        scheduler_cosine = CosineAnnealingLR(optimizer, T_max=t_max)
-        scheduler = GradualWarmupScheduler(optimizer, multiplier=1.1, total_epoch=5,
-                                           after_scheduler=scheduler_cosine)
+        # t_max=10
+        # scheduler_cosine = CosineAnnealingLR(optimizer, T_max=t_max)
+        # scheduler = GradualWarmupScheduler(optimizer, multiplier=1.1, total_epoch=5,
+        #                                    after_scheduler=scheduler_cosine)
+
+        param_optimizer = list(model.named_parameters())
+        no_decay = ["bias", "LayerNorm.bias", "LayerNorm.weight"]
+        optimizer_parameters = [
+            {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.001},
+            {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0},
+        ]
+
+        num_train_steps = int(len(df_train) / config.TRAIN_BATCH_SIZE * config.EPOCHS)
+        optimizer = transformers.AdamW(optimizer_parameters, lr=5e-5)
+        scheduler = transformers.get_linear_schedule_with_warmup(
+            optimizer,
+            num_warmup_steps=0,
+            num_training_steps=num_train_steps
+        )
+
+        model = nn.DataParallel(model)
+
 
     with timer('training loop'):
         best_score = -999
         best_epoch = 0
-        for epoch in range(1, epochs + 1):
+        for epoch in range(1, config.EPOCHS + 1):
 
             LOGGER.info("Starting {} epoch...".format(epoch))
 
-            tr_loss = train_one_epoch(model, train_loader, criterion, optimizer, device)
+            engine.train_fn(train_loader, model, optimizer, device, scheduler)
+            score = engine.eval_fn(val_loader, model, device)
 
-            LOGGER.info('Mean train loss: {}'.format(round(tr_loss, 5)))
+            LOGGER.info(f"Jaccard Score = {score}")
 
-            val_pred, y_true, val_loss = validate(model, val_loader, criterion, device)
-
-            val_pred, le = prepare_labels(val_pred)
-            
-            score = 0
-            for i in range(4):
-                score += roc_auc_score(y_true[:, i], val_pred[:, i], average='macro')
-            score = score/4
-
-            LOGGER.info('Mean valid loss: {} score: {}'.format(round(val_loss, 5), round(score, 5)))
             if score > best_score:
                 best_score = score
                 best_epoch = epoch
-                torch.save(model.state_dict(), os.path.join(OUT_DIR, '{}_fold{}.pth'.format(EXP_ID, fold_id)))
-                to_pickle(os.path.join(OUT_DIR, "{}_fold{}_oof.pkl".format(EXP_ID, fold_id)), [val_idx, val_pred])
+                torch.save(model.state_dict(), os.path.join(config.OUT_DIR, '{}_fold{}.pth'.format(EXP_ID, fold_id)))
+                # to_pickle(os.path.join(config.OUT_DIR, "{}_fold{}_oof.pkl".format(EXP_ID, fold_id)), [val_idx, val_pred])
                 LOGGER.info("save model at score={} on epoch={}".format(best_score, best_epoch))
-            scheduler.step()
 
         LOGGER.info("best score={} on epoch={}".format(best_score, best_epoch))
 
@@ -278,10 +339,7 @@ if __name__ == '__main__':
 
         LOGGER.info("Starting fold {} ...".format(fold_id))
 
-        epochs = 10
-        batch_size = 64
-
-        run_one_fold(fold_id, epochs, batch_size)
+        run_one_fold(fold_id)
 
         if fold0_only:
             LOGGER.info("This is fold0 only experiment.")
