@@ -122,7 +122,7 @@ def eval_fn(data_loader, model, device):
 
     val_outputs = (
       fin_outputs_start, fin_outputs_end, fin_tweet_token_ids,
-      fin_padding_lens, fin_tweet_tokens
+      fin_padding_lens, fin_tweet_tokens, 
       fin_orig_sentiment, fin_orig_selected, fin_orig_tweet
     )
     

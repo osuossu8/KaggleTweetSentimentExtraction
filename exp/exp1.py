@@ -228,10 +228,10 @@ def run_one_fold(fold_id):
 
     with timer('load csv data'):
 
-        DEBUG = True
+        debug = config.DEBUG
         df_train = pd.read_csv(config.TRAIN_PATH)
 
-        if DEBUG:
+        if debug:
             df_train = df_train.sample(1000, random_state=SEED)
 
         num_folds = 5
@@ -284,8 +284,6 @@ def run_one_fold(fold_id):
         model = BERTBaseUncased()
         model = model.to(device)
 
-        # criterion = nn.BCEWithLogitsLoss().to(device)
-
         # t_max=10
         # scheduler_cosine = CosineAnnealingLR(optimizer, T_max=t_max)
         # scheduler = GradualWarmupScheduler(optimizer, multiplier=1.1, total_epoch=5,
@@ -333,7 +331,7 @@ def run_one_fold(fold_id):
 
 if __name__ == '__main__':
 
-    fold0_only = True
+    fold0_only = config.FOLD0_ONLY
 
     for fold_id in range(5):
 
