@@ -119,6 +119,12 @@ def eval_fn(data_loader, model, device):
     fin_outputs_end = np.vstack(fin_outputs_end)
 
     fin_tweet_token_ids = np.vstack(fin_tweet_token_ids)
+
+    val_outputs = (
+      fin_outputs_start, fin_outputs_end, fin_tweet_token_ids,
+      fin_padding_lens, fin_tweet_tokens
+      fin_orig_sentiment, fin_orig_selected, fin_orig_tweet
+    )
     
     threshold = 0.2
     jaccards = []
@@ -170,6 +176,7 @@ def eval_fn(data_loader, model, device):
         jac = jaccard(target_string.strip().lower(), final_output.strip().lower())
         jaccards.append(jac)
     mean_jac = np.mean(jaccards)
-    return mean_jac
+
+    return mean_jac, val_outputs
 
 

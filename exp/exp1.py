@@ -317,7 +317,7 @@ def run_one_fold(fold_id):
             LOGGER.info("Starting {} epoch...".format(epoch))
 
             engine.train_fn(train_loader, model, optimizer, device, scheduler)
-            score = engine.eval_fn(val_loader, model, device)
+            score, val_outputs = engine.eval_fn(val_loader, model, device)
 
             LOGGER.info(f"Jaccard Score = {score}")
 
@@ -325,7 +325,7 @@ def run_one_fold(fold_id):
                 best_score = score
                 best_epoch = epoch
                 torch.save(model.state_dict(), os.path.join(config.OUT_DIR, '{}_fold{}.pth'.format(EXP_ID, fold_id)))
-                # to_pickle(os.path.join(config.OUT_DIR, "{}_fold{}_oof.pkl".format(EXP_ID, fold_id)), [val_idx, val_pred])
+                to_pickle(os.path.join(config.OUT_DIR, "{}_fold{}_oof.pkl".format(EXP_ID, fold_id)), [val_idx, val_outputs])
                 LOGGER.info("save model at score={} on epoch={}".format(best_score, best_epoch))
 
         LOGGER.info("best score={} on epoch={}".format(best_score, best_epoch))
