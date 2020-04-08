@@ -1,0 +1,1245 @@
+2020-04-06 13:36:50,897 - INFO - logger set up
+2020-04-06 13:36:50,897 - INFO - seed=718
+2020-04-06 13:36:50,898 - INFO - Starting fold 0 ...
+2020-04-06 13:38:09,587 - INFO - logger set up
+2020-04-06 13:38:09,587 - INFO - seed=718
+2020-04-06 13:38:09,587 - INFO - Starting fold 0 ...
+2020-04-06 13:38:09,728 - INFO - [load csv data] done in 0.14 s
+2020-04-06 13:40:21,822 - INFO - logger set up
+2020-04-06 13:40:21,822 - INFO - seed=718
+2020-04-06 13:40:21,822 - INFO - Starting fold 0 ...
+2020-04-06 13:40:21,963 - INFO - [load csv data] done in 0.14 s
+2020-04-06 13:40:22,016 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 13:41:04,758 - INFO - logger set up
+2020-04-06 13:41:04,758 - INFO - seed=718
+2020-04-06 13:41:04,758 - INFO - Starting fold 0 ...
+2020-04-06 13:41:04,903 - INFO - [load csv data] done in 0.14 s
+2020-04-06 13:41:04,956 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 13:41:04,957 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 13:41:04,957 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 13:41:04,958 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 13:41:09,216 - INFO - [create model] done in 4.26 s
+2020-04-06 13:41:09,216 - INFO - Starting 1 epoch...
+2020-04-06 13:43:30,398 - INFO - logger set up
+2020-04-06 13:43:30,399 - INFO - seed=718
+2020-04-06 13:43:30,399 - INFO - Starting fold 0 ...
+2020-04-06 13:43:30,507 - INFO - [load csv data] done in 0.11 s
+2020-04-06 13:43:30,557 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 13:43:30,557 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 13:43:30,557 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 13:43:30,558 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 13:43:34,789 - INFO - [create model] done in 4.23 s
+2020-04-06 13:43:34,789 - INFO - Starting 1 epoch...
+2020-04-06 13:43:54,127 - INFO - Jaccard Score = 0.4734039871360236
+2020-04-06 13:44:53,419 - INFO - logger set up
+2020-04-06 13:44:53,419 - INFO - seed=718
+2020-04-06 13:44:53,419 - INFO - Starting fold 0 ...
+2020-04-06 13:44:53,529 - INFO - [load csv data] done in 0.11 s
+2020-04-06 13:44:53,578 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 13:44:53,579 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 13:44:53,579 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 13:44:53,580 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 13:44:57,828 - INFO - [create model] done in 4.25 s
+2020-04-06 13:44:57,828 - INFO - Starting 1 epoch...
+2020-04-06 13:45:17,165 - INFO - Jaccard Score = 0.4734039871360236
+2020-04-06 14:01:19,884 - INFO - logger set up
+2020-04-06 14:01:19,884 - INFO - seed=718
+2020-04-06 14:01:19,884 - INFO - Starting fold 0 ...
+2020-04-06 14:01:19,995 - INFO - [load csv data] done in 0.11 s
+2020-04-06 14:01:20,045 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:01:20,045 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:01:20,046 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:01:20,046 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:01:24,295 - INFO - [create model] done in 4.25 s
+2020-04-06 14:01:24,295 - INFO - Starting 1 epoch...
+2020-04-06 14:01:43,618 - INFO - Jaccard Score = 0.4734039871360236
+2020-04-06 14:01:43,882 - INFO - save model at score=0.4734039871360236 on epoch=1
+2020-04-06 14:01:43,882 - INFO - Starting 2 epoch...
+2020-04-06 14:02:00,233 - INFO - Jaccard Score = 0.4734039871360236
+2020-04-06 14:02:00,233 - INFO - Starting 3 epoch...
+2020-04-06 14:02:16,614 - INFO - Jaccard Score = 0.4729893934378478
+2020-04-06 14:02:16,614 - INFO - Starting 4 epoch...
+2020-04-06 14:02:33,025 - INFO - Jaccard Score = 0.5017710990274643
+2020-04-06 14:02:33,289 - INFO - save model at score=0.5017710990274643 on epoch=4
+2020-04-06 14:02:33,289 - INFO - Starting 5 epoch...
+2020-04-06 14:02:49,727 - INFO - Jaccard Score = 0.5007713482823228
+2020-04-06 14:02:49,727 - INFO - best score=0.5017710990274643 on epoch=4
+2020-04-06 14:02:49,727 - INFO - [training loop] done in 85.43 s
+2020-04-06 14:02:49,728 - INFO - This is fold0 only experiment.
+2020-04-06 14:21:18,257 - INFO - logger set up
+2020-04-06 14:21:18,257 - INFO - seed=718
+2020-04-06 14:21:18,257 - INFO - Starting fold 0 ...
+2020-04-06 14:21:18,367 - INFO - [load csv data] done in 0.11 s
+2020-04-06 14:21:18,416 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:21:18,416 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:21:18,417 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:21:18,418 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:21:22,650 - INFO - [create model] done in 4.23 s
+2020-04-06 14:21:22,650 - INFO - Starting 1 epoch...
+2020-04-06 14:21:41,952 - INFO - Jaccard Score = 0.4734039871360236
+2020-04-06 14:21:42,211 - INFO - save model at score=0.4734039871360236 on epoch=1
+2020-04-06 14:21:42,211 - INFO - Starting 2 epoch...
+2020-04-06 14:21:58,532 - INFO - Jaccard Score = 0.4734039871360236
+2020-04-06 14:21:58,532 - INFO - Starting 3 epoch...
+2020-04-06 14:22:14,889 - INFO - Jaccard Score = 0.4729893934378478
+2020-04-06 14:22:14,889 - INFO - Starting 4 epoch...
+2020-04-06 14:22:31,286 - INFO - Jaccard Score = 0.5017710990274643
+2020-04-06 14:22:31,544 - INFO - save model at score=0.5017710990274643 on epoch=4
+2020-04-06 14:22:31,545 - INFO - Starting 5 epoch...
+2020-04-06 14:22:47,960 - INFO - Jaccard Score = 0.5007713482823228
+2020-04-06 14:22:47,960 - INFO - best score=0.5017710990274643 on epoch=4
+2020-04-06 14:22:47,960 - INFO - [training loop] done in 85.31 s
+2020-04-06 14:22:47,961 - INFO - This is fold0 only experiment.
+2020-04-06 14:27:52,944 - INFO - logger set up
+2020-04-06 14:27:52,944 - INFO - seed=718
+2020-04-06 14:27:52,944 - INFO - Starting fold 0 ...
+2020-04-06 14:27:53,054 - INFO - [load csv data] done in 0.11 s
+2020-04-06 14:27:53,103 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:27:53,104 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:27:53,104 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:27:53,105 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:27:57,332 - INFO - [create model] done in 4.23 s
+2020-04-06 14:27:57,333 - INFO - Starting 1 epoch...
+2020-04-06 14:29:52,976 - INFO - logger set up
+2020-04-06 14:29:52,976 - INFO - seed=718
+2020-04-06 14:29:52,976 - INFO - Starting fold 0 ...
+2020-04-06 14:29:53,117 - INFO - [load csv data] done in 0.14 s
+2020-04-06 14:29:53,170 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:29:53,170 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:29:53,170 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:29:53,171 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:29:57,408 - INFO - [create model] done in 4.24 s
+2020-04-06 14:29:57,409 - INFO - Starting 1 epoch...
+2020-04-06 14:30:41,369 - INFO - logger set up
+2020-04-06 14:30:41,369 - INFO - seed=718
+2020-04-06 14:30:41,369 - INFO - Starting fold 0 ...
+2020-04-06 14:30:41,514 - INFO - [load csv data] done in 0.14 s
+2020-04-06 14:30:41,567 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:30:41,568 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:30:41,568 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:30:41,569 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:30:45,810 - INFO - [create model] done in 4.24 s
+2020-04-06 14:30:45,810 - INFO - Starting 1 epoch...
+2020-04-06 14:31:43,530 - INFO - logger set up
+2020-04-06 14:31:43,531 - INFO - seed=718
+2020-04-06 14:31:43,531 - INFO - Starting fold 0 ...
+2020-04-06 14:31:43,673 - INFO - [load csv data] done in 0.14 s
+2020-04-06 14:31:43,727 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:31:43,727 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:31:43,727 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:31:43,728 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:31:47,965 - INFO - [create model] done in 4.24 s
+2020-04-06 14:31:47,965 - INFO - Starting 1 epoch...
+2020-04-06 14:32:02,264 - INFO - logger set up
+2020-04-06 14:32:02,264 - INFO - seed=718
+2020-04-06 14:32:02,264 - INFO - Starting fold 0 ...
+2020-04-06 14:32:02,404 - INFO - [load csv data] done in 0.14 s
+2020-04-06 14:32:02,457 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:32:02,458 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:32:02,458 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:32:02,459 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:32:06,728 - INFO - [create model] done in 4.27 s
+2020-04-06 14:32:06,728 - INFO - Starting 1 epoch...
+2020-04-06 14:32:20,863 - INFO - logger set up
+2020-04-06 14:32:20,863 - INFO - seed=718
+2020-04-06 14:32:20,863 - INFO - Starting fold 0 ...
+2020-04-06 14:32:21,011 - INFO - [load csv data] done in 0.15 s
+2020-04-06 14:32:21,065 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:32:21,065 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:32:21,065 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:32:21,066 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:32:25,310 - INFO - [create model] done in 4.24 s
+2020-04-06 14:32:25,310 - INFO - Starting 1 epoch...
+2020-04-06 14:32:37,676 - INFO - logger set up
+2020-04-06 14:32:37,676 - INFO - seed=718
+2020-04-06 14:32:37,676 - INFO - Starting fold 0 ...
+2020-04-06 14:32:37,814 - INFO - [load csv data] done in 0.14 s
+2020-04-06 14:32:37,867 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:32:37,867 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:32:37,867 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:32:37,868 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:32:42,103 - INFO - [create model] done in 4.24 s
+2020-04-06 14:32:42,103 - INFO - Starting 1 epoch...
+2020-04-06 14:32:55,490 - INFO - logger set up
+2020-04-06 14:32:55,490 - INFO - seed=718
+2020-04-06 14:32:55,491 - INFO - Starting fold 0 ...
+2020-04-06 14:32:55,632 - INFO - [load csv data] done in 0.14 s
+2020-04-06 14:32:55,685 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:32:55,686 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:32:55,686 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:32:55,687 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:32:59,900 - INFO - [create model] done in 4.21 s
+2020-04-06 14:32:59,901 - INFO - Starting 1 epoch...
+2020-04-06 14:33:18,878 - INFO - logger set up
+2020-04-06 14:33:18,879 - INFO - seed=718
+2020-04-06 14:33:18,879 - INFO - Starting fold 0 ...
+2020-04-06 14:33:19,019 - INFO - [load csv data] done in 0.14 s
+2020-04-06 14:33:19,072 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:33:19,072 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:33:19,073 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:33:19,074 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:33:23,305 - INFO - [create model] done in 4.23 s
+2020-04-06 14:33:23,305 - INFO - Starting 1 epoch...
+2020-04-06 14:33:42,668 - INFO - logger set up
+2020-04-06 14:33:42,668 - INFO - seed=718
+2020-04-06 14:33:42,668 - INFO - Starting fold 0 ...
+2020-04-06 14:33:42,814 - INFO - [load csv data] done in 0.15 s
+2020-04-06 14:33:42,871 - INFO - [prepare validation data] done in 0.06 s
+2020-04-06 14:33:42,872 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:33:42,872 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:33:42,873 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:33:47,137 - INFO - [create model] done in 4.26 s
+2020-04-06 14:33:47,137 - INFO - Starting 1 epoch...
+2020-04-06 14:41:42,833 - INFO - Jaccard Score = 0.6421156014704815
+2020-04-06 14:41:43,107 - INFO - save model at score=0.6421156014704815 on epoch=1
+2020-04-06 14:41:43,107 - INFO - Starting 2 epoch...
+2020-04-06 14:49:09,453 - INFO - logger set up
+2020-04-06 14:49:09,453 - INFO - seed=718
+2020-04-06 14:49:09,454 - INFO - Starting fold 0 ...
+2020-04-06 14:49:09,601 - INFO - [load csv data] done in 0.15 s
+2020-04-06 14:49:09,654 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 14:49:09,654 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 14:49:09,654 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 14:49:09,655 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 14:49:13,890 - INFO - [create model] done in 4.24 s
+2020-04-06 14:49:13,890 - INFO - Starting 1 epoch...
+2020-04-06 14:57:09,504 - INFO - Jaccard Score = 0.6287184116010568
+2020-04-06 14:57:09,777 - INFO - save model at score=0.6287184116010568 on epoch=1
+2020-04-06 14:57:09,777 - INFO - Starting 2 epoch...
+2020-04-06 15:05:10,038 - INFO - Jaccard Score = 0.6508917060369578
+2020-04-06 15:05:10,309 - INFO - save model at score=0.6508917060369578 on epoch=2
+2020-04-06 15:05:10,309 - INFO - Starting 3 epoch...
+2020-04-06 15:13:10,141 - INFO - Jaccard Score = 0.6389433812074107
+2020-04-06 15:13:10,142 - INFO - Starting 4 epoch...
+2020-04-06 15:21:10,005 - INFO - Jaccard Score = 0.6519103829251399
+2020-04-06 15:21:10,277 - INFO - save model at score=0.6519103829251399 on epoch=4
+2020-04-06 15:21:10,277 - INFO - Starting 5 epoch...
+2020-04-06 15:29:10,360 - INFO - Jaccard Score = 0.6533786670455702
+2020-04-06 15:29:10,633 - INFO - save model at score=0.6533786670455702 on epoch=5
+2020-04-06 15:29:10,633 - INFO - Starting 6 epoch...
+2020-04-06 15:37:10,322 - INFO - Jaccard Score = 0.6599564695885048
+2020-04-06 15:37:10,594 - INFO - save model at score=0.6599564695885048 on epoch=6
+2020-04-06 15:37:10,595 - INFO - Starting 7 epoch...
+2020-04-06 15:45:10,059 - INFO - Jaccard Score = 0.6453138239267358
+2020-04-06 15:45:10,059 - INFO - Starting 8 epoch...
+2020-04-06 15:53:09,165 - INFO - Jaccard Score = 0.6584563586500984
+2020-04-06 15:53:09,165 - INFO - Starting 9 epoch...
+2020-04-06 16:01:08,386 - INFO - Jaccard Score = 0.6541435099832323
+2020-04-06 16:01:08,386 - INFO - Starting 10 epoch...
+2020-04-06 16:09:07,660 - INFO - Jaccard Score = 0.6577559449922743
+2020-04-06 16:09:07,660 - INFO - Starting 11 epoch...
+2020-04-06 16:17:07,167 - INFO - Jaccard Score = 0.6521110221061044
+2020-04-06 16:17:07,167 - INFO - Starting 12 epoch...
+2020-04-06 16:25:06,755 - INFO - Jaccard Score = 0.6597644301807173
+2020-04-06 16:25:06,755 - INFO - Starting 13 epoch...
+2020-04-06 16:33:06,093 - INFO - Jaccard Score = 0.6562073212255981
+2020-04-06 16:33:06,093 - INFO - Starting 14 epoch...
+2020-04-06 16:41:05,127 - INFO - Jaccard Score = 0.6562192561945503
+2020-04-06 16:41:05,128 - INFO - Starting 15 epoch...
+2020-04-06 16:49:04,173 - INFO - Jaccard Score = 0.6602599136736568
+2020-04-06 16:49:04,446 - INFO - save model at score=0.6602599136736568 on epoch=15
+2020-04-06 16:49:04,446 - INFO - Starting 16 epoch...
+2020-04-06 16:57:03,745 - INFO - Jaccard Score = 0.6538246609732297
+2020-04-06 16:57:03,745 - INFO - Starting 17 epoch...
+2020-04-06 17:05:03,136 - INFO - Jaccard Score = 0.6624700781328828
+2020-04-06 17:05:03,408 - INFO - save model at score=0.6624700781328828 on epoch=17
+2020-04-06 17:05:03,408 - INFO - Starting 18 epoch...
+2020-04-06 17:13:03,188 - INFO - Jaccard Score = 0.6593412108065527
+2020-04-06 17:13:03,189 - INFO - Starting 19 epoch...
+2020-04-06 17:21:02,670 - INFO - Jaccard Score = 0.6601013650460449
+2020-04-06 17:21:02,670 - INFO - Starting 20 epoch...
+2020-04-06 17:29:01,699 - INFO - Jaccard Score = 0.6542285481675271
+2020-04-06 17:29:01,699 - INFO - Starting 21 epoch...
+2020-04-06 17:37:00,516 - INFO - Jaccard Score = 0.6598237487439714
+2020-04-06 17:37:00,516 - INFO - Starting 22 epoch...
+2020-04-06 17:44:59,503 - INFO - Jaccard Score = 0.6552041776992377
+2020-04-06 17:44:59,503 - INFO - Starting 23 epoch...
+2020-04-06 17:52:58,465 - INFO - Jaccard Score = 0.6578245847894647
+2020-04-06 17:52:58,466 - INFO - Starting 24 epoch...
+2020-04-06 18:00:57,772 - INFO - Jaccard Score = 0.6571651071087189
+2020-04-06 18:00:57,772 - INFO - Starting 25 epoch...
+2020-04-06 18:08:57,156 - INFO - Jaccard Score = 0.6567474859680746
+2020-04-06 18:08:57,156 - INFO - Starting 26 epoch...
+2020-04-06 18:16:56,353 - INFO - Jaccard Score = 0.6595884962052557
+2020-04-06 18:16:56,353 - INFO - Starting 27 epoch...
+2020-04-06 18:24:55,135 - INFO - Jaccard Score = 0.654144371376287
+2020-04-06 18:24:55,135 - INFO - Starting 28 epoch...
+2020-04-06 18:32:53,871 - INFO - Jaccard Score = 0.6607328183590989
+2020-04-06 18:32:53,872 - INFO - Starting 29 epoch...
+2020-04-06 18:40:52,672 - INFO - Jaccard Score = 0.6538571123777536
+2020-04-06 18:40:52,672 - INFO - Starting 30 epoch...
+2020-04-06 18:48:51,579 - INFO - Jaccard Score = 0.6576392904810733
+2020-04-06 18:48:51,579 - INFO - Starting 31 epoch...
+2020-04-06 18:56:50,851 - INFO - Jaccard Score = 0.6607855822783076
+2020-04-06 18:56:50,852 - INFO - Starting 32 epoch...
+2020-04-06 19:04:49,939 - INFO - Jaccard Score = 0.6518290455004162
+2020-04-06 19:04:49,939 - INFO - Starting 33 epoch...
+2020-04-06 19:12:48,780 - INFO - Jaccard Score = 0.653437593266172
+2020-04-06 19:12:48,780 - INFO - Starting 34 epoch...
+2020-04-06 19:20:47,254 - INFO - Jaccard Score = 0.6508582709449897
+2020-04-06 19:20:47,254 - INFO - Starting 35 epoch...
+2020-04-06 19:28:45,857 - INFO - Jaccard Score = 0.6553422038405793
+2020-04-06 19:28:45,857 - INFO - Starting 36 epoch...
+2020-04-06 19:36:44,620 - INFO - Jaccard Score = 0.6552250962701612
+2020-04-06 19:36:44,621 - INFO - Starting 37 epoch...
+2020-04-06 19:44:43,444 - INFO - Jaccard Score = 0.6565046954126194
+2020-04-06 19:44:43,444 - INFO - Starting 38 epoch...
+2020-04-06 19:52:42,608 - INFO - Jaccard Score = 0.655028845636673
+2020-04-06 19:52:42,608 - INFO - Starting 39 epoch...
+2020-04-06 20:00:41,552 - INFO - Jaccard Score = 0.6600988570565139
+2020-04-06 20:00:41,552 - INFO - Starting 40 epoch...
+2020-04-06 20:08:40,086 - INFO - Jaccard Score = 0.6623133767730517
+2020-04-06 20:08:40,086 - INFO - Starting 41 epoch...
+2020-04-06 20:16:38,621 - INFO - Jaccard Score = 0.6621075201205261
+2020-04-06 20:16:38,621 - INFO - Starting 42 epoch...
+2020-04-06 20:24:37,212 - INFO - Jaccard Score = 0.6561029151573272
+2020-04-06 20:24:37,212 - INFO - Starting 43 epoch...
+2020-04-06 20:32:35,884 - INFO - Jaccard Score = 0.6593239038488906
+2020-04-06 20:32:35,884 - INFO - Starting 44 epoch...
+2020-04-06 20:40:34,819 - INFO - Jaccard Score = 0.6585677719409743
+2020-04-06 20:40:34,819 - INFO - Starting 45 epoch...
+2020-04-06 20:48:33,814 - INFO - Jaccard Score = 0.6545952591173984
+2020-04-06 20:48:33,815 - INFO - Starting 46 epoch...
+2020-04-06 20:56:32,587 - INFO - Jaccard Score = 0.6595248199753165
+2020-04-06 20:56:32,587 - INFO - Starting 47 epoch...
+2020-04-06 21:04:31,002 - INFO - Jaccard Score = 0.6543393700420083
+2020-04-06 21:04:31,002 - INFO - Starting 48 epoch...
+2020-04-06 21:12:29,450 - INFO - Jaccard Score = 0.6559756267718421
+2020-04-06 21:12:29,450 - INFO - Starting 49 epoch...
+2020-04-06 21:20:27,904 - INFO - Jaccard Score = 0.6613959195335372
+2020-04-06 21:20:27,904 - INFO - Starting 50 epoch...
+2020-04-06 21:28:26,618 - INFO - Jaccard Score = 0.6577405587732398
+2020-04-06 21:28:26,618 - INFO - best score=0.6624700781328828 on epoch=17
+2020-04-06 21:28:26,618 - INFO - [training loop] done in 23952.73 s
+2020-04-06 21:28:26,621 - INFO - Starting fold 1 ...
+2020-04-06 21:28:26,746 - INFO - [load csv data] done in 0.12 s
+2020-04-06 21:28:26,799 - INFO - [prepare validation data] done in 0.05 s
+2020-04-06 21:28:26,799 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-06 21:28:26,799 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-06 21:28:26,800 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-06 21:28:27,881 - INFO - [create model] done in 1.08 s
+2020-04-06 21:28:27,881 - INFO - Starting 1 epoch...
+2020-04-06 21:36:26,967 - INFO - Jaccard Score = 0.6510562743943538
+2020-04-06 21:36:27,168 - INFO - save model at score=0.6510562743943538 on epoch=1
+2020-04-06 21:36:27,168 - INFO - Starting 2 epoch...
+2020-04-06 21:44:26,063 - INFO - Jaccard Score = 0.6520374556241116
+2020-04-06 21:44:26,337 - INFO - save model at score=0.6520374556241116 on epoch=2
+2020-04-06 21:44:26,337 - INFO - Starting 3 epoch...
+2020-04-06 21:52:25,121 - INFO - Jaccard Score = 0.655135320841352
+2020-04-06 21:52:25,395 - INFO - save model at score=0.655135320841352 on epoch=3
+2020-04-06 21:52:25,395 - INFO - Starting 4 epoch...
+2020-04-06 22:00:23,930 - INFO - Jaccard Score = 0.6571880233477067
+2020-04-06 22:00:24,204 - INFO - save model at score=0.6571880233477067 on epoch=4
+2020-04-06 22:00:24,204 - INFO - Starting 5 epoch...
+2020-04-06 22:08:22,802 - INFO - Jaccard Score = 0.6590240752081512
+2020-04-06 22:08:23,075 - INFO - save model at score=0.6590240752081512 on epoch=5
+2020-04-06 22:08:23,075 - INFO - Starting 6 epoch...
+2020-04-06 22:16:21,805 - INFO - Jaccard Score = 0.6641000204433639
+2020-04-06 22:16:22,078 - INFO - save model at score=0.6641000204433639 on epoch=6
+2020-04-06 22:16:22,078 - INFO - Starting 7 epoch...
+2020-04-06 22:24:20,888 - INFO - Jaccard Score = 0.6598398995876836
+2020-04-06 22:24:20,889 - INFO - Starting 8 epoch...
+2020-04-06 22:32:20,168 - INFO - Jaccard Score = 0.6652503132119255
+2020-04-06 22:32:20,443 - INFO - save model at score=0.6652503132119255 on epoch=8
+2020-04-06 22:32:20,443 - INFO - Starting 9 epoch...
+2020-04-06 22:40:19,665 - INFO - Jaccard Score = 0.6655420135618034
+2020-04-06 22:40:19,938 - INFO - save model at score=0.6655420135618034 on epoch=9
+2020-04-06 22:40:19,938 - INFO - Starting 10 epoch...
+2020-04-06 22:48:19,088 - INFO - Jaccard Score = 0.6642095491911999
+2020-04-06 22:48:19,088 - INFO - Starting 11 epoch...
+2020-04-06 22:56:17,988 - INFO - Jaccard Score = 0.6621720817233727
+2020-04-06 22:56:17,989 - INFO - Starting 12 epoch...
+2020-04-06 23:04:17,135 - INFO - Jaccard Score = 0.6663028473802353
+2020-04-06 23:04:17,410 - INFO - save model at score=0.6663028473802353 on epoch=12
+2020-04-06 23:04:17,410 - INFO - Starting 13 epoch...
+2020-04-06 23:12:16,773 - INFO - Jaccard Score = 0.668777298393987
+2020-04-06 23:12:17,050 - INFO - save model at score=0.668777298393987 on epoch=13
+2020-04-06 23:12:17,050 - INFO - Starting 14 epoch...
+2020-04-06 23:20:16,666 - INFO - Jaccard Score = 0.6543003897660981
+2020-04-06 23:20:16,666 - INFO - Starting 15 epoch...
+2020-04-06 23:28:16,409 - INFO - Jaccard Score = 0.6576121097127623
+2020-04-06 23:28:16,409 - INFO - Starting 16 epoch...
+2020-04-06 23:36:16,004 - INFO - Jaccard Score = 0.6649425180247688
+2020-04-06 23:36:16,004 - INFO - Starting 17 epoch...
+2020-04-06 23:44:15,824 - INFO - Jaccard Score = 0.6576419683078947
+2020-04-06 23:44:15,824 - INFO - Starting 18 epoch...
+2020-04-06 23:52:15,872 - INFO - Jaccard Score = 0.6662578423896776
+2020-04-06 23:52:15,872 - INFO - Starting 19 epoch...
+2020-04-07 00:00:15,930 - INFO - Jaccard Score = 0.6558950396144504
+2020-04-07 00:00:15,930 - INFO - Starting 20 epoch...
+2020-04-07 00:08:16,209 - INFO - Jaccard Score = 0.6628646946130433
+2020-04-07 00:08:16,209 - INFO - Starting 21 epoch...
+2020-04-07 00:16:16,796 - INFO - Jaccard Score = 0.6655519060976395
+2020-04-07 00:16:16,796 - INFO - Starting 22 epoch...
+2020-04-07 00:24:17,498 - INFO - Jaccard Score = 0.6620324155701903
+2020-04-07 00:24:17,498 - INFO - Starting 23 epoch...
+2020-04-07 00:32:18,329 - INFO - Jaccard Score = 0.664348760842717
+2020-04-07 00:32:18,329 - INFO - Starting 24 epoch...
+2020-04-07 00:40:19,394 - INFO - Jaccard Score = 0.6578468323974069
+2020-04-07 00:40:19,394 - INFO - Starting 25 epoch...
+2020-04-07 00:48:20,922 - INFO - Jaccard Score = 0.6656101117464118
+2020-04-07 00:48:20,922 - INFO - Starting 26 epoch...
+2020-04-07 00:56:22,986 - INFO - Jaccard Score = 0.6617054788090793
+2020-04-07 00:56:22,987 - INFO - Starting 27 epoch...
+2020-04-07 01:04:26,094 - INFO - Jaccard Score = 0.6627177660436169
+2020-04-07 01:04:26,094 - INFO - Starting 28 epoch...
+2020-04-07 01:12:29,106 - INFO - Jaccard Score = 0.6606671444224487
+2020-04-07 01:12:29,106 - INFO - Starting 29 epoch...
+2020-04-07 01:20:32,209 - INFO - Jaccard Score = 0.6652049837870535
+2020-04-07 01:20:32,209 - INFO - Starting 30 epoch...
+2020-04-07 01:28:35,329 - INFO - Jaccard Score = 0.6669195001837744
+2020-04-07 01:28:35,329 - INFO - Starting 31 epoch...
+2020-04-07 01:36:39,059 - INFO - Jaccard Score = 0.6685787035149252
+2020-04-07 01:36:39,059 - INFO - Starting 32 epoch...
+2020-04-07 01:44:43,738 - INFO - Jaccard Score = 0.6667126707749091
+2020-04-07 01:44:43,738 - INFO - Starting 33 epoch...
+2020-04-07 01:52:48,501 - INFO - Jaccard Score = 0.6641506576474231
+2020-04-07 01:52:48,501 - INFO - Starting 34 epoch...
+2020-04-07 02:00:53,150 - INFO - Jaccard Score = 0.6702050881305438
+2020-04-07 02:00:53,425 - INFO - save model at score=0.6702050881305438 on epoch=34
+2020-04-07 02:00:53,425 - INFO - Starting 35 epoch...
+2020-04-07 02:08:57,808 - INFO - Jaccard Score = 0.664421824165696
+2020-04-07 02:08:57,808 - INFO - Starting 36 epoch...
+2020-04-07 02:17:02,718 - INFO - Jaccard Score = 0.6652961806059987
+2020-04-07 02:17:02,718 - INFO - Starting 37 epoch...
+2020-04-07 02:25:08,099 - INFO - Jaccard Score = 0.6633029361885715
+2020-04-07 02:25:08,099 - INFO - Starting 38 epoch...
+2020-04-07 02:33:12,850 - INFO - Jaccard Score = 0.6602526151288374
+2020-04-07 02:33:12,851 - INFO - Starting 39 epoch...
+2020-04-07 02:41:17,016 - INFO - Jaccard Score = 0.6638301039913052
+2020-04-07 02:41:17,016 - INFO - Starting 40 epoch...
+2020-04-07 02:49:21,235 - INFO - Jaccard Score = 0.6644610017531494
+2020-04-07 02:49:21,236 - INFO - Starting 41 epoch...
+2020-04-07 02:57:26,005 - INFO - Jaccard Score = 0.6638001013721719
+2020-04-07 02:57:26,005 - INFO - Starting 42 epoch...
+2020-04-07 03:05:31,833 - INFO - Jaccard Score = 0.6667472556710208
+2020-04-07 03:05:31,833 - INFO - Starting 43 epoch...
+2020-04-07 03:13:37,445 - INFO - Jaccard Score = 0.6604544772773411
+2020-04-07 03:13:37,445 - INFO - Starting 44 epoch...
+2020-04-07 03:21:42,817 - INFO - Jaccard Score = 0.6617534306326082
+2020-04-07 03:21:42,817 - INFO - Starting 45 epoch...
+2020-04-07 03:29:47,618 - INFO - Jaccard Score = 0.6651397215861814
+2020-04-07 03:29:47,618 - INFO - Starting 46 epoch...
+2020-04-07 03:37:52,613 - INFO - Jaccard Score = 0.6622284199667926
+2020-04-07 03:37:52,613 - INFO - Starting 47 epoch...
+2020-04-07 03:45:58,266 - INFO - Jaccard Score = 0.6638282319713437
+2020-04-07 03:45:58,266 - INFO - Starting 48 epoch...
+2020-04-07 03:54:03,763 - INFO - Jaccard Score = 0.6645088239539158
+2020-04-07 03:54:03,763 - INFO - Starting 49 epoch...
+2020-04-07 04:02:09,195 - INFO - Jaccard Score = 0.669130041804269
+2020-04-07 04:02:09,196 - INFO - Starting 50 epoch...
+2020-04-07 04:10:14,607 - INFO - Jaccard Score = 0.6654575144184253
+2020-04-07 04:10:14,607 - INFO - best score=0.6702050881305438 on epoch=34
+2020-04-07 04:10:14,608 - INFO - [training loop] done in 24106.73 s
+2020-04-07 04:10:14,610 - INFO - Starting fold 2 ...
+2020-04-07 04:10:14,736 - INFO - [load csv data] done in 0.13 s
+2020-04-07 04:10:14,789 - INFO - [prepare validation data] done in 0.05 s
+2020-04-07 04:10:14,790 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-07 04:10:14,790 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-07 04:10:14,790 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-07 04:10:15,859 - INFO - [create model] done in 1.07 s
+2020-04-07 04:10:15,859 - INFO - Starting 1 epoch...
+2020-04-07 04:18:21,635 - INFO - Jaccard Score = 0.6389496559768099
+2020-04-07 04:18:21,835 - INFO - save model at score=0.6389496559768099 on epoch=1
+2020-04-07 04:18:21,835 - INFO - Starting 2 epoch...
+2020-04-07 04:26:27,866 - INFO - Jaccard Score = 0.6455785141369352
+2020-04-07 04:26:28,138 - INFO - save model at score=0.6455785141369352 on epoch=2
+2020-04-07 04:26:28,139 - INFO - Starting 3 epoch...
+2020-04-07 04:34:33,980 - INFO - Jaccard Score = 0.6584390117653917
+2020-04-07 04:34:34,252 - INFO - save model at score=0.6584390117653917 on epoch=3
+2020-04-07 04:34:34,253 - INFO - Starting 4 epoch...
+2020-04-07 04:42:39,736 - INFO - Jaccard Score = 0.6561138617545974
+2020-04-07 04:42:39,737 - INFO - Starting 5 epoch...
+2020-04-07 04:50:44,856 - INFO - Jaccard Score = 0.6606262313580037
+2020-04-07 04:50:45,128 - INFO - save model at score=0.6606262313580037 on epoch=5
+2020-04-07 04:50:45,128 - INFO - Starting 6 epoch...
+2020-04-07 04:58:50,674 - INFO - Jaccard Score = 0.6579688990516861
+2020-04-07 04:58:50,674 - INFO - Starting 7 epoch...
+2020-04-07 05:06:56,893 - INFO - Jaccard Score = 0.6617305856988946
+2020-04-07 05:06:57,165 - INFO - save model at score=0.6617305856988946 on epoch=7
+2020-04-07 05:06:57,165 - INFO - Starting 8 epoch...
+2020-04-07 05:15:03,205 - INFO - Jaccard Score = 0.6611033029767326
+2020-04-07 05:15:03,205 - INFO - Starting 9 epoch...
+2020-04-07 05:23:08,920 - INFO - Jaccard Score = 0.66411900537386
+2020-04-07 05:23:09,192 - INFO - save model at score=0.66411900537386 on epoch=9
+2020-04-07 05:23:09,192 - INFO - Starting 10 epoch...
+2020-04-07 05:31:14,663 - INFO - Jaccard Score = 0.6596394880788127
+2020-04-07 05:31:14,663 - INFO - Starting 11 epoch...
+2020-04-07 05:39:20,538 - INFO - Jaccard Score = 0.6586413528716784
+2020-04-07 05:39:20,538 - INFO - Starting 12 epoch...
+2020-04-07 05:47:26,587 - INFO - Jaccard Score = 0.6565998598125936
+2020-04-07 05:47:26,587 - INFO - Starting 13 epoch...
+2020-04-07 05:55:32,466 - INFO - Jaccard Score = 0.6614619914343195
+2020-04-07 05:55:32,467 - INFO - Starting 14 epoch...
+2020-04-07 06:03:38,033 - INFO - Jaccard Score = 0.6638698752329335
+2020-04-07 06:03:38,034 - INFO - Starting 15 epoch...
+2020-04-07 06:11:43,711 - INFO - Jaccard Score = 0.6651073292625885
+2020-04-07 06:11:43,985 - INFO - save model at score=0.6651073292625885 on epoch=15
+2020-04-07 06:11:43,985 - INFO - Starting 16 epoch...
+2020-04-07 06:19:50,817 - INFO - Jaccard Score = 0.6607458797766947
+2020-04-07 06:19:50,817 - INFO - Starting 17 epoch...
+2020-04-07 06:27:57,175 - INFO - Jaccard Score = 0.6612945304092193
+2020-04-07 06:27:57,176 - INFO - Starting 18 epoch...
+2020-04-07 06:36:03,438 - INFO - Jaccard Score = 0.6608943772044428
+2020-04-07 06:36:03,438 - INFO - Starting 19 epoch...
+2020-04-07 06:44:09,668 - INFO - Jaccard Score = 0.6593992725526883
+2020-04-07 06:44:09,668 - INFO - Starting 20 epoch...
+2020-04-07 06:52:16,108 - INFO - Jaccard Score = 0.6647462730718087
+2020-04-07 06:52:16,108 - INFO - Starting 21 epoch...
+2020-04-07 07:00:22,861 - INFO - Jaccard Score = 0.6640665299683908
+2020-04-07 07:00:22,861 - INFO - Starting 22 epoch...
+2020-04-07 07:08:29,696 - INFO - Jaccard Score = 0.6617507741498395
+2020-04-07 07:08:29,696 - INFO - Starting 23 epoch...
+2020-04-07 07:16:36,225 - INFO - Jaccard Score = 0.6686393140341564
+2020-04-07 07:16:36,499 - INFO - save model at score=0.6686393140341564 on epoch=23
+2020-04-07 07:16:36,499 - INFO - Starting 24 epoch...
+2020-04-07 07:24:42,640 - INFO - Jaccard Score = 0.6642776406541793
+2020-04-07 07:24:42,640 - INFO - Starting 25 epoch...
+2020-04-07 07:32:49,019 - INFO - Jaccard Score = 0.6670174610627271
+2020-04-07 07:32:49,019 - INFO - Starting 26 epoch...
+2020-04-07 07:40:55,742 - INFO - Jaccard Score = 0.6623646626483368
+2020-04-07 07:40:55,742 - INFO - Starting 27 epoch...
+2020-04-07 07:49:02,346 - INFO - Jaccard Score = 0.6657349409942221
+2020-04-07 07:49:02,346 - INFO - Starting 28 epoch...
+2020-04-07 07:57:08,774 - INFO - Jaccard Score = 0.6592027242119078
+2020-04-07 07:57:08,774 - INFO - Starting 29 epoch...
+2020-04-07 08:05:14,555 - INFO - Jaccard Score = 0.6586423873184852
+2020-04-07 08:05:14,555 - INFO - Starting 30 epoch...
+2020-04-07 08:13:20,589 - INFO - Jaccard Score = 0.6581565217792735
+2020-04-07 08:13:20,589 - INFO - Starting 31 epoch...
+2020-04-07 08:21:27,207 - INFO - Jaccard Score = 0.6604271572604536
+2020-04-07 08:21:27,207 - INFO - Starting 32 epoch...
+2020-04-07 08:29:33,557 - INFO - Jaccard Score = 0.6602095487239333
+2020-04-07 08:29:33,557 - INFO - Starting 33 epoch...
+2020-04-07 08:37:39,522 - INFO - Jaccard Score = 0.6606109767724018
+2020-04-07 08:37:39,522 - INFO - Starting 34 epoch...
+2020-04-07 08:45:45,054 - INFO - Jaccard Score = 0.6577259942949477
+2020-04-07 08:45:45,054 - INFO - Starting 35 epoch...
+2020-04-07 08:53:50,696 - INFO - Jaccard Score = 0.6571752233510458
+2020-04-07 08:53:50,697 - INFO - Starting 36 epoch...
+2020-04-07 09:01:56,601 - INFO - Jaccard Score = 0.652872969952278
+2020-04-07 09:01:56,601 - INFO - Starting 37 epoch...
+2020-04-07 09:10:02,201 - INFO - Jaccard Score = 0.6609508480700875
+2020-04-07 09:10:02,202 - INFO - Starting 38 epoch...
+2020-04-07 09:18:07,587 - INFO - Jaccard Score = 0.6609215707561957
+2020-04-07 09:18:07,588 - INFO - Starting 39 epoch...
+2020-04-07 09:26:12,679 - INFO - Jaccard Score = 0.6595692929083272
+2020-04-07 09:26:12,680 - INFO - Starting 40 epoch...
+2020-04-07 09:34:17,686 - INFO - Jaccard Score = 0.6591217255873781
+2020-04-07 09:34:17,686 - INFO - Starting 41 epoch...
+2020-04-07 09:42:23,510 - INFO - Jaccard Score = 0.660629183727006
+2020-04-07 09:42:23,510 - INFO - Starting 42 epoch...
+2020-04-07 09:50:29,251 - INFO - Jaccard Score = 0.6586198329836084
+2020-04-07 09:50:29,251 - INFO - Starting 43 epoch...
+2020-04-07 09:58:34,978 - INFO - Jaccard Score = 0.6562421236561526
+2020-04-07 09:58:34,978 - INFO - Starting 44 epoch...
+2020-04-07 10:06:39,849 - INFO - Jaccard Score = 0.6639045955444602
+2020-04-07 10:06:39,849 - INFO - Starting 45 epoch...
+2020-04-07 10:14:44,788 - INFO - Jaccard Score = 0.6577697292877083
+2020-04-07 10:14:44,788 - INFO - Starting 46 epoch...
+2020-04-07 10:22:50,335 - INFO - Jaccard Score = 0.6637041347856536
+2020-04-07 10:22:50,335 - INFO - Starting 47 epoch...
+2020-04-07 10:30:55,991 - INFO - Jaccard Score = 0.6627211080255353
+2020-04-07 10:30:55,991 - INFO - Starting 48 epoch...
+2020-04-07 10:39:01,293 - INFO - Jaccard Score = 0.665098152218237
+2020-04-07 10:39:01,293 - INFO - Starting 49 epoch...
+2020-04-07 10:47:05,660 - INFO - Jaccard Score = 0.6615636189579006
+2020-04-07 10:47:05,661 - INFO - Starting 50 epoch...
+2020-04-07 10:55:10,529 - INFO - Jaccard Score = 0.6658685348925579
+2020-04-07 10:55:10,529 - INFO - best score=0.6686393140341564 on epoch=23
+2020-04-07 10:55:10,529 - INFO - [training loop] done in 24294.67 s
+2020-04-07 10:55:10,531 - INFO - Starting fold 3 ...
+2020-04-07 10:55:10,658 - INFO - [load csv data] done in 0.13 s
+2020-04-07 10:55:10,711 - INFO - [prepare validation data] done in 0.05 s
+2020-04-07 10:55:10,712 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-07 10:55:10,712 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-07 10:55:10,712 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-07 10:55:11,781 - INFO - [create model] done in 1.07 s
+2020-04-07 10:55:11,781 - INFO - Starting 1 epoch...
+2020-04-07 11:03:16,478 - INFO - Jaccard Score = 0.6458907443039241
+2020-04-07 11:03:16,680 - INFO - save model at score=0.6458907443039241 on epoch=1
+2020-04-07 11:03:16,680 - INFO - Starting 2 epoch...
+2020-04-07 11:11:21,929 - INFO - Jaccard Score = 0.6544258501694917
+2020-04-07 11:11:22,209 - INFO - save model at score=0.6544258501694917 on epoch=2
+2020-04-07 11:11:22,209 - INFO - Starting 3 epoch...
+2020-04-07 11:19:27,124 - INFO - Jaccard Score = 0.6487898235669455
+2020-04-07 11:19:27,124 - INFO - Starting 4 epoch...
+2020-04-07 11:27:31,514 - INFO - Jaccard Score = 0.6648772320956322
+2020-04-07 11:27:31,762 - INFO - save model at score=0.6648772320956322 on epoch=4
+2020-04-07 11:27:31,762 - INFO - Starting 5 epoch...
+2020-04-07 11:35:35,542 - INFO - Jaccard Score = 0.6566075937260318
+2020-04-07 11:35:35,542 - INFO - Starting 6 epoch...
+2020-04-07 11:43:39,505 - INFO - Jaccard Score = 0.6661137208638068
+2020-04-07 11:43:39,778 - INFO - save model at score=0.6661137208638068 on epoch=6
+2020-04-07 11:43:39,778 - INFO - Starting 7 epoch...
+2020-04-07 11:51:44,141 - INFO - Jaccard Score = 0.660172084437268
+2020-04-07 11:51:44,141 - INFO - Starting 8 epoch...
+2020-04-07 11:59:48,288 - INFO - Jaccard Score = 0.6656100320414303
+2020-04-07 11:59:48,288 - INFO - Starting 9 epoch...
+2020-04-07 12:07:52,295 - INFO - Jaccard Score = 0.6613790718537438
+2020-04-07 12:07:52,295 - INFO - Starting 10 epoch...
+2020-04-07 12:15:56,159 - INFO - Jaccard Score = 0.6635099409569429
+2020-04-07 12:15:56,159 - INFO - Starting 11 epoch...
+2020-04-07 12:24:00,036 - INFO - Jaccard Score = 0.664200082395661
+2020-04-07 12:24:00,037 - INFO - Starting 12 epoch...
+2020-04-07 12:32:04,319 - INFO - Jaccard Score = 0.6653570070853497
+2020-04-07 12:32:04,319 - INFO - Starting 13 epoch...
+2020-04-07 12:40:08,083 - INFO - Jaccard Score = 0.6619170856571998
+2020-04-07 12:40:08,083 - INFO - Starting 14 epoch...
+2020-04-07 12:48:11,792 - INFO - Jaccard Score = 0.665644003989569
+2020-04-07 12:48:11,792 - INFO - Starting 15 epoch...
+2020-04-07 12:56:14,866 - INFO - Jaccard Score = 0.6631546349044865
+2020-04-07 12:56:14,866 - INFO - Starting 16 epoch...
+2020-04-07 13:04:18,335 - INFO - Jaccard Score = 0.6600787868278946
+2020-04-07 13:04:18,335 - INFO - Starting 17 epoch...
+2020-04-07 13:12:22,006 - INFO - Jaccard Score = 0.6619059532226741
+2020-04-07 13:12:22,007 - INFO - Starting 18 epoch...
+2020-04-07 13:20:26,044 - INFO - Jaccard Score = 0.6653148570038327
+2020-04-07 13:20:26,044 - INFO - Starting 19 epoch...
+2020-04-07 13:28:29,708 - INFO - Jaccard Score = 0.6636479309330972
+2020-04-07 13:28:29,708 - INFO - Starting 20 epoch...
+2020-04-07 13:36:33,040 - INFO - Jaccard Score = 0.6658906305380702
+2020-04-07 13:36:33,040 - INFO - Starting 21 epoch...
+2020-04-07 13:44:36,054 - INFO - Jaccard Score = 0.6653632567886683
+2020-04-07 13:44:36,054 - INFO - Starting 22 epoch...
+2020-04-07 13:52:39,464 - INFO - Jaccard Score = 0.6630463458445364
+2020-04-07 13:52:39,464 - INFO - Starting 23 epoch...
+2020-04-07 14:00:43,288 - INFO - Jaccard Score = 0.6643760066095736
+2020-04-07 14:00:43,288 - INFO - Starting 24 epoch...
+2020-04-07 14:08:47,172 - INFO - Jaccard Score = 0.6659726120375377
+2020-04-07 14:08:47,172 - INFO - Starting 25 epoch...
+2020-04-07 14:16:50,766 - INFO - Jaccard Score = 0.6648034918039374
+2020-04-07 14:16:50,766 - INFO - Starting 26 epoch...
+2020-04-07 14:24:53,716 - INFO - Jaccard Score = 0.6693945345963713
+2020-04-07 14:24:54,043 - INFO - save model at score=0.6693945345963713 on epoch=26
+2020-04-07 14:24:54,043 - INFO - Starting 27 epoch...
+2020-04-07 14:32:57,223 - INFO - Jaccard Score = 0.6634692842012092
+2020-04-07 14:32:57,223 - INFO - Starting 28 epoch...
+2020-04-07 14:41:00,563 - INFO - Jaccard Score = 0.6663881812741254
+2020-04-07 14:41:00,564 - INFO - Starting 29 epoch...
+2020-04-07 14:49:04,401 - INFO - Jaccard Score = 0.6684620653677616
+2020-04-07 14:49:04,401 - INFO - Starting 30 epoch...
+2020-04-07 14:57:08,203 - INFO - Jaccard Score = 0.6664683634087535
+2020-04-07 14:57:08,204 - INFO - Starting 31 epoch...
+2020-04-07 15:05:11,449 - INFO - Jaccard Score = 0.667096461283704
+2020-04-07 15:05:11,449 - INFO - Starting 32 epoch...
+2020-04-07 15:13:14,760 - INFO - Jaccard Score = 0.6680427063543007
+2020-04-07 15:13:14,760 - INFO - Starting 33 epoch...
+2020-04-07 15:21:18,825 - INFO - Jaccard Score = 0.6678106182777296
+2020-04-07 15:21:18,825 - INFO - Starting 34 epoch...
+2020-04-07 15:29:23,345 - INFO - Jaccard Score = 0.6672991039443413
+2020-04-07 15:29:23,346 - INFO - Starting 35 epoch...
+2020-04-07 15:37:27,325 - INFO - Jaccard Score = 0.6647317925714724
+2020-04-07 15:37:27,325 - INFO - Starting 36 epoch...
+2020-04-07 15:45:31,368 - INFO - Jaccard Score = 0.6676931401285215
+2020-04-07 15:45:31,368 - INFO - Starting 37 epoch...
+2020-04-07 15:53:35,153 - INFO - Jaccard Score = 0.6686458639958875
+2020-04-07 15:53:35,153 - INFO - Starting 38 epoch...
+2020-04-07 16:01:38,827 - INFO - Jaccard Score = 0.6632882426701896
+2020-04-07 16:01:38,827 - INFO - Starting 39 epoch...
+2020-04-07 16:09:43,421 - INFO - Jaccard Score = 0.6691624901883674
+2020-04-07 16:09:43,421 - INFO - Starting 40 epoch...
+2020-04-07 16:17:47,625 - INFO - Jaccard Score = 0.6620909725222175
+2020-04-07 16:17:47,625 - INFO - Starting 41 epoch...
+2020-04-07 16:25:52,017 - INFO - Jaccard Score = 0.6695318987725521
+2020-04-07 16:25:52,293 - INFO - save model at score=0.6695318987725521 on epoch=41
+2020-04-07 16:25:52,293 - INFO - Starting 42 epoch...
+2020-04-07 16:33:56,107 - INFO - Jaccard Score = 0.6681215785564553
+2020-04-07 16:33:56,107 - INFO - Starting 43 epoch...
+2020-04-07 16:41:59,596 - INFO - Jaccard Score = 0.6647510677997793
+2020-04-07 16:41:59,597 - INFO - Starting 44 epoch...
+2020-04-07 16:50:03,042 - INFO - Jaccard Score = 0.6696539280684096
+2020-04-07 16:50:03,319 - INFO - save model at score=0.6696539280684096 on epoch=44
+2020-04-07 16:50:03,319 - INFO - Starting 45 epoch...
+2020-04-07 16:58:06,858 - INFO - Jaccard Score = 0.6700967143793405
+2020-04-07 16:58:07,132 - INFO - save model at score=0.6700967143793405 on epoch=45
+2020-04-07 16:58:07,132 - INFO - Starting 46 epoch...
+2020-04-07 17:06:10,103 - INFO - Jaccard Score = 0.6683795041492405
+2020-04-07 17:06:10,104 - INFO - Starting 47 epoch...
+2020-04-07 17:14:12,640 - INFO - Jaccard Score = 0.6675132423655133
+2020-04-07 17:14:12,640 - INFO - Starting 48 epoch...
+2020-04-07 17:22:14,980 - INFO - Jaccard Score = 0.6675250961436116
+2020-04-07 17:22:14,980 - INFO - Starting 49 epoch...
+2020-04-07 17:30:17,307 - INFO - Jaccard Score = 0.6713496653040439
+2020-04-07 17:30:17,582 - INFO - save model at score=0.6713496653040439 on epoch=49
+2020-04-07 17:30:17,583 - INFO - Starting 50 epoch...
+2020-04-07 17:38:20,004 - INFO - Jaccard Score = 0.6666180916372252
+2020-04-07 17:38:20,004 - INFO - best score=0.6713496653040439 on epoch=49
+2020-04-07 17:38:20,004 - INFO - [training loop] done in 24188.22 s
+2020-04-07 17:38:20,007 - INFO - Starting fold 4 ...
+2020-04-07 17:38:20,141 - INFO - [load csv data] done in 0.13 s
+2020-04-07 17:38:20,200 - INFO - [prepare validation data] done in 0.06 s
+2020-04-07 17:38:20,201 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-07 17:38:20,201 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-07 17:38:20,201 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-07 17:38:21,288 - INFO - [create model] done in 1.09 s
+2020-04-07 17:38:21,289 - INFO - Starting 1 epoch...
+2020-04-07 17:46:23,472 - INFO - Jaccard Score = 0.6369824454184919
+2020-04-07 17:46:23,675 - INFO - save model at score=0.6369824454184919 on epoch=1
+2020-04-07 17:46:23,675 - INFO - Starting 2 epoch...
+2020-04-07 17:54:25,593 - INFO - Jaccard Score = 0.6528131196124833
+2020-04-07 17:54:25,867 - INFO - save model at score=0.6528131196124833 on epoch=2
+2020-04-07 17:54:25,867 - INFO - Starting 3 epoch...
+2020-04-07 18:02:27,120 - INFO - Jaccard Score = 0.6503333843376096
+2020-04-07 18:02:27,120 - INFO - Starting 4 epoch...
+2020-04-07 18:10:28,598 - INFO - Jaccard Score = 0.6514712785981583
+2020-04-07 18:10:28,598 - INFO - Starting 5 epoch...
+2020-04-07 18:18:30,322 - INFO - Jaccard Score = 0.6623362587133476
+2020-04-07 18:18:30,598 - INFO - save model at score=0.6623362587133476 on epoch=5
+2020-04-07 18:18:30,598 - INFO - Starting 6 epoch...
+2020-04-07 18:26:32,626 - INFO - Jaccard Score = 0.662092386386133
+2020-04-07 18:26:32,626 - INFO - Starting 7 epoch...
+2020-04-07 18:34:33,971 - INFO - Jaccard Score = 0.6628069060213612
+2020-04-07 18:34:34,246 - INFO - save model at score=0.6628069060213612 on epoch=7
+2020-04-07 18:34:34,246 - INFO - Starting 8 epoch...
+2020-04-07 18:42:35,411 - INFO - Jaccard Score = 0.6603140939618198
+2020-04-07 18:42:35,411 - INFO - Starting 9 epoch...
+2020-04-07 18:50:36,528 - INFO - Jaccard Score = 0.6614024227643607
+2020-04-07 18:50:36,528 - INFO - Starting 10 epoch...
+2020-04-07 18:58:37,443 - INFO - Jaccard Score = 0.6596756502417348
+2020-04-07 18:58:37,443 - INFO - Starting 11 epoch...
+2020-04-07 19:06:39,009 - INFO - Jaccard Score = 0.665086931846925
+2020-04-07 19:06:39,285 - INFO - save model at score=0.665086931846925 on epoch=11
+2020-04-07 19:06:39,286 - INFO - Starting 12 epoch...
+2020-04-07 19:14:40,684 - INFO - Jaccard Score = 0.6631487861245865
+2020-04-07 19:14:40,684 - INFO - Starting 13 epoch...
+2020-04-07 19:22:42,051 - INFO - Jaccard Score = 0.6622755557313008
+2020-04-07 19:22:42,051 - INFO - Starting 14 epoch...
+2020-04-07 19:30:42,944 - INFO - Jaccard Score = 0.6619009384379405
+2020-04-07 19:30:42,944 - INFO - Starting 15 epoch...
+2020-04-07 19:38:43,267 - INFO - Jaccard Score = 0.6690798438901251
+2020-04-07 19:38:43,544 - INFO - save model at score=0.6690798438901251 on epoch=15
+2020-04-07 19:38:43,545 - INFO - Starting 16 epoch...
+2020-04-07 19:46:44,028 - INFO - Jaccard Score = 0.6644556522882121
+2020-04-07 19:46:44,028 - INFO - Starting 17 epoch...
+2020-04-07 19:54:44,682 - INFO - Jaccard Score = 0.659384533784207
+2020-04-07 19:54:44,682 - INFO - Starting 18 epoch...
+2020-04-07 20:02:45,568 - INFO - Jaccard Score = 0.6677460400597857
+2020-04-07 20:02:45,568 - INFO - Starting 19 epoch...
+2020-04-07 20:10:46,234 - INFO - Jaccard Score = 0.6617471447192786
+2020-04-07 20:10:46,234 - INFO - Starting 20 epoch...
+2020-04-07 20:18:46,638 - INFO - Jaccard Score = 0.6582113891456285
+2020-04-07 20:18:46,638 - INFO - Starting 21 epoch...
+2020-04-07 20:26:46,720 - INFO - Jaccard Score = 0.6586583758005667
+2020-04-07 20:26:46,720 - INFO - Starting 22 epoch...
+2020-04-07 20:34:46,819 - INFO - Jaccard Score = 0.6649033695026598
+2020-04-07 20:34:46,819 - INFO - Starting 23 epoch...
+2020-04-07 20:42:47,011 - INFO - Jaccard Score = 0.6568369708886644
+2020-04-07 20:42:47,012 - INFO - Starting 24 epoch...
+2020-04-07 20:50:47,438 - INFO - Jaccard Score = 0.663326568637898
+2020-04-07 20:50:47,439 - INFO - Starting 25 epoch...
+2020-04-07 20:58:47,661 - INFO - Jaccard Score = 0.6594485933911881
+2020-04-07 20:58:47,661 - INFO - Starting 26 epoch...
+2020-04-07 21:06:47,647 - INFO - Jaccard Score = 0.6563193972346372
+2020-04-07 21:06:47,648 - INFO - Starting 27 epoch...
+2020-04-07 21:14:47,383 - INFO - Jaccard Score = 0.6637506212083777
+2020-04-07 21:14:47,383 - INFO - Starting 28 epoch...
+2020-04-07 21:22:47,245 - INFO - Jaccard Score = 0.6664388404442786
+2020-04-07 21:22:47,246 - INFO - Starting 29 epoch...
+2020-04-07 21:30:47,198 - INFO - Jaccard Score = 0.657843896688254
+2020-04-07 21:30:47,198 - INFO - Starting 30 epoch...
+2020-04-07 21:38:47,216 - INFO - Jaccard Score = 0.6601199280895945
+2020-04-07 21:38:47,217 - INFO - Starting 31 epoch...
+2020-04-07 21:46:47,590 - INFO - Jaccard Score = 0.6604367998960823
+2020-04-07 21:46:47,590 - INFO - Starting 32 epoch...
+2020-04-07 21:54:47,654 - INFO - Jaccard Score = 0.6647982377808762
+2020-04-07 21:54:47,654 - INFO - Starting 33 epoch...
+2020-04-07 22:02:47,387 - INFO - Jaccard Score = 0.6661035818008496
+2020-04-07 22:02:47,387 - INFO - Starting 34 epoch...
+2020-04-07 22:10:47,106 - INFO - Jaccard Score = 0.6614066937810644
+2020-04-07 22:10:47,106 - INFO - Starting 35 epoch...
+2020-04-07 22:18:46,982 - INFO - Jaccard Score = 0.6656360984743919
+2020-04-07 22:18:46,982 - INFO - Starting 36 epoch...
+2020-04-07 22:26:47,131 - INFO - Jaccard Score = 0.6641029275607189
+2020-04-07 22:26:47,132 - INFO - Starting 37 epoch...
+2020-04-07 22:34:47,792 - INFO - Jaccard Score = 0.6642513974958396
+2020-04-07 22:34:47,793 - INFO - Starting 38 epoch...
+2020-04-07 22:42:48,360 - INFO - Jaccard Score = 0.6690867555154315
+2020-04-07 22:42:48,637 - INFO - save model at score=0.6690867555154315 on epoch=38
+2020-04-07 22:42:48,637 - INFO - Starting 39 epoch...
+2020-04-07 22:50:49,156 - INFO - Jaccard Score = 0.6631230234252518
+2020-04-07 22:50:49,156 - INFO - Starting 40 epoch...
+2020-04-07 22:58:49,472 - INFO - Jaccard Score = 0.6700540006273686
+2020-04-07 22:58:49,747 - INFO - save model at score=0.6700540006273686 on epoch=40
+2020-04-07 22:58:49,747 - INFO - Starting 41 epoch...
+2020-04-07 23:06:50,531 - INFO - Jaccard Score = 0.666214336631113
+2020-04-07 23:06:50,531 - INFO - Starting 42 epoch...
+2020-04-07 23:14:51,463 - INFO - Jaccard Score = 0.6660391859431236
+2020-04-07 23:14:51,464 - INFO - Starting 43 epoch...
+2020-04-07 23:22:52,927 - INFO - Jaccard Score = 0.6654971066918869
+2020-04-07 23:22:52,927 - INFO - Starting 44 epoch...
+2020-04-07 23:30:54,570 - INFO - Jaccard Score = 0.665935038551213
+2020-04-07 23:30:54,571 - INFO - Starting 45 epoch...
+2020-04-07 23:38:56,464 - INFO - Jaccard Score = 0.6681290354380841
+2020-04-07 23:38:56,465 - INFO - Starting 46 epoch...
+2020-04-07 23:46:58,474 - INFO - Jaccard Score = 0.6686841498470134
+2020-04-07 23:46:58,474 - INFO - Starting 47 epoch...
+2020-04-07 23:55:00,228 - INFO - Jaccard Score = 0.6669724915573636
+2020-04-07 23:55:00,228 - INFO - Starting 48 epoch...
+2020-04-08 00:03:02,282 - INFO - Jaccard Score = 0.6667018653838526
+2020-04-08 00:03:02,282 - INFO - Starting 49 epoch...
+2020-04-08 00:11:05,196 - INFO - Jaccard Score = 0.6676698728508841
+2020-04-08 00:11:05,196 - INFO - Starting 50 epoch...
+2020-04-08 00:19:07,920 - INFO - Jaccard Score = 0.6641535003779966
+2020-04-08 00:19:07,921 - INFO - best score=0.6700540006273686 on epoch=40
+2020-04-08 00:19:07,921 - INFO - [training loop] done in 24046.63 s
