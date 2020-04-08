@@ -104,8 +104,8 @@ def eval_fn(data_loader, model, device):
             token_type_ids=token_type_ids
         )
         
-        fin_outputs_start.append(torch.sigmoid(o1).cpu().detach().numpy())
-        fin_outputs_end.append(torch.sigmoid(o2).cpu().detach().numpy())
+        fin_outputs_start.append(torch.softmax(o1, 1).cpu().detach().numpy())
+        fin_outputs_end.append(torch.softmax(o2, 1).cpu().detach().numpy())
         
         fin_padding_lens.extend(padding_len.cpu().detach().numpy().tolist())
         fin_tweet_token_ids.append(ids.cpu().detach().numpy().tolist())

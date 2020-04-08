@@ -204,7 +204,7 @@ def run_one_fold(fold_id):
 
     with timer('load csv data'):
 
-        debug = True# config.DEBUG
+        debug = config.DEBUG
         df_train = pd.read_csv(config.TRAIN_PATH).dropna().reset_index(drop=True)
 
         if debug:
