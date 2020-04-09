@@ -61,7 +61,7 @@ import src.config3 as config
 import src.engine as engine
 from src.machine_learning_util import seed_everything, prepare_labels, DownSampler, timer, \
                                       to_pickle, unpickle
-from src.model import TweetBERTBaseUncased
+from src.model import TweetBERTBaseUncased, TweetModel
 from src.image_util import resize_to_square_PIL, pad_PIL, threshold_image, \
                            bbox, crop_resize, Resize, \
                            image_to_tensor, train_one_epoch, validate
