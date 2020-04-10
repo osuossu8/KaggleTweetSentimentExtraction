@@ -284,7 +284,7 @@ def run_one_fold(fold_id):
     with timer('training loop'):
         best_score = -999
         best_epoch = 0
-        patience = 10
+        patience = 6
         p = 0
         for epoch in range(1, config.EPOCHS + 1):
 

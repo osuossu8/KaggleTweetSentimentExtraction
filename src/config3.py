@@ -16,11 +16,11 @@ TOKENIZER = tokenizers.BertWordPieceTokenizer(
     lowercase=True
 )
 
-INPUT_DIR = 'inputs'
+INPUT_DIR = 'inputs/old_data' # pretraining by old data
 OUT_DIR = 'models'
 TRAIN_PATH = os.path.join(INPUT_DIR, "train.csv")
 TEST_PATH = os.path.join(INPUT_DIR, "test.csv")
 SAMPLE_PATH = os.path.join(INPUT_DIR, "sample_submission.csv")
 
-FOLD0_ONLY = False
+FOLD0_ONLY = True # only single fold
 DEBUG = False
