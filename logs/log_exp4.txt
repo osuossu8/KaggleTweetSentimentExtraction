@@ -1,0 +1,277 @@
+2020-04-10 16:26:24,704 - INFO - logger set up
+2020-04-10 16:26:24,704 - INFO - seed=718
+2020-04-10 16:26:24,704 - INFO - Starting fold 0 ...
+2020-04-10 16:26:24,852 - INFO - [load csv data] done in 0.15 s
+2020-04-10 16:26:24,905 - INFO - [prepare validation data] done in 0.05 s
+2020-04-10 16:26:24,906 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-10 16:26:24,906 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-10 16:26:24,907 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-10 16:26:29,476 - INFO - pretrained model loaded
+2020-04-10 16:26:29,476 - INFO - [create model] done in 4.57 s
+2020-04-10 16:26:29,476 - INFO - Starting 1 epoch...
+2020-04-10 16:31:26,827 - INFO - Jaccard Score = 0.7943818408764479
+2020-04-10 16:31:27,022 - INFO - save model at score=0.7943818408764479 on epoch=1
+2020-04-10 16:31:27,023 - INFO - Starting 2 epoch...
+2020-04-10 16:36:30,128 - INFO - Jaccard Score = 0.7924036377079076
+2020-04-10 16:36:30,129 - INFO - best score is not updated while 1 epochs of training
+2020-04-10 16:36:30,129 - INFO - Starting 3 epoch...
+2020-04-10 16:41:32,853 - INFO - Jaccard Score = 0.784956129566263
+2020-04-10 16:41:32,854 - INFO - best score is not updated while 2 epochs of training
+2020-04-10 16:41:32,854 - INFO - Starting 4 epoch...
+2020-04-10 16:46:35,292 - INFO - Jaccard Score = 0.77306461944922
+2020-04-10 16:46:35,292 - INFO - best score is not updated while 3 epochs of training
+2020-04-10 16:46:35,292 - INFO - Starting 5 epoch...
+2020-04-10 16:51:37,744 - INFO - Jaccard Score = 0.7772477496316993
+2020-04-10 16:51:37,744 - INFO - best score is not updated while 4 epochs of training
+2020-04-10 16:51:37,744 - INFO - Starting 6 epoch...
+2020-04-10 16:56:40,189 - INFO - Jaccard Score = 0.7683491398624213
+2020-04-10 16:56:40,189 - INFO - best score is not updated while 5 epochs of training
+2020-04-10 16:56:40,189 - INFO - Starting 7 epoch...
+2020-04-10 17:01:42,783 - INFO - Jaccard Score = 0.7619928824397423
+2020-04-10 17:01:42,783 - INFO - best score is not updated while 6 epochs of training
+2020-04-10 17:01:42,783 - INFO - Early Stopping
+2020-04-10 17:01:42,784 - INFO - best score=0.7943818408764479 on epoch=1
+2020-04-10 17:01:42,784 - INFO - [training loop] done in 2113.31 s
+2020-04-10 17:01:42,786 - INFO - Starting fold 1 ...
+2020-04-10 17:01:42,915 - INFO - [load csv data] done in 0.13 s
+2020-04-10 17:01:42,968 - INFO - [prepare validation data] done in 0.05 s
+2020-04-10 17:01:42,968 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-10 17:01:42,969 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-10 17:01:42,969 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-10 17:01:44,304 - INFO - pretrained model loaded
+2020-04-10 17:01:44,304 - INFO - [create model] done in 1.34 s
+2020-04-10 17:01:44,304 - INFO - Starting 1 epoch...
+2020-04-10 17:06:46,990 - INFO - Jaccard Score = 0.7958579317776144
+2020-04-10 17:06:47,185 - INFO - save model at score=0.7958579317776144 on epoch=1
+2020-04-10 17:06:47,185 - INFO - Starting 2 epoch...
+2020-04-10 17:11:49,747 - INFO - Jaccard Score = 0.7837359083660317
+2020-04-10 17:11:49,748 - INFO - best score is not updated while 1 epochs of training
+2020-04-10 17:11:49,748 - INFO - Starting 3 epoch...
+2020-04-10 17:16:52,233 - INFO - Jaccard Score = 0.7832766430424527
+2020-04-10 17:16:52,233 - INFO - best score is not updated while 2 epochs of training
+2020-04-10 17:16:52,233 - INFO - Starting 4 epoch...
+2020-04-10 17:21:54,462 - INFO - Jaccard Score = 0.7820114234767782
+2020-04-10 17:21:54,462 - INFO - best score is not updated while 3 epochs of training
+2020-04-10 17:21:54,462 - INFO - Starting 5 epoch...
+2020-04-10 17:26:57,164 - INFO - Jaccard Score = 0.7781467189880708
+2020-04-10 17:26:57,164 - INFO - best score is not updated while 4 epochs of training
+2020-04-10 17:26:57,164 - INFO - Starting 6 epoch...
+2020-04-10 17:31:59,846 - INFO - Jaccard Score = 0.7724969672401998
+2020-04-10 17:31:59,846 - INFO - best score is not updated while 5 epochs of training
+2020-04-10 17:31:59,846 - INFO - Starting 7 epoch...
+2020-04-10 17:37:02,703 - INFO - Jaccard Score = 0.7690460359699752
+2020-04-10 17:37:02,703 - INFO - best score is not updated while 6 epochs of training
+2020-04-10 17:37:02,703 - INFO - Early Stopping
+2020-04-10 17:37:02,703 - INFO - best score=0.7958579317776144 on epoch=1
+2020-04-10 17:37:02,703 - INFO - [training loop] done in 2118.4 s
+2020-04-10 17:37:02,705 - INFO - Starting fold 2 ...
+2020-04-10 17:37:02,837 - INFO - [load csv data] done in 0.13 s
+2020-04-10 17:37:02,890 - INFO - [prepare validation data] done in 0.05 s
+2020-04-10 17:37:02,891 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-10 17:37:02,891 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-10 17:37:02,891 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-10 17:37:04,244 - INFO - pretrained model loaded
+2020-04-10 17:37:04,244 - INFO - [create model] done in 1.35 s
+2020-04-10 17:37:04,245 - INFO - Starting 1 epoch...
+2020-04-10 17:42:06,964 - INFO - Jaccard Score = 0.7925099370541999
+2020-04-10 17:42:07,156 - INFO - save model at score=0.7925099370541999 on epoch=1
+2020-04-10 17:42:07,156 - INFO - Starting 2 epoch...
+2020-04-10 17:47:09,958 - INFO - Jaccard Score = 0.7830082806190133
+2020-04-10 17:47:09,958 - INFO - best score is not updated while 1 epochs of training
+2020-04-10 17:47:09,958 - INFO - Starting 3 epoch...
+2020-04-10 17:52:12,931 - INFO - Jaccard Score = 0.7791580716384089
+2020-04-10 17:52:12,932 - INFO - best score is not updated while 2 epochs of training
+2020-04-10 17:52:12,932 - INFO - Starting 4 epoch...
+2020-04-10 17:57:15,568 - INFO - Jaccard Score = 0.7730574410493674
+2020-04-10 17:57:15,568 - INFO - best score is not updated while 3 epochs of training
+2020-04-10 17:57:15,568 - INFO - Starting 5 epoch...
+2020-04-10 18:02:18,147 - INFO - Jaccard Score = 0.7652080328698981
+2020-04-10 18:02:18,147 - INFO - best score is not updated while 4 epochs of training
+2020-04-10 18:02:18,148 - INFO - Starting 6 epoch...
+2020-04-10 18:07:20,541 - INFO - Jaccard Score = 0.7643408700980348
+2020-04-10 18:07:20,541 - INFO - best score is not updated while 5 epochs of training
+2020-04-10 18:07:20,541 - INFO - Starting 7 epoch...
+2020-04-10 18:12:22,870 - INFO - Jaccard Score = 0.7622766835200482
+2020-04-10 18:12:22,870 - INFO - best score is not updated while 6 epochs of training
+2020-04-10 18:12:22,870 - INFO - Early Stopping
+2020-04-10 18:12:22,870 - INFO - best score=0.7925099370541999 on epoch=1
+2020-04-10 18:12:22,870 - INFO - [training loop] done in 2118.63 s
+2020-04-10 18:12:22,873 - INFO - Starting fold 3 ...
+2020-04-10 18:12:23,001 - INFO - [load csv data] done in 0.13 s
+2020-04-10 18:12:23,054 - INFO - [prepare validation data] done in 0.05 s
+2020-04-10 18:12:23,055 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-10 18:12:23,055 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-10 18:12:23,055 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-10 18:12:24,389 - INFO - pretrained model loaded
+2020-04-10 18:12:24,389 - INFO - [create model] done in 1.33 s
+2020-04-10 18:12:24,389 - INFO - Starting 1 epoch...
+2020-04-10 18:17:26,809 - INFO - Jaccard Score = 0.7917935474723451
+2020-04-10 18:17:27,003 - INFO - save model at score=0.7917935474723451 on epoch=1
+2020-04-10 18:17:27,003 - INFO - Starting 2 epoch...
+2020-04-10 18:22:29,378 - INFO - Jaccard Score = 0.7857662418106492
+2020-04-10 18:22:29,378 - INFO - best score is not updated while 1 epochs of training
+2020-04-10 18:22:29,378 - INFO - Starting 3 epoch...
+2020-04-10 18:27:31,842 - INFO - Jaccard Score = 0.7765962628651063
+2020-04-10 18:27:31,842 - INFO - best score is not updated while 2 epochs of training
+2020-04-10 18:27:31,842 - INFO - Starting 4 epoch...
+2020-04-10 18:32:34,272 - INFO - Jaccard Score = 0.7762284431881153
+2020-04-10 18:32:34,272 - INFO - best score is not updated while 3 epochs of training
+2020-04-10 18:32:34,272 - INFO - Starting 5 epoch...
+2020-04-10 18:37:36,980 - INFO - Jaccard Score = 0.7662703344326351
+2020-04-10 18:37:36,980 - INFO - best score is not updated while 4 epochs of training
+2020-04-10 18:37:36,980 - INFO - Starting 6 epoch...
+2020-04-10 18:42:39,501 - INFO - Jaccard Score = 0.7665031600190593
+2020-04-10 18:42:39,501 - INFO - best score is not updated while 5 epochs of training
+2020-04-10 18:42:39,501 - INFO - Starting 7 epoch...
+2020-04-10 18:47:41,928 - INFO - Jaccard Score = 0.7662118347202882
+2020-04-10 18:47:41,928 - INFO - best score is not updated while 6 epochs of training
+2020-04-10 18:47:41,928 - INFO - Early Stopping
+2020-04-10 18:47:41,928 - INFO - best score=0.7917935474723451 on epoch=1
+2020-04-10 18:47:41,928 - INFO - [training loop] done in 2117.54 s
+2020-04-10 18:47:41,930 - INFO - Starting fold 4 ...
+2020-04-10 18:47:42,065 - INFO - [load csv data] done in 0.13 s
+2020-04-10 18:47:42,122 - INFO - [prepare validation data] done in 0.06 s
+2020-04-10 18:47:42,122 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-04-10 18:47:42,123 - INFO - Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-10 18:47:42,123 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-04-10 18:47:43,469 - INFO - pretrained model loaded
+2020-04-10 18:47:43,469 - INFO - [create model] done in 1.35 s
+2020-04-10 18:47:43,469 - INFO - Starting 1 epoch...
+2020-04-10 18:52:45,936 - INFO - Jaccard Score = 0.7955170120243176
+2020-04-10 18:52:46,127 - INFO - save model at score=0.7955170120243176 on epoch=1
+2020-04-10 18:52:46,127 - INFO - Starting 2 epoch...
+2020-04-10 18:57:48,324 - INFO - Jaccard Score = 0.7932652213978166
+2020-04-10 18:57:48,324 - INFO - best score is not updated while 1 epochs of training
+2020-04-10 18:57:48,324 - INFO - Starting 3 epoch...
+2020-04-10 19:02:50,519 - INFO - Jaccard Score = 0.7848647507102893
+2020-04-10 19:02:50,520 - INFO - best score is not updated while 2 epochs of training
+2020-04-10 19:02:50,520 - INFO - Starting 4 epoch...
+2020-04-10 19:07:52,789 - INFO - Jaccard Score = 0.7763034532860417
+2020-04-10 19:07:52,789 - INFO - best score is not updated while 3 epochs of training
+2020-04-10 19:07:52,789 - INFO - Starting 5 epoch...
+2020-04-10 19:12:55,081 - INFO - Jaccard Score = 0.7699799705585945
+2020-04-10 19:12:55,081 - INFO - best score is not updated while 4 epochs of training
+2020-04-10 19:12:55,081 - INFO - Starting 6 epoch...
+2020-04-10 19:17:57,338 - INFO - Jaccard Score = 0.7723831767192373
+2020-04-10 19:17:57,338 - INFO - best score is not updated while 5 epochs of training
+2020-04-10 19:17:57,338 - INFO - Starting 7 epoch...
+2020-04-10 19:22:59,740 - INFO - Jaccard Score = 0.7642124950758922
+2020-04-10 19:22:59,740 - INFO - best score is not updated while 6 epochs of training
+2020-04-10 19:22:59,740 - INFO - Early Stopping
+2020-04-10 19:22:59,740 - INFO - best score=0.7955170120243176 on epoch=1
+2020-04-10 19:22:59,740 - INFO - [training loop] done in 2116.27 s
