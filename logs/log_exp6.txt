@@ -1,0 +1,409 @@
+2020-04-14 02:19:51,704 - INFO - logger set up
+2020-04-14 02:19:51,704 - INFO - seed=718
+2020-04-14 02:19:51,704 - INFO - Starting fold 0 ...
+2020-04-14 02:19:51,853 - INFO - [load csv data] done in 0.15 s
+2020-04-14 02:19:51,907 - INFO - [prepare validation data] done in 0.05 s
+2020-04-14 02:19:51,909 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 02:19:52,780 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 02:19:52,781 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 02:19:52,782 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 02:19:52,783 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 02:19:53,630 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 02:19:53,631 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 02:19:53,632 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 02:19:53,633 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 02:19:54,445 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin HTTP/1.1" 200 0
+2020-04-14 02:19:54,445 - INFO - loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/66cc7a7501e3499efedc37e47b3a613e0d3d8d0a51c66224c69f0c669b52dcfb.ae11cc7f2a26b857b76b404a908c7abad793f88bf8ad95caecff154da87994b1
+2020-04-14 02:20:01,061 - INFO - [create model] done in 9.15 s
+2020-04-14 02:20:01,061 - INFO - Starting 1 epoch...
+2020-04-14 02:44:16,918 - INFO - Jaccard Score = 0.6738856364559817
+2020-04-14 02:44:17,497 - INFO - save model at score=0.6738856364559817 on epoch=1
+2020-04-14 02:44:17,497 - INFO - Starting 2 epoch...
+2020-04-14 03:08:36,998 - INFO - Jaccard Score = 0.6937543198383888
+2020-04-14 03:08:38,013 - INFO - save model at score=0.6937543198383888 on epoch=2
+2020-04-14 03:08:38,013 - INFO - Starting 3 epoch...
+2020-04-14 03:32:58,199 - INFO - Jaccard Score = 0.6791275959023041
+2020-04-14 03:32:58,199 - INFO - best score is not updated while 1 epochs of training
+2020-04-14 03:32:58,199 - INFO - Starting 4 epoch...
+2020-04-14 03:57:18,026 - INFO - Jaccard Score = 0.6834129309813163
+2020-04-14 03:57:18,026 - INFO - best score is not updated while 2 epochs of training
+2020-04-14 03:57:18,026 - INFO - Early Stopping
+2020-04-14 03:57:18,026 - INFO - best score=0.6937543198383888 on epoch=2
+2020-04-14 03:57:18,027 - INFO - [training loop] done in 5836.97 s
+2020-04-14 03:57:18,029 - INFO - Starting fold 1 ...
+2020-04-14 03:57:18,165 - INFO - [load csv data] done in 0.14 s
+2020-04-14 03:57:18,219 - INFO - [prepare validation data] done in 0.05 s
+2020-04-14 03:57:18,220 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 03:57:19,351 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 03:57:19,352 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 03:57:19,352 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 03:57:19,353 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 03:57:20,255 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 03:57:20,256 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 03:57:20,256 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 03:57:20,257 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 03:57:21,127 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin HTTP/1.1" 200 0
+2020-04-14 03:57:21,127 - INFO - loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/66cc7a7501e3499efedc37e47b3a613e0d3d8d0a51c66224c69f0c669b52dcfb.ae11cc7f2a26b857b76b404a908c7abad793f88bf8ad95caecff154da87994b1
+2020-04-14 03:57:24,458 - INFO - [create model] done in 6.24 s
+2020-04-14 03:57:24,459 - INFO - Starting 1 epoch...
+2020-04-14 04:21:48,299 - INFO - Jaccard Score = 0.6895132078119869
+2020-04-14 04:21:48,859 - INFO - save model at score=0.6895132078119869 on epoch=1
+2020-04-14 04:21:48,859 - INFO - Starting 2 epoch...
+2020-04-14 04:46:12,894 - INFO - Jaccard Score = 0.6972093775737915
+2020-04-14 04:46:13,893 - INFO - save model at score=0.6972093775737915 on epoch=2
+2020-04-14 04:46:13,893 - INFO - Starting 3 epoch...
+2020-04-14 05:10:36,851 - INFO - Jaccard Score = 0.6892750829844989
+2020-04-14 05:10:36,851 - INFO - best score is not updated while 1 epochs of training
+2020-04-14 05:10:36,851 - INFO - Starting 4 epoch...
+2020-04-14 05:35:00,285 - INFO - Jaccard Score = 0.6842521415684143
+2020-04-14 05:35:00,285 - INFO - best score is not updated while 2 epochs of training
+2020-04-14 05:35:00,285 - INFO - Early Stopping
+2020-04-14 05:35:00,286 - INFO - best score=0.6972093775737915 on epoch=2
+2020-04-14 05:35:00,286 - INFO - [training loop] done in 5855.83 s
+2020-04-14 05:35:00,288 - INFO - Starting fold 2 ...
+2020-04-14 05:35:00,417 - INFO - [load csv data] done in 0.13 s
+2020-04-14 05:35:00,470 - INFO - [prepare validation data] done in 0.05 s
+2020-04-14 05:35:00,471 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 05:35:01,315 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 05:35:01,316 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 05:35:01,316 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 05:35:01,318 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 05:35:02,304 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 05:35:02,305 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 05:35:02,305 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 05:35:02,306 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 05:35:03,148 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin HTTP/1.1" 200 0
+2020-04-14 05:35:03,149 - INFO - loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/66cc7a7501e3499efedc37e47b3a613e0d3d8d0a51c66224c69f0c669b52dcfb.ae11cc7f2a26b857b76b404a908c7abad793f88bf8ad95caecff154da87994b1
+2020-04-14 05:35:06,463 - INFO - [create model] done in 5.99 s
+2020-04-14 05:35:06,463 - INFO - Starting 1 epoch...
+2020-04-14 05:59:32,075 - INFO - Jaccard Score = 0.6996354196791773
+2020-04-14 05:59:32,648 - INFO - save model at score=0.6996354196791773 on epoch=1
+2020-04-14 05:59:32,648 - INFO - Starting 2 epoch...
+2020-04-14 06:23:56,899 - INFO - Jaccard Score = 0.691582330996681
+2020-04-14 06:23:56,899 - INFO - best score is not updated while 1 epochs of training
+2020-04-14 06:23:56,899 - INFO - Starting 3 epoch...
+2020-04-14 06:48:21,793 - INFO - Jaccard Score = 0.6880031152485443
+2020-04-14 06:48:21,793 - INFO - best score is not updated while 2 epochs of training
+2020-04-14 06:48:21,794 - INFO - Early Stopping
+2020-04-14 06:48:21,794 - INFO - best score=0.6996354196791773 on epoch=1
+2020-04-14 06:48:21,794 - INFO - [training loop] done in 4395.33 s
+2020-04-14 06:48:21,796 - INFO - Starting fold 3 ...
+2020-04-14 06:48:21,932 - INFO - [load csv data] done in 0.14 s
+2020-04-14 06:48:21,990 - INFO - [prepare validation data] done in 0.06 s
+2020-04-14 06:48:21,991 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 06:48:22,722 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 06:48:22,723 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 06:48:22,723 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 06:48:22,724 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 06:48:23,473 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 06:48:23,474 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 06:48:23,475 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 06:48:23,476 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 06:48:24,297 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin HTTP/1.1" 200 0
+2020-04-14 06:48:24,298 - INFO - loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/66cc7a7501e3499efedc37e47b3a613e0d3d8d0a51c66224c69f0c669b52dcfb.ae11cc7f2a26b857b76b404a908c7abad793f88bf8ad95caecff154da87994b1
+2020-04-14 06:48:27,603 - INFO - [create model] done in 5.61 s
+2020-04-14 06:48:27,603 - INFO - Starting 1 epoch...
+2020-04-14 07:12:55,099 - INFO - Jaccard Score = 0.6860948786075453
+2020-04-14 07:12:55,668 - INFO - save model at score=0.6860948786075453 on epoch=1
+2020-04-14 07:12:55,668 - INFO - Starting 2 epoch...
+2020-04-14 07:37:24,021 - INFO - Jaccard Score = 0.6907004334201063
+2020-04-14 07:37:25,036 - INFO - save model at score=0.6907004334201063 on epoch=2
+2020-04-14 07:37:25,036 - INFO - Starting 3 epoch...
+2020-04-14 08:01:51,440 - INFO - Jaccard Score = 0.6970387808976725
+2020-04-14 08:01:52,449 - INFO - save model at score=0.6970387808976725 on epoch=3
+2020-04-14 08:01:52,449 - INFO - Starting 4 epoch...
+2020-04-14 08:26:17,194 - INFO - Jaccard Score = 0.6902342603109511
+2020-04-14 08:26:17,195 - INFO - best score is not updated while 1 epochs of training
+2020-04-14 08:26:17,195 - INFO - Starting 5 epoch...
+2020-04-14 08:50:41,800 - INFO - Jaccard Score = 0.6940659562216495
+2020-04-14 08:50:41,800 - INFO - best score is not updated while 2 epochs of training
+2020-04-14 08:50:41,800 - INFO - Early Stopping
+2020-04-14 08:50:41,800 - INFO - best score=0.6970387808976725 on epoch=3
+2020-04-14 08:50:41,801 - INFO - [training loop] done in 7334.2 s
+2020-04-14 08:50:41,803 - INFO - Starting fold 4 ...
+2020-04-14 08:50:41,934 - INFO - [load csv data] done in 0.13 s
+2020-04-14 08:50:41,987 - INFO - [prepare validation data] done in 0.05 s
+2020-04-14 08:50:41,989 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 08:50:42,790 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 08:50:42,791 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 08:50:42,791 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 08:50:42,792 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 08:50:43,553 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json HTTP/1.1" 200 0
+2020-04-14 08:50:43,553 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-config.json from cache at /usr/src/app/.cache/torch/transformers/acdf0fd9c7a1b157516c5c0434216c72438b384fb6ddeeaa20d67e83d1fef81f.fc076a4d5f1edf25ea3a2bd66e9f6f295dcd64c81dfef5b3f5a3eb2a82751ad1
+2020-04-14 08:50:43,554 - INFO - Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": true,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+2020-04-14 08:50:43,554 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-04-14 08:50:44,378 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin HTTP/1.1" 200 0
+2020-04-14 08:50:44,379 - INFO - loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-uncased-whole-word-masking-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/66cc7a7501e3499efedc37e47b3a613e0d3d8d0a51c66224c69f0c669b52dcfb.ae11cc7f2a26b857b76b404a908c7abad793f88bf8ad95caecff154da87994b1
+2020-04-14 08:50:47,690 - INFO - [create model] done in 5.7 s
+2020-04-14 08:50:47,690 - INFO - Starting 1 epoch...
+2020-04-14 09:15:13,370 - INFO - Jaccard Score = 0.695544397415232
+2020-04-14 09:15:13,951 - INFO - save model at score=0.695544397415232 on epoch=1
+2020-04-14 09:15:13,951 - INFO - Starting 2 epoch...
+2020-04-14 09:39:38,463 - INFO - Jaccard Score = 0.6933028662316105
+2020-04-14 09:39:38,463 - INFO - best score is not updated while 1 epochs of training
+2020-04-14 09:39:38,464 - INFO - Starting 3 epoch...
+2020-04-14 10:04:01,914 - INFO - Jaccard Score = 0.6875582832100526
+2020-04-14 10:04:01,915 - INFO - best score is not updated while 2 epochs of training
+2020-04-14 10:04:01,915 - INFO - Early Stopping
+2020-04-14 10:04:01,915 - INFO - best score=0.695544397415232 on epoch=1
+2020-04-14 10:04:01,915 - INFO - [training loop] done in 4394.23 s
