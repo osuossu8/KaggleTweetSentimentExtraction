@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 
-import src.config as config
+import src.configs.config as config
 
 
 #def loss_fn(o1, o2, t1, t2):
