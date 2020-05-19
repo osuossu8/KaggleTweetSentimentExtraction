@@ -111,8 +111,8 @@ def train_fn(data_loader, model, optimizer, device, scheduler=None):
         )
         
         
-        loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end) \
-                  + loss_fn_for_sentiment(sentiment_logit, sentiment_target)
+        loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end) * 0.5 \
+                  + loss_fn_for_sentiment(sentiment_logit, sentiment_target) * 0.5
 
         loss.backward()
         optimizer.step()
@@ -170,8 +170,8 @@ def eval_fn(data_loader, model, device):
                 mask=mask,
                 token_type_ids=token_type_ids
             )
-            loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end) \
-                      + loss_fn_for_sentiment(sentiment_logit, sentiment_target)
+            loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end) * 0.5 \
+                      + loss_fn_for_sentiment(sentiment_logit, sentiment_target) * 0.5
             outputs_start = torch.softmax(outputs_start, dim=1).cpu().detach().numpy()
             outputs_end = torch.softmax(outputs_end, dim=1).cpu().detach().numpy()
             jaccard_scores = []
@@ -192,5 +192,4 @@ def eval_fn(data_loader, model, device):
             losses.update(loss.item(), ids.size(0))
             tk0.set_postfix(loss=losses.avg, jaccard=jaccards.avg)
     
-    print(f"Jaccard = {jaccards.avg}")
-    return jaccards.avg
+    return jaccards.avg, losses.avg
