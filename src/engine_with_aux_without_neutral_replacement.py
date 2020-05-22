@@ -23,10 +23,17 @@ def loss_fn_for_sentiment(sentiment_logit, sentiment_target):
 
 # right imprementation for this comp
 # https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/140942
+# def jaccard(str1, str2):
+#     a = str1.lower().split()
+#     b = str2.lower().split()
+#     c = set(a).intersection(set(b))
+#     return float(len(c)) / (len(a) + len(b) - len(c))
+
+
 def jaccard(str1, str2):
-    a = str1.lower().split()
-    b = str2.lower().split()
-    c = set(a).intersection(set(b))
+    a = set(str1.lower().split())
+    b = set(str2.lower().split())
+    c = a.intersection(b)
     return float(len(c)) / (len(a) + len(b) - len(c))
 
 
@@ -68,7 +75,8 @@ def calculate_jaccard_score(
 
     # don't replace neural manually, trust your model
     # if sentiment_val == "neutral" or len(original_tweet.split()) < 2:
-    #     filtered_output = original_tweet
+    if len(original_tweet.split()) < 2:
+        filtered_output = original_tweet
 
     jac = jaccard(target_string.strip(), filtered_output.strip())
     return jac, filtered_output

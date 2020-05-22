@@ -62,7 +62,7 @@ import src.configs.config31 as config
 import src.engine_with_aux_without_neutral_replacement as engine
 from src.machine_learning_util import seed_everything, prepare_labels, DownSampler, timer, \
                                       to_pickle, unpickle
-from src.model import TweetBERTBaseUncased, TweetModel, TweetModelLargeWWM, TweetRoBERTaModelV4
+from src.model import TweetBERTBaseUncased, TweetModel, TweetModelLargeWWM, TweetRoBERTaModelV4, TweetRoBERTaModelV5
 from src.image_util import resize_to_square_PIL, pad_PIL, threshold_image, \
                            bbox, crop_resize, Resize, \
                            image_to_tensor, train_one_epoch, validate
@@ -267,7 +267,7 @@ def run_one_fold(fold_id):
     with timer('create model'):
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-        model = TweetRoBERTaModelV4(config.ROBERTA_PATH)
+        model = TweetRoBERTaModelV5(config.ROBERTA_PATH)
         model = model.to(device)
 
         param_optimizer = list(model.named_parameters())

@@ -165,6 +165,38 @@ class TweetRoBERTaModelV5(nn.Module):
         model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
         model_config.output_hidden_states = True
         self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
+        self.drop_out = nn.Dropout(0.5)
+        self.l0 = nn.Linear(768, 2)
+        torch.nn.init.normal_(self.l0.weight, std=0.02)
+
+
+    def forward(self, ids, mask, token_type_ids):
+        _, _, out = self.roberta(
+            ids,
+            attention_mask=mask,
+            token_type_ids=token_type_ids
+        )
+
+        x = torch.stack([out[-1], out[-2], out[-3], out[-4]])
+        x = torch.mean(x, 0)
+        x = self.drop_out(x)
+        logits = self.l0(x)
+
+        sentiment_logit = torch.mean(logits, 1)
+
+        start_logits, end_logits = logits.split(1, dim=-1)
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
+
+        return start_logits, end_logits, sentiment_logit
+
+
+class TweetRoBERTaModelV6(nn.Module):
+    def __init__(self, roberta_path):
+        super(TweetRoBERTaModelV6, self).__init__()
+        model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
+        model_config.output_hidden_states = True
+        self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
         self.drop_out = nn.Dropout(0.1)
         self.l0 = nn.Linear(768 * 2, 2)
         torch.nn.init.normal_(self.l0.weight, std=0.02)
