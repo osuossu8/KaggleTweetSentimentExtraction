@@ -1,0 +1,712 @@
+2020-05-22 12:02:54,144 - INFO - logger set up
+2020-05-22 12:02:54,144 - INFO - seed=718
+2020-05-22 12:02:54,144 - INFO - #####
+2020-05-22 12:02:54,144 - INFO - #####
+2020-05-22 12:02:54,144 - INFO - Starting fold 0 ...
+2020-05-22 12:02:54,144 - INFO - #####
+2020-05-22 12:02:54,145 - INFO - #####
+2020-05-22 12:02:54,295 - INFO - [load csv data] done in 0.15 s
+2020-05-22 12:02:54,350 - INFO - [prepare validation data] done in 0.05 s
+2020-05-22 12:02:54,350 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 12:02:54,351 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 12:02:54,351 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 12:03:00,332 - INFO - [create model] done in 5.98 s
+2020-05-22 12:03:00,332 - INFO - Starting 1 epoch...
+2020-05-22 12:08:48,965 - INFO - Jaccard Score = 0.638221549843487
+2020-05-22 12:08:49,238 - INFO - save model at score=0.638221549843487 on epoch=1
+2020-05-22 12:08:49,238 - INFO - Starting 2 epoch...
+2020-05-22 12:14:40,473 - INFO - Jaccard Score = 0.6693539927716513
+2020-05-22 12:14:40,829 - INFO - save model at score=0.6693539927716513 on epoch=2
+2020-05-22 12:14:40,829 - INFO - Starting 3 epoch...
+2020-05-22 12:20:31,733 - INFO - Jaccard Score = 0.6744816942393774
+2020-05-22 12:20:31,733 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 12:20:31,733 - INFO - Starting 4 epoch...
+2020-05-22 12:26:22,534 - INFO - Jaccard Score = 0.6707669499672726
+2020-05-22 12:26:22,534 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 12:26:22,535 - INFO - Starting 5 epoch...
+2020-05-22 12:32:13,293 - INFO - Jaccard Score = 0.6757534032022112
+2020-05-22 12:32:13,293 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 12:32:13,293 - INFO - Early Stopping
+2020-05-22 12:32:13,293 - INFO - best score=0.6693539927716513 on epoch=2
+2020-05-22 12:32:13,293 - INFO - [training loop] done in 1752.96 s
+2020-05-22 12:32:13,296 - INFO - #####
+2020-05-22 12:32:13,296 - INFO - #####
+2020-05-22 12:32:13,296 - INFO - Starting fold 1 ...
+2020-05-22 12:32:13,296 - INFO - #####
+2020-05-22 12:32:13,296 - INFO - #####
+2020-05-22 12:32:13,429 - INFO - [load csv data] done in 0.13 s
+2020-05-22 12:32:13,484 - INFO - [prepare validation data] done in 0.06 s
+2020-05-22 12:32:13,485 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 12:32:13,485 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 12:32:13,485 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 12:32:15,845 - INFO - [create model] done in 2.36 s
+2020-05-22 12:32:15,846 - INFO - Starting 1 epoch...
+2020-05-22 12:38:45,341 - INFO - logger set up
+2020-05-22 12:38:45,341 - INFO - seed=718
+2020-05-22 12:38:45,341 - INFO - #####
+2020-05-22 12:38:45,341 - INFO - #####
+2020-05-22 12:38:45,342 - INFO - Starting fold 0 ...
+2020-05-22 12:38:45,342 - INFO - #####
+2020-05-22 12:38:45,342 - INFO - #####
+2020-05-22 12:38:45,492 - INFO - [load csv data] done in 0.15 s
+2020-05-22 12:38:45,547 - INFO - [prepare validation data] done in 0.06 s
+2020-05-22 12:38:45,548 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 12:38:45,548 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 12:38:45,549 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 12:38:51,384 - INFO - [create model] done in 5.84 s
+2020-05-22 12:38:51,385 - INFO - Starting 1 epoch...
+2020-05-22 12:44:40,832 - INFO - Jaccard Score = 0.63858531848663
+2020-05-22 12:44:41,179 - INFO - save model at score=0.63858531848663 on epoch=1
+2020-05-22 12:44:41,179 - INFO - Starting 2 epoch...
+2020-05-22 12:50:32,170 - INFO - Jaccard Score = 0.6691721084500798
+2020-05-22 12:50:32,520 - INFO - save model at score=0.6691721084500798 on epoch=2
+2020-05-22 12:50:32,521 - INFO - Starting 3 epoch...
+2020-05-22 12:56:23,543 - INFO - Jaccard Score = 0.6744816942393774
+2020-05-22 12:56:23,543 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 12:56:23,543 - INFO - Starting 4 epoch...
+2020-05-22 13:02:14,955 - INFO - Jaccard Score = 0.6705850656457012
+2020-05-22 13:02:14,955 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 13:02:14,955 - INFO - Starting 5 epoch...
+2020-05-22 13:09:35,269 - INFO - logger set up
+2020-05-22 13:09:35,269 - INFO - seed=718
+2020-05-22 13:09:35,270 - INFO - #####
+2020-05-22 13:09:35,270 - INFO - #####
+2020-05-22 13:09:35,270 - INFO - Starting fold 0 ...
+2020-05-22 13:09:35,270 - INFO - #####
+2020-05-22 13:09:35,270 - INFO - #####
+2020-05-22 13:09:35,422 - INFO - [load csv data] done in 0.15 s
+2020-05-22 13:09:35,477 - INFO - [prepare validation data] done in 0.05 s
+2020-05-22 13:09:35,477 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 13:09:35,478 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 13:09:35,478 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 13:09:41,334 - INFO - [create model] done in 5.86 s
+2020-05-22 13:09:41,334 - INFO - Starting 1 epoch...
+2020-05-22 13:11:18,870 - INFO - logger set up
+2020-05-22 13:11:18,870 - INFO - seed=718
+2020-05-22 13:11:18,870 - INFO - #####
+2020-05-22 13:11:18,870 - INFO - #####
+2020-05-22 13:11:18,870 - INFO - Starting fold 0 ...
+2020-05-22 13:11:18,870 - INFO - #####
+2020-05-22 13:11:18,870 - INFO - #####
+2020-05-22 13:11:19,021 - INFO - [load csv data] done in 0.15 s
+2020-05-22 13:11:19,076 - INFO - [prepare validation data] done in 0.05 s
+2020-05-22 13:11:19,076 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 13:11:19,076 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 13:11:19,077 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 13:11:24,943 - INFO - [create model] done in 5.87 s
+2020-05-22 13:11:24,943 - INFO - Starting 1 epoch...
+2020-05-22 13:17:14,937 - INFO - Jaccard Score = 0.664093366979589
+2020-05-22 13:17:15,291 - INFO - save model at score=0.664093366979589 on epoch=1
+2020-05-22 13:17:15,291 - INFO - Starting 2 epoch...
+2020-05-22 13:23:07,049 - INFO - Jaccard Score = 0.6798972912198472
+2020-05-22 13:23:07,402 - INFO - save model at score=0.6798972912198472 on epoch=2
+2020-05-22 13:23:07,402 - INFO - Starting 3 epoch...
+2020-05-22 13:28:58,701 - INFO - Jaccard Score = 0.6760013674221201
+2020-05-22 13:28:59,052 - INFO - save model at score=0.6760013674221201 on epoch=3
+2020-05-22 13:28:59,052 - INFO - Starting 4 epoch...
+2020-05-22 13:34:50,402 - INFO - Jaccard Score = 0.6715206888461664
+2020-05-22 13:34:50,403 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 13:34:50,403 - INFO - Starting 5 epoch...
+2020-05-22 13:40:41,740 - INFO - Jaccard Score = 0.6611523923380306
+2020-05-22 13:40:41,740 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 13:40:41,740 - INFO - Starting 6 epoch...
+2020-05-22 13:46:32,780 - INFO - Jaccard Score = 0.670693236319341
+2020-05-22 13:46:32,780 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 13:46:32,780 - INFO - Early Stopping
+2020-05-22 13:46:32,780 - INFO - best score=0.6760013674221201 on epoch=3
+2020-05-22 13:46:32,780 - INFO - [training loop] done in 2107.84 s
+2020-05-22 13:46:32,783 - INFO - #####
+2020-05-22 13:46:32,783 - INFO - #####
+2020-05-22 13:46:32,783 - INFO - Starting fold 1 ...
+2020-05-22 13:46:32,783 - INFO - #####
+2020-05-22 13:46:32,783 - INFO - #####
+2020-05-22 13:46:32,916 - INFO - [load csv data] done in 0.13 s
+2020-05-22 13:46:32,971 - INFO - [prepare validation data] done in 0.05 s
+2020-05-22 13:46:32,972 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 13:46:32,972 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 13:46:32,972 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 13:46:35,304 - INFO - [create model] done in 2.33 s
+2020-05-22 13:46:35,305 - INFO - Starting 1 epoch...
+2020-05-22 13:52:26,959 - INFO - Jaccard Score = 0.6722899114931553
+2020-05-22 13:52:27,176 - INFO - save model at score=0.6722899114931553 on epoch=1
+2020-05-22 13:52:27,176 - INFO - Starting 2 epoch...
+2020-05-22 13:58:18,434 - INFO - Jaccard Score = 0.6811233627706672
+2020-05-22 13:58:18,737 - INFO - save model at score=0.6811233627706672 on epoch=2
+2020-05-22 13:58:18,738 - INFO - Starting 3 epoch...
+2020-05-22 14:04:10,450 - INFO - Jaccard Score = 0.6702517666337647
+2020-05-22 14:04:10,450 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 14:04:10,450 - INFO - Starting 4 epoch...
+2020-05-22 14:10:01,425 - INFO - Jaccard Score = 0.6749000325543928
+2020-05-22 14:10:01,425 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 14:10:01,425 - INFO - Starting 5 epoch...
+2020-05-22 14:15:52,885 - INFO - Jaccard Score = 0.6769810575324554
+2020-05-22 14:15:52,885 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 14:15:52,885 - INFO - Early Stopping
+2020-05-22 14:15:52,886 - INFO - best score=0.6811233627706672 on epoch=2
+2020-05-22 14:15:52,886 - INFO - [training loop] done in 1757.58 s
+2020-05-22 14:15:52,888 - INFO - #####
+2020-05-22 14:15:52,888 - INFO - #####
+2020-05-22 14:15:52,888 - INFO - Starting fold 2 ...
+2020-05-22 14:15:52,888 - INFO - #####
+2020-05-22 14:15:52,889 - INFO - #####
+2020-05-22 14:15:53,022 - INFO - [load csv data] done in 0.13 s
+2020-05-22 14:15:53,091 - INFO - [prepare validation data] done in 0.07 s
+2020-05-22 14:15:53,091 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 14:15:53,092 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 14:15:53,092 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 14:15:55,382 - INFO - [create model] done in 2.29 s
+2020-05-22 14:15:55,383 - INFO - Starting 1 epoch...
+2020-05-22 14:21:47,393 - INFO - Jaccard Score = 0.6718435194524165
+2020-05-22 14:21:47,658 - INFO - save model at score=0.6718435194524165 on epoch=1
+2020-05-22 14:21:47,658 - INFO - Starting 2 epoch...
+2020-05-22 14:27:39,167 - INFO - Jaccard Score = 0.6633072558632181
+2020-05-22 14:27:39,520 - INFO - save model at score=0.6633072558632181 on epoch=2
+2020-05-22 14:27:39,520 - INFO - Starting 3 epoch...
+2020-05-22 14:33:31,077 - INFO - Jaccard Score = 0.6647709074054385
+2020-05-22 14:33:31,077 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 14:33:31,077 - INFO - Starting 4 epoch...
+2020-05-22 14:39:21,828 - INFO - Jaccard Score = 0.6721431970310094
+2020-05-22 14:39:21,829 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 14:39:21,829 - INFO - Starting 5 epoch...
+2020-05-22 14:45:12,966 - INFO - Jaccard Score = 0.6680943271340094
+2020-05-22 14:45:12,966 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 14:45:12,966 - INFO - Early Stopping
+2020-05-22 14:45:12,967 - INFO - best score=0.6633072558632181 on epoch=2
+2020-05-22 14:45:12,967 - INFO - [training loop] done in 1757.58 s
+2020-05-22 14:45:12,969 - INFO - #####
+2020-05-22 14:45:12,969 - INFO - #####
+2020-05-22 14:45:12,969 - INFO - Starting fold 3 ...
+2020-05-22 14:45:12,969 - INFO - #####
+2020-05-22 14:45:12,969 - INFO - #####
+2020-05-22 14:45:13,102 - INFO - [load csv data] done in 0.13 s
+2020-05-22 14:45:13,157 - INFO - [prepare validation data] done in 0.05 s
+2020-05-22 14:45:13,157 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 14:45:13,158 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 14:45:13,158 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 14:45:15,454 - INFO - [create model] done in 2.3 s
+2020-05-22 14:45:15,454 - INFO - Starting 1 epoch...
+2020-05-22 14:51:07,421 - INFO - Jaccard Score = 0.6768238711215712
+2020-05-22 14:51:07,635 - INFO - save model at score=0.6768238711215712 on epoch=1
+2020-05-22 14:51:07,636 - INFO - Starting 2 epoch...
+2020-05-22 14:56:59,447 - INFO - Jaccard Score = 0.6752643753068301
+2020-05-22 14:56:59,762 - INFO - save model at score=0.6752643753068301 on epoch=2
+2020-05-22 14:56:59,762 - INFO - Starting 3 epoch...
+2020-05-22 15:02:51,355 - INFO - Jaccard Score = 0.6803173332132568
+2020-05-22 15:02:51,355 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 15:02:51,356 - INFO - Starting 4 epoch...
+2020-05-22 15:08:42,758 - INFO - Jaccard Score = 0.677988993487389
+2020-05-22 15:08:42,758 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 15:08:42,758 - INFO - Starting 5 epoch...
+2020-05-22 15:14:33,622 - INFO - Jaccard Score = 0.6734319394565931
+2020-05-22 15:14:33,622 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 15:14:33,622 - INFO - Early Stopping
+2020-05-22 15:14:33,622 - INFO - best score=0.6752643753068301 on epoch=2
+2020-05-22 15:14:33,622 - INFO - [training loop] done in 1758.17 s
+2020-05-22 15:14:33,625 - INFO - #####
+2020-05-22 15:14:33,625 - INFO - #####
+2020-05-22 15:14:33,625 - INFO - Starting fold 4 ...
+2020-05-22 15:14:33,625 - INFO - #####
+2020-05-22 15:14:33,625 - INFO - #####
+2020-05-22 15:14:33,757 - INFO - [load csv data] done in 0.13 s
+2020-05-22 15:14:33,811 - INFO - [prepare validation data] done in 0.05 s
+2020-05-22 15:14:33,812 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 15:14:33,812 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 15:14:33,812 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 15:14:36,003 - INFO - [create model] done in 2.19 s
+2020-05-22 15:14:36,003 - INFO - Starting 1 epoch...
+2020-05-22 15:20:27,346 - INFO - Jaccard Score = 0.6758683719411216
+2020-05-22 15:20:27,577 - INFO - save model at score=0.6758683719411216 on epoch=1
+2020-05-22 15:20:27,577 - INFO - Starting 2 epoch...
+2020-05-22 15:26:18,945 - INFO - Jaccard Score = 0.6825676084017739
+2020-05-22 15:26:19,275 - INFO - save model at score=0.6825676084017739 on epoch=2
+2020-05-22 15:26:19,275 - INFO - Starting 3 epoch...
+2020-05-22 15:32:10,862 - INFO - Jaccard Score = 0.6797288012171707
+2020-05-22 15:32:10,863 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 15:32:10,863 - INFO - Starting 4 epoch...
+2020-05-22 15:38:02,081 - INFO - Jaccard Score = 0.675440796833288
+2020-05-22 15:38:02,081 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 15:38:02,081 - INFO - Starting 5 epoch...
+2020-05-22 15:43:53,569 - INFO - Jaccard Score = 0.6664565096070936
+2020-05-22 15:43:53,569 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 15:43:53,569 - INFO - Early Stopping
+2020-05-22 15:43:53,570 - INFO - best score=0.6825676084017739 on epoch=2
+2020-05-22 15:43:53,570 - INFO - [training loop] done in 1757.57 s
+2020-05-22 19:59:45,850 - INFO - logger set up
+2020-05-22 19:59:45,850 - INFO - seed=718
+2020-05-22 19:59:45,850 - INFO - #####
+2020-05-22 19:59:45,850 - INFO - #####
+2020-05-22 19:59:45,851 - INFO - Starting fold 0 ...
+2020-05-22 19:59:45,851 - INFO - #####
+2020-05-22 19:59:45,851 - INFO - #####
+2020-05-22 19:59:46,003 - INFO - [load csv data] done in 0.15 s
+2020-05-22 19:59:46,058 - INFO - [prepare validation data] done in 0.06 s
+2020-05-22 19:59:46,059 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 19:59:46,059 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 19:59:46,060 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 19:59:51,993 - INFO - [create model] done in 5.93 s
+2020-05-22 19:59:51,993 - INFO - Starting 1 epoch...
+2020-05-22 20:00:50,390 - INFO - logger set up
+2020-05-22 20:00:50,390 - INFO - seed=718
+2020-05-22 20:00:50,390 - INFO - #####
+2020-05-22 20:00:50,390 - INFO - #####
+2020-05-22 20:00:50,390 - INFO - Starting fold 0 ...
+2020-05-22 20:00:50,390 - INFO - #####
+2020-05-22 20:00:50,390 - INFO - #####
+2020-05-22 20:00:50,543 - INFO - [load csv data] done in 0.15 s
+2020-05-22 20:00:50,598 - INFO - [prepare validation data] done in 0.06 s
+2020-05-22 20:00:50,599 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 20:00:50,599 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 20:00:50,600 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 20:00:56,527 - INFO - [create model] done in 5.93 s
+2020-05-22 20:00:56,527 - INFO - Starting 1 epoch...
+2020-05-22 20:06:45,925 - INFO - Jaccard Score = 0.6906774347056647
+2020-05-22 20:06:46,196 - INFO - save model at score=0.6906774347056647 on epoch=1
+2020-05-22 20:06:46,197 - INFO - Starting 2 epoch...
+2020-05-22 20:12:37,773 - INFO - Jaccard Score = 0.7059625731594762
+2020-05-22 20:12:38,143 - INFO - save model at score=0.7059625731594762 on epoch=2
+2020-05-22 20:12:38,143 - INFO - Starting 3 epoch...
+2020-05-22 20:18:28,949 - INFO - Jaccard Score = 0.7023092934369234
+2020-05-22 20:18:29,312 - INFO - save model at score=0.7023092934369234 on epoch=3
+2020-05-22 20:18:29,312 - INFO - Starting 4 epoch...
+2020-05-22 20:24:19,959 - INFO - Jaccard Score = 0.6982061158337467
+2020-05-22 20:24:19,959 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 20:24:19,959 - INFO - Starting 5 epoch...
+2020-05-22 20:30:11,370 - INFO - Jaccard Score = 0.6877187395694749
+2020-05-22 20:30:11,370 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 20:30:11,370 - INFO - Starting 6 epoch...
+2020-05-22 20:36:02,505 - INFO - Jaccard Score = 0.6973728343767064
+2020-05-22 20:36:02,505 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 20:36:02,505 - INFO - Early Stopping
+2020-05-22 20:36:02,505 - INFO - best score=0.7023092934369234 on epoch=3
+2020-05-22 20:36:02,505 - INFO - [training loop] done in 2105.98 s
+2020-05-22 20:36:02,508 - INFO - #####
+2020-05-22 20:36:02,508 - INFO - #####
+2020-05-22 20:36:02,508 - INFO - Starting fold 1 ...
+2020-05-22 20:36:02,508 - INFO - #####
+2020-05-22 20:36:02,508 - INFO - #####
+2020-05-22 20:36:02,642 - INFO - [load csv data] done in 0.13 s
+2020-05-22 20:36:02,696 - INFO - [prepare validation data] done in 0.05 s
+2020-05-22 20:36:02,696 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 20:36:02,697 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 20:36:02,697 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 20:36:05,023 - INFO - [create model] done in 2.33 s
+2020-05-22 20:36:05,023 - INFO - Starting 1 epoch...
+2020-05-22 20:41:56,678 - INFO - Jaccard Score = 0.6997694994376998
+2020-05-22 20:41:56,950 - INFO - save model at score=0.6997694994376998 on epoch=1
+2020-05-22 20:41:56,950 - INFO - Starting 2 epoch...
+2020-05-22 20:47:47,999 - INFO - Jaccard Score = 0.7085201214729611
+2020-05-22 20:47:48,357 - INFO - save model at score=0.7085201214729611 on epoch=2
+2020-05-22 20:47:48,357 - INFO - Starting 3 epoch...
+2020-05-22 20:53:38,656 - INFO - Jaccard Score = 0.6977052366495721
+2020-05-22 20:53:38,656 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 20:53:38,656 - INFO - Starting 4 epoch...
+2020-05-22 20:59:29,624 - INFO - Jaccard Score = 0.7020977246224064
+2020-05-22 20:59:29,624 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 20:59:29,624 - INFO - Starting 5 epoch...
+2020-05-22 21:05:21,009 - INFO - Jaccard Score = 0.7047017175785862
+2020-05-22 21:05:21,009 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 21:05:21,009 - INFO - Early Stopping
+2020-05-22 21:05:21,009 - INFO - best score=0.7085201214729611 on epoch=2
+2020-05-22 21:05:21,009 - INFO - [training loop] done in 1755.99 s
+2020-05-22 21:05:21,012 - INFO - #####
+2020-05-22 21:05:21,012 - INFO - #####
+2020-05-22 21:05:21,012 - INFO - Starting fold 2 ...
+2020-05-22 21:05:21,012 - INFO - #####
+2020-05-22 21:05:21,012 - INFO - #####
+2020-05-22 21:05:21,144 - INFO - [load csv data] done in 0.13 s
+2020-05-22 21:05:21,199 - INFO - [prepare validation data] done in 0.06 s
+2020-05-22 21:05:21,199 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 21:05:21,200 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 21:05:21,200 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 21:05:23,467 - INFO - [create model] done in 2.27 s
+2020-05-22 21:05:23,467 - INFO - Starting 1 epoch...
+2020-05-22 21:11:15,570 - INFO - Jaccard Score = 0.6983384758734938
+2020-05-22 21:11:15,844 - INFO - save model at score=0.6983384758734938 on epoch=1
+2020-05-22 21:11:15,845 - INFO - Starting 2 epoch...
+2020-05-22 21:17:07,269 - INFO - Jaccard Score = 0.6902021910405787
+2020-05-22 21:17:07,629 - INFO - save model at score=0.6902021910405787 on epoch=2
+2020-05-22 21:17:07,629 - INFO - Starting 3 epoch...
+2020-05-22 21:22:58,500 - INFO - Jaccard Score = 0.6919044943245267
+2020-05-22 21:22:58,500 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 21:22:58,500 - INFO - Starting 4 epoch...
+2020-05-22 21:28:49,624 - INFO - Jaccard Score = 0.6987693709757435
+2020-05-22 21:28:49,624 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 21:28:49,624 - INFO - Starting 5 epoch...
+2020-05-22 21:34:40,814 - INFO - Jaccard Score = 0.6944447065439148
+2020-05-22 21:34:40,814 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 21:34:40,814 - INFO - Early Stopping
+2020-05-22 21:34:40,814 - INFO - best score=0.6902021910405787 on epoch=2
+2020-05-22 21:34:40,814 - INFO - [training loop] done in 1757.35 s
+2020-05-22 21:34:40,816 - INFO - #####
+2020-05-22 21:34:40,816 - INFO - #####
+2020-05-22 21:34:40,816 - INFO - Starting fold 3 ...
+2020-05-22 21:34:40,817 - INFO - #####
+2020-05-22 21:34:40,817 - INFO - #####
+2020-05-22 21:34:40,951 - INFO - [load csv data] done in 0.13 s
+2020-05-22 21:34:41,007 - INFO - [prepare validation data] done in 0.06 s
+2020-05-22 21:34:41,007 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 21:34:41,007 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 21:34:41,008 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 21:34:43,273 - INFO - [create model] done in 2.27 s
+2020-05-22 21:34:43,274 - INFO - Starting 1 epoch...
+2020-05-22 21:40:34,958 - INFO - Jaccard Score = 0.7034617513874364
+2020-05-22 21:40:35,228 - INFO - save model at score=0.7034617513874364 on epoch=1
+2020-05-22 21:40:35,228 - INFO - Starting 2 epoch...
+2020-05-22 21:46:26,778 - INFO - Jaccard Score = 0.7019727693388044
+2020-05-22 21:46:27,132 - INFO - save model at score=0.7019727693388044 on epoch=2
+2020-05-22 21:46:27,132 - INFO - Starting 3 epoch...
+2020-05-22 21:52:18,209 - INFO - Jaccard Score = 0.7062743991384531
+2020-05-22 21:52:18,209 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 21:52:18,209 - INFO - Starting 4 epoch...
+2020-05-22 21:58:09,646 - INFO - Jaccard Score = 0.7042405307972966
+2020-05-22 21:58:09,646 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 21:58:09,646 - INFO - Starting 5 epoch...
+2020-05-22 22:04:00,961 - INFO - Jaccard Score = 0.70009830198285
+2020-05-22 22:04:00,962 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 22:04:00,962 - INFO - Early Stopping
+2020-05-22 22:04:00,962 - INFO - best score=0.7019727693388044 on epoch=2
+2020-05-22 22:04:00,962 - INFO - [training loop] done in 1757.69 s
+2020-05-22 22:04:00,964 - INFO - #####
+2020-05-22 22:04:00,964 - INFO - #####
+2020-05-22 22:04:00,964 - INFO - Starting fold 4 ...
+2020-05-22 22:04:00,965 - INFO - #####
+2020-05-22 22:04:00,965 - INFO - #####
+2020-05-22 22:04:01,097 - INFO - [load csv data] done in 0.13 s
+2020-05-22 22:04:01,151 - INFO - [prepare validation data] done in 0.05 s
+2020-05-22 22:04:01,152 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-05-22 22:04:01,152 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-05-22 22:04:01,153 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-05-22 22:04:03,424 - INFO - [create model] done in 2.27 s
+2020-05-22 22:04:03,424 - INFO - Starting 1 epoch...
+2020-05-22 22:09:55,109 - INFO - Jaccard Score = 0.7009034666856724
+2020-05-22 22:09:55,383 - INFO - save model at score=0.7009034666856724 on epoch=1
+2020-05-22 22:09:55,383 - INFO - Starting 2 epoch...
+2020-05-22 22:15:46,512 - INFO - Jaccard Score = 0.7081273111133753
+2020-05-22 22:15:46,868 - INFO - save model at score=0.7081273111133753 on epoch=2
+2020-05-22 22:15:46,868 - INFO - Starting 3 epoch...
+2020-05-22 22:21:38,129 - INFO - Jaccard Score = 0.7046927248661594
+2020-05-22 22:21:38,130 - INFO - val loss is not updated while 1 epochs of training
+2020-05-22 22:21:38,130 - INFO - Starting 4 epoch...
+2020-05-22 22:27:29,870 - INFO - Jaccard Score = 0.700913970339711
+2020-05-22 22:27:29,870 - INFO - val loss is not updated while 2 epochs of training
+2020-05-22 22:27:29,871 - INFO - Starting 5 epoch...
+2020-05-22 22:33:21,534 - INFO - Jaccard Score = 0.692642094242004
+2020-05-22 22:33:21,534 - INFO - val loss is not updated while 3 epochs of training
+2020-05-22 22:33:21,534 - INFO - Early Stopping
+2020-05-22 22:33:21,534 - INFO - best score=0.7081273111133753 on epoch=2
+2020-05-22 22:33:21,534 - INFO - [training loop] done in 1758.11 s

@@ -75,8 +75,8 @@ def calculate_jaccard_score(
 
     # don't replace neural manually, trust your model
     # if sentiment_val == "neutral" or len(original_tweet.split()) < 2:
-    if len(original_tweet.split()) < 2:
-        filtered_output = original_tweet
+    # if len(original_tweet.split()) < 2:
+    #     filtered_output = original_tweet
 
     jac = jaccard(target_string.strip(), filtered_output.strip())
     return jac, filtered_output
