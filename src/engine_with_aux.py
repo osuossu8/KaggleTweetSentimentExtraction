@@ -23,10 +23,17 @@ def loss_fn_for_sentiment(sentiment_logit, sentiment_target):
 
 # right imprementation for this comp
 # https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/140942
+#def jaccard(str1, str2):
+#    a = str1.lower().split()
+#    b = str2.lower().split()
+#    c = set(a).intersection(set(b))
+#    return float(len(c)) / (len(a) + len(b) - len(c))
+
+
 def jaccard(str1, str2):
-    a = str1.lower().split()
-    b = str2.lower().split()
-    c = set(a).intersection(set(b))
+    a = set(str1.lower().split())
+    b = set(str2.lower().split())
+    c = a.intersection(b)
     return float(len(c)) / (len(a) + len(b) - len(c))
 
 

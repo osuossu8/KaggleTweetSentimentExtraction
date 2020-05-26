@@ -59,6 +59,75 @@ class TweetRoBERTaModel(nn.Module):
         return start_logits, end_logits
 
 
+class TweetRoBERTaModelMK2(nn.Module):
+    def __init__(self, roberta_path):
+        super(TweetRoBERTaModelMK2, self).__init__()
+        model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
+        model_config.output_hidden_states = True
+        self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
+        self.drop_out = nn.Dropout(0.5)
+        self.l0 = nn.Linear(768, 2)
+        torch.nn.init.normal_(self.l0.weight, std=0.02)
+
+
+    def forward(self, ids, mask, token_type_ids):
+        _, _, out = self.roberta(
+            ids,
+            attention_mask=mask,
+            token_type_ids=token_type_ids
+        )
+
+        x = torch.stack([out[-1], out[-2], out[-3], out[-4]])
+        x = torch.mean(x, 0)
+        x = self.drop_out(x)
+
+        logits = self.l0(x)
+        start_logits, end_logits = logits.split(1, dim=-1)
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
+
+        return start_logits, end_logits
+
+
+class TweetRoBERTaModelMK3(nn.Module):
+    def __init__(self, roberta_path):
+        super(TweetRoBERTaModelMK3, self).__init__()
+        model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
+        model_config.output_hidden_states = True
+        self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
+        self.drop_out1 = nn.Dropout(0.5)
+        self.drop_out2 = nn.Dropout(0.1)
+        self.l0 = nn.Linear(768 * 4, 2)
+        torch.nn.init.normal_(self.l0.weight, std=0.02)
+
+
+    def forward(self, ids, mask, token_type_ids):
+        _, _, out = self.roberta(
+            ids,
+            attention_mask=mask,
+            token_type_ids=token_type_ids
+        )
+
+        x = torch.stack([out[-1], out[-2], out[-3], out[-4]]) # 16, 128, 768
+        x_mean = torch.mean(x, 0)
+        x_max, _ = torch.max(x, 0)
+
+        x = torch.cat([x_mean, x_max], -1) # 16, 128, 768 * 2
+        x = self.drop_out1(x)
+
+        x2 = torch.cat((out[-1], out[-2]), dim=-1) # 16, 128, 768 * 2
+        x2 = self.drop_out2(x2)
+
+        x = torch.cat([x, x2], -1)
+
+        logits = self.l0(x)
+        start_logits, end_logits = logits.split(1, dim=-1)
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
+
+        return start_logits, end_logits
+
+
 class TweetRoBERTaModelV2(nn.Module):
     def __init__(self, roberta_path):
         super(TweetRoBERTaModelV2, self).__init__()
@@ -237,9 +306,9 @@ class TweetRoBERTaModelV7(nn.Module):
         self.l0 = nn.Linear(768 * 2, 2)
         torch.nn.init.normal_(self.l0.weight, std=0.02)
 
-        self.l1 = nn.Linear(768 * 4, 768 * 2)
+        self.drop_out2 = nn.Dropout(0.5)
+        self.l1 = nn.Linear(768, 2)
         torch.nn.init.normal_(self.l1.weight, std=0.02)
-
 
     def forward(self, ids, mask, token_type_ids):
         _, _, out = self.roberta(
@@ -248,15 +317,18 @@ class TweetRoBERTaModelV7(nn.Module):
             token_type_ids=token_type_ids
         )
 
+        # out_logit = out[0] #16, 128, 768
+        out_logit = torch.stack([out[-1], out[-2], out[-3], out[-4]])
+        out_logit = torch.mean(out_logit, 0)
+
         out = torch.cat((out[-1], out[-2]), dim=-1)
         out = self.drop_out(out)
 
-        sentiment_logit_mean = torch.mean(out, 1)
-        sentiment_logit_max, _ = torch.max(out, 1)
-        sentiment_logit = torch.cat([sentiment_logit_mean, sentiment_logit_max], 1)
-        sentiment_logit = self.l1(sentiment_logit)
-
         logits = self.l0(out)
+
+        out_logit = self.drop_out2(out_logit)
+        sentiment_logit = torch.mean(out_logit, 1) #16, 768
+        sentiment_logit = self.l1(sentiment_logit)
 
         start_logits, end_logits = logits.split(1, dim=-1)
         start_logits = start_logits.squeeze(-1)
