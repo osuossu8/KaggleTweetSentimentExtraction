@@ -68,6 +68,7 @@ class TweetRoBERTaModelMK2(nn.Module):
         self.drop_out = nn.Dropout(0.5)
         self.l0 = nn.Linear(768, 2)
         torch.nn.init.normal_(self.l0.weight, std=0.02)
+        torch.nn.init.normal_(self.l0.bias, 0)
 
 
     def forward(self, ids, mask, token_type_ids):
