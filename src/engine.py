@@ -28,7 +28,7 @@ def jaccard(str1, str2):
     return float(len(c)) / (len(a) + len(b) - len(c))
 
 
-# right imprementation for this comp
+# not right imprementation for this comp
 # https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/140942
 # def jaccard(str1, str2):
 #     a = str1.lower().split()
