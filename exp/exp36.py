@@ -68,6 +68,11 @@ from src.image_util import resize_to_square_PIL, pad_PIL, threshold_image, \
                            image_to_tensor, train_one_epoch, validate
 from src.scheduler import GradualWarmupScheduler
 
+import sys, codecs
+import io
+# 3.6 =< 3.x
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 
 SEED = 718
 seed_everything(SEED)
@@ -150,7 +155,8 @@ def process_data(tweet, selected_text, sentiment, tokenizer, max_len):
         mask = mask + ([0] * padding_length)
         token_type_ids = token_type_ids + ([0] * padding_length)
         tweet_offsets = tweet_offsets + ([(0, 0)] * padding_length)
-    
+
+
     return {
         'ids': input_ids,
         'mask': mask,
@@ -184,6 +190,7 @@ class TweetDataset:
             self.max_len
         )
 
+
         return {
             'ids': torch.tensor(data["ids"], dtype=torch.long),
             'mask': torch.tensor(data["mask"], dtype=torch.long),
@@ -206,6 +213,8 @@ def run_one_fold(fold_id):
 
         if debug:
             df_train = df_train.sample(1000, random_state=SEED).dropna().reset_index(drop=True)
+
+        # df_train.loc[df_train['sentiment']=='neutral', 'selected_text'] = df_train[df_train['sentiment']=='neutral']['text']
 
         num_folds = config.NUM_FOLDS
         kf = StratifiedKFold(n_splits = num_folds, random_state = SEED)

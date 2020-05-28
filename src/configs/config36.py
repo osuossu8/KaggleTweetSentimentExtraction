@@ -10,7 +10,8 @@ import sentencepiece as spm
 import sentencepiece_pb2
 
 
-MAX_LEN = 128
+# Got 128 and 133 in dimension 1
+MAX_LEN = 136 # 128
 TRAIN_BATCH_SIZE = 16
 VALID_BATCH_SIZE = 8
 EPOCHS = 50
