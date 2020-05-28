@@ -57,6 +57,8 @@ warnings.filterwarnings('ignore')
 
 sys.path.append("/usr/src/app/kaggle/tweet-sentiment-extraction")
 
+
+EXP_ID = "exp29"
 import src.configs.config29 as config
 import src.engine_with_aux as engine
 from src.machine_learning_util import seed_everything, prepare_labels, DownSampler, timer, \
@@ -96,7 +98,6 @@ def setup_logger(out_file=None, stderr=True, stderr_level=logging.INFO, file_lev
     return LOGGER
 
 
-EXP_ID = "exp29"
 LOGGER_PATH = f"logs/log_{EXP_ID}.txt"
 setup_logger(out_file=LOGGER_PATH)
 LOGGER.info("seed={}".format(SEED))
@@ -302,7 +303,7 @@ def run_one_fold(fold_id):
             LOGGER.info("Starting {} epoch...".format(epoch))
 
             engine.train_fn(train_loader, model, optimizer, device, scheduler)
-            score = engine.eval_fn(val_loader, model, device)
+            score, val_loss = engine.eval_fn(val_loader, model, device)
 
             LOGGER.info(f"Jaccard Score = {score}")
 
