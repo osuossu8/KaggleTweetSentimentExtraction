@@ -185,7 +185,7 @@ class TweetRoBERTaModelMK4(nn.Module):
         self.lstm = nn.LSTM(768 * 2, 256, bidirectional=True, batch_first=True)
         self.lstm_attention = Attention(256 * 2, config.MAX_LEN)
 
-        self.l0 = nn.Linear(256 * 2, 2)
+        self.l0 = nn.Linear(768 * 2, 2)
         torch.nn.init.normal_(self.l0.weight, std=0.02)
 
         self.l1 = nn.Linear(256 * 2, 2)
@@ -203,22 +203,23 @@ class TweetRoBERTaModelMK4(nn.Module):
         out = self.drop_out(out)
 
         h_gru, _ = self.gru(out)
-        # h_gru_attn = self.gru_attention(h_gru)
+        h_gru_attn = self.gru_attention(h_gru)
 
-        h_lstm, _ = self.lstm(out)
+        # h_lstm, _ = self.lstm(out)
         # hidden = torch.cat((h_gru, h_lstm), dim=-1)
         # hidden = h_gru + h_lstm
 
-        logits = self.l0(h_gru)
+        # logits = self.l0(h_gru)
+        logits = self.l0(out)
 
-        # sentiment_logits = self.l1(h_gru_attn)
+        sentiment_logits = self.l1(h_gru_attn)
 
         start_logits, end_logits = logits.split(1, dim=-1)
 
         start_logits = start_logits.squeeze(-1)
         end_logits = end_logits.squeeze(-1)
 
-        return start_logits, end_logits# , sentiment_logits
+        return start_logits, end_logits , sentiment_logits
 
 
 class TweetRoBERTaModelV2(nn.Module):
