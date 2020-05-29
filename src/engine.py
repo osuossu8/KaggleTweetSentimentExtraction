@@ -189,8 +189,7 @@ def eval_fn(data_loader, model, device):
             losses.update(loss.item(), ids.size(0))
             tk0.set_postfix(loss=losses.avg, jaccard=jaccards.avg)
     
-    print(f"Jaccard = {jaccards.avg}")
-    return jaccards.avg
+    return jaccards.avg, losses.avg
 
 
 '''

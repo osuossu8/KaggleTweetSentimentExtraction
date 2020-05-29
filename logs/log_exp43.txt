@@ -1,0 +1,210 @@
+2020-05-29 19:17:29,068 - INFO - logger set up
+2020-05-29 19:17:29,068 - INFO - seed=718
+2020-05-29 19:17:29,068 - INFO - #####
+2020-05-29 19:17:29,068 - INFO - #####
+2020-05-29 19:17:29,068 - INFO - Starting fold 0 ...
+2020-05-29 19:17:29,068 - INFO - #####
+2020-05-29 19:17:29,068 - INFO - #####
+2020-05-29 19:17:29,222 - INFO - [load csv data] done in 0.15 s
+2020-05-29 19:17:29,278 - INFO - [prepare validation data] done in 0.06 s
+2020-05-29 19:17:29,279 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-05-29 19:17:29,279 - INFO - Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2020-05-29 19:17:29,280 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-05-29 19:17:30,945 - INFO - Weights of BertForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-05-29 19:17:30,946 - INFO - Weights from pretrained model not used in BertForQuestionAnswering: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+2020-05-29 19:17:34,834 - INFO - [create model] done in 5.56 s
+2020-05-29 19:17:34,835 - INFO - Starting 1 epoch...
+2020-05-29 19:23:09,814 - INFO - Jaccard Score = 0.6886974114424281
+2020-05-29 19:23:10,128 - INFO - save model at score=0.6886974114424281 on epoch=1
+2020-05-29 19:23:10,128 - INFO - Starting 2 epoch...
+2020-05-29 19:28:47,742 - INFO - Jaccard Score = 0.702430307573567
+2020-05-29 19:28:48,055 - INFO - save model at score=0.702430307573567 on epoch=2
+2020-05-29 19:28:48,055 - INFO - Starting 3 epoch...
+2020-05-29 19:34:25,695 - INFO - Jaccard Score = 0.6944124016676734
+2020-05-29 19:34:25,695 - INFO - val loss is not updated while 1 epochs of training
+2020-05-29 19:34:25,696 - INFO - Starting 4 epoch...
+2020-05-29 19:40:02,699 - INFO - Jaccard Score = 0.6896364843812941
+2020-05-29 19:40:02,699 - INFO - val loss is not updated while 2 epochs of training
+2020-05-29 19:40:02,700 - INFO - Early Stopping
+2020-05-29 19:40:02,700 - INFO - best score=0.702430307573567 on epoch=2
+2020-05-29 19:40:02,700 - INFO - [training loop] done in 1347.87 s
+2020-05-29 19:40:02,702 - INFO - #####
+2020-05-29 19:40:02,702 - INFO - #####
+2020-05-29 19:40:02,703 - INFO - Starting fold 1 ...
+2020-05-29 19:40:02,703 - INFO - #####
+2020-05-29 19:40:02,703 - INFO - #####
+2020-05-29 19:40:02,837 - INFO - [load csv data] done in 0.13 s
+2020-05-29 19:40:02,893 - INFO - [prepare validation data] done in 0.06 s
+2020-05-29 19:40:02,893 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-05-29 19:40:02,893 - INFO - Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2020-05-29 19:40:02,893 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-05-29 19:40:04,497 - INFO - Weights of BertForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-05-29 19:40:04,497 - INFO - Weights from pretrained model not used in BertForQuestionAnswering: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+2020-05-29 19:40:04,813 - INFO - [create model] done in 1.92 s
+2020-05-29 19:40:04,814 - INFO - Starting 1 epoch...
+2020-05-29 19:45:42,937 - INFO - Jaccard Score = 0.6932526597904183
+2020-05-29 19:45:43,134 - INFO - save model at score=0.6932526597904183 on epoch=1
+2020-05-29 19:45:43,134 - INFO - Starting 2 epoch...
+2020-05-29 19:51:19,539 - INFO - Jaccard Score = 0.6988579598750996
+2020-05-29 19:51:19,539 - INFO - val loss is not updated while 1 epochs of training
+2020-05-29 19:51:19,540 - INFO - Starting 3 epoch...
+2020-05-29 19:56:56,463 - INFO - Jaccard Score = 0.6954667864879105
+2020-05-29 19:56:56,463 - INFO - val loss is not updated while 2 epochs of training
+2020-05-29 19:56:56,463 - INFO - Early Stopping
+2020-05-29 19:56:56,463 - INFO - best score=0.6932526597904183 on epoch=1
+2020-05-29 19:56:56,464 - INFO - [training loop] done in 1011.65 s
+2020-05-29 19:56:56,466 - INFO - #####
+2020-05-29 19:56:56,466 - INFO - #####
+2020-05-29 19:56:56,466 - INFO - Starting fold 2 ...
+2020-05-29 19:56:56,466 - INFO - #####
+2020-05-29 19:56:56,466 - INFO - #####
+2020-05-29 19:56:56,622 - INFO - [load csv data] done in 0.16 s
+2020-05-29 19:56:56,678 - INFO - [prepare validation data] done in 0.06 s
+2020-05-29 19:56:56,679 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-05-29 19:56:56,679 - INFO - Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2020-05-29 19:56:56,679 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-05-29 19:56:58,291 - INFO - Weights of BertForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-05-29 19:56:58,291 - INFO - Weights from pretrained model not used in BertForQuestionAnswering: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+2020-05-29 19:56:58,608 - INFO - [create model] done in 1.93 s
+2020-05-29 19:56:58,608 - INFO - Starting 1 epoch...
+2020-05-29 20:02:35,851 - INFO - Jaccard Score = 0.6887107132193179
+2020-05-29 20:02:36,048 - INFO - save model at score=0.6887107132193179 on epoch=1
+2020-05-29 20:02:36,049 - INFO - Starting 2 epoch...
+2020-05-29 20:08:12,923 - INFO - Jaccard Score = 0.6970610793367374
+2020-05-29 20:08:12,923 - INFO - val loss is not updated while 1 epochs of training
+2020-05-29 20:08:12,923 - INFO - Starting 3 epoch...
+2020-05-29 20:13:49,466 - INFO - Jaccard Score = 0.6992959038496135
+2020-05-29 20:13:49,466 - INFO - val loss is not updated while 2 epochs of training
+2020-05-29 20:13:49,466 - INFO - Early Stopping
+2020-05-29 20:13:49,466 - INFO - best score=0.6887107132193179 on epoch=1
+2020-05-29 20:13:49,466 - INFO - [training loop] done in 1010.86 s
+2020-05-29 20:13:49,468 - INFO - #####
+2020-05-29 20:13:49,469 - INFO - #####
+2020-05-29 20:13:49,469 - INFO - Starting fold 3 ...
+2020-05-29 20:13:49,469 - INFO - #####
+2020-05-29 20:13:49,469 - INFO - #####
+2020-05-29 20:13:49,608 - INFO - [load csv data] done in 0.14 s
+2020-05-29 20:13:49,667 - INFO - [prepare validation data] done in 0.06 s
+2020-05-29 20:13:49,668 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-05-29 20:13:49,668 - INFO - Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2020-05-29 20:13:49,668 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-05-29 20:13:51,193 - INFO - Weights of BertForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-05-29 20:13:51,193 - INFO - Weights from pretrained model not used in BertForQuestionAnswering: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+2020-05-29 20:13:51,502 - INFO - [create model] done in 1.83 s
+2020-05-29 20:13:51,502 - INFO - Starting 1 epoch...
+2020-05-29 20:19:28,711 - INFO - Jaccard Score = 0.7037455114357019
+2020-05-29 20:19:28,932 - INFO - save model at score=0.7037455114357019 on epoch=1
+2020-05-29 20:19:28,933 - INFO - Starting 2 epoch...
+2020-05-29 20:25:06,140 - INFO - Jaccard Score = 0.7063605287442369
+2020-05-29 20:25:06,140 - INFO - val loss is not updated while 1 epochs of training
+2020-05-29 20:25:06,140 - INFO - Starting 3 epoch...
+2020-05-29 20:30:43,926 - INFO - Jaccard Score = 0.7044037181149586
+2020-05-29 20:30:43,926 - INFO - val loss is not updated while 2 epochs of training
+2020-05-29 20:30:43,926 - INFO - Early Stopping
+2020-05-29 20:30:43,926 - INFO - best score=0.7037455114357019 on epoch=1
+2020-05-29 20:30:43,926 - INFO - [training loop] done in 1012.42 s
+2020-05-29 20:30:43,929 - INFO - #####
+2020-05-29 20:30:43,929 - INFO - #####
+2020-05-29 20:30:43,929 - INFO - Starting fold 4 ...
+2020-05-29 20:30:43,929 - INFO - #####
+2020-05-29 20:30:43,929 - INFO - #####
+2020-05-29 20:30:44,067 - INFO - [load csv data] done in 0.14 s
+2020-05-29 20:30:44,127 - INFO - [prepare validation data] done in 0.06 s
+2020-05-29 20:30:44,128 - INFO - loading configuration file inputs/bert-base-uncased/config.json
+2020-05-29 20:30:44,128 - INFO - Model config BertConfig {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2020-05-29 20:30:44,128 - INFO - loading weights file inputs/bert-base-uncased/pytorch_model.bin
+2020-05-29 20:30:45,779 - INFO - Weights of BertForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-05-29 20:30:45,779 - INFO - Weights from pretrained model not used in BertForQuestionAnswering: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+2020-05-29 20:30:46,092 - INFO - [create model] done in 1.96 s
+2020-05-29 20:30:46,092 - INFO - Starting 1 epoch...
+2020-05-29 20:36:23,195 - INFO - Jaccard Score = 0.7039608937600673
+2020-05-29 20:36:23,388 - INFO - save model at score=0.7039608937600673 on epoch=1
+2020-05-29 20:36:23,389 - INFO - Starting 2 epoch...
+2020-05-29 20:42:00,767 - INFO - Jaccard Score = 0.699641432418947
+2020-05-29 20:42:00,767 - INFO - val loss is not updated while 1 epochs of training
+2020-05-29 20:42:00,767 - INFO - Starting 3 epoch...
+2020-05-29 20:47:38,023 - INFO - Jaccard Score = 0.7008816019916796
+2020-05-29 20:47:38,023 - INFO - val loss is not updated while 2 epochs of training
+2020-05-29 20:47:38,023 - INFO - Early Stopping
+2020-05-29 20:47:38,024 - INFO - best score=0.7039608937600673 on epoch=1
+2020-05-29 20:47:38,024 - INFO - [training loop] done in 1011.93 s

@@ -222,6 +222,50 @@ class TweetRoBERTaModelMK4(nn.Module):
         return start_logits, end_logits , sentiment_logits
 
 
+class TweetRoBERTaModelMK5(nn.Module):
+    def __init__(self, roberta_path):
+        super(TweetRoBERTaModelMK5, self).__init__()
+        model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
+        model_config.output_hidden_states = True
+        self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
+        self.drop_out = nn.Dropout(0.1)
+
+        self.gru = nn.GRU(768 * 2, 256, bidirectional=True, batch_first=True)
+        self.gru_attention = Attention(256 * 2, config.MAX_LEN)
+
+        self.l0 = nn.Linear(768 * 2, 2)
+        torch.nn.init.normal_(self.l0.weight, std=0.02)
+
+        self.l1 = nn.Linear(256 * 2 + 768, 2)
+        torch.nn.init.normal_(self.l1.weight, std=0.02)
+
+
+    def forward(self, ids, mask, token_type_ids):
+        seq_out, pooled_out, hs = self.roberta(
+            ids,
+            attention_mask=mask,
+            token_type_ids=token_type_ids
+        )
+
+        hs = torch.cat((hs[-1], hs[-2]), dim=-1)
+        hs = self.drop_out(hs)
+
+        h_gru, _ = self.gru(hs)
+        h_gru_attn = self.gru_attention(h_gru)
+
+        logits = self.l0(hs)
+
+        sentiment_cat = torch.cat([h_gru_attn, pooled_out], 1)
+        sentiment_logits = self.l1(sentiment_cat)
+
+        start_logits, end_logits = logits.split(1, dim=-1)
+
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
+
+        return start_logits, end_logits , sentiment_logits
+
+
 class TweetRoBERTaModelV2(nn.Module):
     def __init__(self, roberta_path):
         super(TweetRoBERTaModelV2, self).__init__()
@@ -464,6 +508,42 @@ class TweetBERTModelMK2(nn.Module):
         model_config = transformers.BertConfig.from_pretrained(bert_path)
         model_config.output_hidden_states = True 
         self.bert = transformers.BertModel.from_pretrained(bert_path, config=model_config)
+        self.drop_out = nn.Dropout(0.1)
+        self.l0 = nn.Linear(768 * 2, 2)
+        torch.nn.init.normal_(self.l0.weight, std=0.02)
+
+
+    def forward(self, ids, mask, token_type_ids):
+        _, _, out = self.bert(
+            ids,
+            attention_mask=mask,
+            token_type_ids=token_type_ids
+        )
+
+        out = torch.cat((out[-1], out[-2]), dim=-1)
+        out = self.drop_out(out)
+        logits = self.l0(out)
+
+        start_logits, end_logits = logits.split(1, dim=-1)
+
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
+
+        return start_logits, end_logits
+
+
+class TweetBERTModelMK3(nn.Module):
+    def __init__(self, bert_path):
+        super(TweetBERTModelMK3, self).__init__()
+        model_config = transformers.BertConfig.from_pretrained(bert_path)
+        model_config.output_hidden_states = True
+        # self.bert = transformers.BertModel.from_pretrained(bert_path, config=model_config)
+
+        bert_model = transformers.AutoModelForQuestionAnswering.from_pretrained(bert_path, config=model_config)
+        bert_model.load_state_dict(torch.load('inputs/bertqnasquad-20-finetuned-model-pytorch/pytorch_model.bin'))
+        self.bert = bert_model.bert
+        print('bertqnasquad-20-finetuned-model-pytorch weight loaded')
+
         self.drop_out = nn.Dropout(0.1)
         self.l0 = nn.Linear(768 * 2, 2)
         torch.nn.init.normal_(self.l0.weight, std=0.02)
