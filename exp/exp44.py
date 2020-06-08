@@ -235,7 +235,7 @@ def run_one_fold(fold_id):
         train_dataset = TweetDatasetWithAux(
             tweet=df_train.iloc[train_idx].text.values,
             sentiment=df_train.iloc[train_idx].sentiment.values,
-            selected_text=df_train.iloc[train_idx].selected_text.values
+            selected_text=df_train.iloc[train_idx].selected_text.values,
             incorrect=df_train.iloc[train_idx].incorrect.value
         )
     
@@ -250,7 +250,7 @@ def run_one_fold(fold_id):
         val_dataset = TweetDatasetWithAux(
             tweet=df_train.iloc[val_idx].text.values,
             sentiment=df_train.iloc[val_idx].sentiment.values,
-            selected_text=df_train.iloc[val_idx].selected_text.values
+            selected_text=df_train.iloc[val_idx].selected_text.values,
             incorrect=df_train.iloc[val_idx].incorrect.value
         )
     
