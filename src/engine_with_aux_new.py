@@ -99,7 +99,7 @@ def train_fn(data_loader, model, optimizer, device, scheduler=None):
         incorrect_target = d['incorrect_target'].to(device, dtype=torch.float32)
 
         model.zero_grad()
-        outputs_start, outputs_end, sentiment_logit = model(
+        outputs_start, outputs_end, sentiment_logit, incorrect_logit = model(
             ids=ids,
             mask=mask,
             token_type_ids=token_type_ids,
@@ -155,7 +155,7 @@ def eval_fn(data_loader, model, device):
             sentiment_target = d['sentiment_target'].to(device, dtype=torch.float32)
             incorrect_target = d['incorrect_target'].to(device, dtype=torch.float32)
 
-            outputs_start, outputs_end, sentiment_logit = model(
+            outputs_start, outputs_end, sentiment_logit, incorrect_logit = model(
                 ids=ids,
                 mask=mask,
                 token_type_ids=token_type_ids

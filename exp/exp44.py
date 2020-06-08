@@ -150,7 +150,7 @@ def process_data_with_aux(tweet, selected_text, sentiment, tokenizer, max_len, i
     else:
         sentiment_target = [0, 0, 1]
      
-    if incorrect == 1 :
+    if incorrect == True:
         incorrect_target = [1, 0]
     else:
         incorrect_target = [0, 1]
@@ -189,7 +189,7 @@ class TweetDatasetWithAux:
             self.sentiment[item],
             self.tokenizer,
             self.max_len,
-            self.incorrect
+            self.incorrect[item]
         )
 
         return {
@@ -236,7 +236,7 @@ def run_one_fold(fold_id):
             tweet=df_train.iloc[train_idx].text.values,
             sentiment=df_train.iloc[train_idx].sentiment.values,
             selected_text=df_train.iloc[train_idx].selected_text.values,
-            incorrect=df_train.iloc[train_idx].incorrect.value
+            incorrect=df_train.iloc[train_idx].incorrect.values
         )
     
         train_loader = torch.utils.data.DataLoader(
@@ -251,7 +251,7 @@ def run_one_fold(fold_id):
             tweet=df_train.iloc[val_idx].text.values,
             sentiment=df_train.iloc[val_idx].sentiment.values,
             selected_text=df_train.iloc[val_idx].selected_text.values,
-            incorrect=df_train.iloc[val_idx].incorrect.value
+            incorrect=df_train.iloc[val_idx].incorrect.values
         )
     
         val_loader = torch.utils.data.DataLoader(

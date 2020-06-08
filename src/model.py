@@ -280,7 +280,7 @@ class TweetRoBERTaModelMK6(nn.Module):
         self.l0 = nn.Linear(768 * 2, 2)
         torch.nn.init.normal_(self.l0.weight, std=0.02)
 
-        self.l1 = nn.Linear(256 * 2, 2)
+        self.l1 = nn.Linear(256 * 2, 3)
         torch.nn.init.normal_(self.l1.weight, std=0.02)
 
         self.l2 = nn.Linear(768, 2)
