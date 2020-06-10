@@ -191,12 +191,6 @@ class TweetDataset:
         }
 
 
-def check_initial_white_space(x):
-    if x[0] == ' ':
-        return True
-    return False
-
-
 def run_one_fold(fold_id):
 
     with timer('load csv data'):
@@ -207,25 +201,25 @@ def run_one_fold(fold_id):
         if debug:
             df_train = df_train.sample(1000, random_state=SEED).dropna().reset_index(drop=True)
 
-        neutral_texts = df_train[df_train['sentiment']=='neutral']['text']
-        neutral_selected_texts = df_train[df_train['sentiment']=='neutral']['selected_text']
+        # df_train['text'] = df_train['text'].apply(lambda x: remove_initial_white_space(x))
+        df_train['text'] = df_train['text'].apply(lambda x: ' '.join(x.split()))
 
-        df_train['is_text_start_with_white_space'] = df_train['text'].apply(lambda x: check_initial_white_space(x))
-        df_train['text_equal_selected_text'] = neutral_texts == neutral_selected_texts
-
-        df_pos = df_train[df_train['sentiment']=='positive']
-        df_neg = df_train[df_train['sentiment']=='negative']
+        # neutral_texts = df_train[df_train['sentiment']=='neutral']['text']
+        # neutral_selected_texts = df_train[df_train['sentiment']=='neutral']['selected_text']
+        # df_train['is_text_start_with_white_space'] = df_train['text'].apply(lambda x: check_initial_white_space(x))
+        # df_train['text_equal_selected_text'] = neutral_texts == neutral_selected_texts
+        # df_pos = df_train[df_train['sentiment']=='positive']
+        # df_neg = df_train[df_train['sentiment']=='negative']
 
         # neutral の中でも全文が selected されていないサンプル群
-        df_neutral_use = df_train[(df_train['text_equal_selected_text']==0)&(df_train['is_text_start_with_white_space']==0)]
-
-        df_train = pd.concat([df_pos, df_neg, df_neutral_use]).reset_index(drop=True)
+        # df_neutral_use = df_train[(df_train['text_equal_selected_text']==0)&(df_train['is_text_start_with_white_space']==0)]
+        # df_train = pd.concat([df_pos, df_neg, df_neutral_use]).reset_index(drop=True)
 
         df_train['text_token_len'] = df_train['text'].apply(lambda x: len(config.TOKENIZER.encode(x).ids))
         df_train['selected_text_token_len'] = df_train['selected_text'].apply(lambda x: len(config.TOKENIZER.encode(x).ids))
         df_train['total_token_len'] = df_train['text_token_len'] + df_train['selected_text_token_len']
+        df_train = df_train[df_train['total_token_len']<97].reset_index(drop=True)
 
-        # df_train = df_train[df_train['total_token_len']<97].reset_index(drop=True)
         # df_train = df_train[df_train['sentiment']!='neutral'].reset_index(drop=True)
 
         num_folds = config.NUM_FOLDS

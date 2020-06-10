@@ -59,11 +59,11 @@ def calculate_jaccard_score(
         if (ix+1) < len(offsets) and offsets[ix][1] < offsets[ix+1][0]:
             filtered_output += " "
 
-    # if sentiment_val == "neutral" or len(original_tweet.split()) < 2:
-    #     filtered_output = original_tweet
-
-    if len(original_tweet.split()) < 2:
+    if sentiment_val == "neutral" or len(original_tweet.split()) < 2:
         filtered_output = original_tweet
+
+    # if len(original_tweet.split()) < 2:
+    #     filtered_output = original_tweet
 
     jac = jaccard(target_string.strip(), filtered_output.strip())
     return jac, filtered_output
