@@ -191,6 +191,12 @@ class TweetDataset:
         }
 
 
+def check_initial_white_space(x):
+    if x[0] == ' ':
+        return True
+    return False
+
+
 def run_one_fold(fold_id):
 
     with timer('load csv data'):
@@ -201,10 +207,26 @@ def run_one_fold(fold_id):
         if debug:
             df_train = df_train.sample(1000, random_state=SEED).dropna().reset_index(drop=True)
 
+        neutral_texts = df_train[df_train['sentiment']=='neutral']['text']
+        neutral_selected_texts = df_train[df_train['sentiment']=='neutral']['selected_text']
+
+        df_train['is_text_start_with_white_space'] = df_train['text'].apply(lambda x: check_initial_white_space(x))
+        df_train['text_equal_selected_text'] = neutral_texts == neutral_selected_texts
+
+        df_pos = df_train[df_train['sentiment']=='positive']
+        df_neg = df_train[df_train['sentiment']=='negative']
+
+        # neutral の中でも全文が selected されていないサンプル群
+        df_neutral_use = df_train[(df_train['text_equal_selected_text']==0)&(df_train['is_text_start_with_white_space']==0)]
+
+        df_train = pd.concat([df_pos, df_neg, df_neutral_use]).reset_index(drop=True)
+
         df_train['text_token_len'] = df_train['text'].apply(lambda x: len(config.TOKENIZER.encode(x).ids))
         df_train['selected_text_token_len'] = df_train['selected_text'].apply(lambda x: len(config.TOKENIZER.encode(x).ids))
         df_train['total_token_len'] = df_train['text_token_len'] + df_train['selected_text_token_len']
-        df_train = df_train[df_train['total_token_len']<97].reset_index(drop=True)
+
+        # df_train = df_train[df_train['total_token_len']<97].reset_index(drop=True)
+        # df_train = df_train[df_train['sentiment']!='neutral'].reset_index(drop=True)
 
         num_folds = config.NUM_FOLDS
         kf = StratifiedKFold(n_splits = num_folds, random_state = SEED)
@@ -261,25 +283,18 @@ def run_one_fold(fold_id):
         param_optimizer = list(model.named_parameters())
         no_decay = ["bias", "LayerNorm.bias", "LayerNorm.weight"]
         optimizer_parameters = [
-            # {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.001},
-            {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.01},
+            {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.001},
             {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0},
         ]
 
-        # num_train_steps = int(len(df_train) / config.TRAIN_BATCH_SIZE * config.EPOCHS)
-        optimizer = transformers.AdamW(optimizer_parameters, lr=2e-5, correct_bias=False)
-        #scheduler = transformers.get_linear_schedule_with_warmup(
-        #    optimizer,
-        #    num_warmup_steps=0,
-        #    num_training_steps=num_train_steps
-        #)
+        num_train_steps = int(len(df_train) / config.TRAIN_BATCH_SIZE * config.EPOCHS)
+        optimizer = transformers.AdamW(optimizer_parameters, lr=3e-5, correct_bias=False)
+        scheduler = transformers.get_linear_schedule_with_warmup(
+            optimizer,
+            num_warmup_steps=0,
+            num_training_steps=num_train_steps
+        )
         
-        warmup = 0.05
-        accumulation_steps = 4
-        num_train_optimization_steps = int(config.EPOCHS * len(df_train) / config.TRAIN_BATCH_SIZE / accumulation_steps)
-        num_warmup_steps = int(num_train_optimization_steps * warmup)
-        scheduler = transformers.WarmupLinearSchedule(optimizer, warmup_steps=num_warmup_steps, t_total=num_train_optimization_steps)
-
         model = nn.DataParallel(model)
         
         # pretrain_path = 'models/exp11_fold0.pth'
