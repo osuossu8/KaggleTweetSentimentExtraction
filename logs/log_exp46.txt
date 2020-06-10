@@ -1,0 +1,942 @@
+2020-06-10 06:56:42,053 - INFO - logger set up
+2020-06-10 06:56:42,053 - INFO - seed=718
+2020-06-10 06:56:42,053 - INFO - #####
+2020-06-10 06:56:42,053 - INFO - #####
+2020-06-10 06:56:42,053 - INFO - Starting fold 0 ...
+2020-06-10 06:56:42,053 - INFO - #####
+2020-06-10 06:56:42,053 - INFO - #####
+2020-06-10 06:56:47,756 - INFO - [load csv data] done in 5.7 s
+2020-06-10 06:56:47,811 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 06:56:48,923 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 06:56:49,709 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 06:56:49,711 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 06:56:49,712 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 06:56:49,715 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 06:56:49,911 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 06:56:49,912 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 06:56:52,850 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 06:56:52,850 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 06:56:56,508 - INFO - [create model] done in 8.7 s
+2020-06-10 06:56:56,508 - INFO - Starting 1 epoch...
+2020-06-10 07:04:55,486 - INFO - save model at score=0.6975567798153778 on epoch=1
+2020-06-10 07:04:55,486 - INFO - Starting 2 epoch...
+2020-06-10 07:05:13,183 - INFO - logger set up
+2020-06-10 07:05:13,183 - INFO - seed=718
+2020-06-10 07:05:13,183 - INFO - #####
+2020-06-10 07:05:13,183 - INFO - #####
+2020-06-10 07:05:13,183 - INFO - Starting fold 0 ...
+2020-06-10 07:05:13,183 - INFO - #####
+2020-06-10 07:05:13,183 - INFO - #####
+2020-06-10 07:05:19,209 - INFO - [load csv data] done in 6.03 s
+2020-06-10 07:05:19,263 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 07:05:20,376 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 07:05:21,352 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 07:05:21,354 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 07:05:21,355 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 07:05:21,359 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 07:05:21,607 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 07:05:21,609 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 07:05:24,516 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 07:05:24,516 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 07:05:28,211 - INFO - [create model] done in 8.95 s
+2020-06-10 07:05:28,211 - INFO - Starting 1 epoch...
+2020-06-10 07:13:27,532 - INFO - save model at score=0.6979658390399759 on epoch=1
+2020-06-10 07:13:27,532 - INFO - Starting 2 epoch...
+2020-06-10 07:14:14,438 - INFO - logger set up
+2020-06-10 07:14:14,438 - INFO - seed=718
+2020-06-10 07:14:14,438 - INFO - #####
+2020-06-10 07:14:14,438 - INFO - #####
+2020-06-10 07:14:14,438 - INFO - Starting fold 0 ...
+2020-06-10 07:14:14,438 - INFO - #####
+2020-06-10 07:14:14,438 - INFO - #####
+2020-06-10 07:14:19,956 - INFO - [load csv data] done in 5.52 s
+2020-06-10 07:14:20,010 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 07:14:21,126 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 07:14:22,201 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 07:14:22,202 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 07:14:22,203 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 07:14:22,204 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 07:14:22,677 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 07:14:22,678 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 07:14:25,489 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 07:14:25,489 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 07:14:29,191 - INFO - [create model] done in 9.18 s
+2020-06-10 07:14:29,191 - INFO - Starting 1 epoch...
+2020-06-10 07:25:33,780 - INFO - save model at score=0.7063897717053107 on epoch=1
+2020-06-10 07:25:33,780 - INFO - Starting 2 epoch...
+2020-06-10 07:29:30,546 - INFO - logger set up
+2020-06-10 07:29:30,546 - INFO - seed=718
+2020-06-10 07:29:30,546 - INFO - #####
+2020-06-10 07:29:30,546 - INFO - #####
+2020-06-10 07:29:30,546 - INFO - Starting fold 0 ...
+2020-06-10 07:29:30,546 - INFO - #####
+2020-06-10 07:29:30,546 - INFO - #####
+2020-06-10 07:29:36,195 - INFO - [load csv data] done in 5.65 s
+2020-06-10 07:29:36,247 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 07:29:37,357 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 07:29:38,142 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 07:29:38,143 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 07:29:38,143 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 07:29:38,145 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 07:29:38,455 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 07:29:38,456 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 07:29:41,275 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 07:29:41,276 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 07:29:44,958 - INFO - [create model] done in 8.71 s
+2020-06-10 07:29:44,958 - INFO - Starting 1 epoch...
+2020-06-10 07:36:21,757 - INFO - save model at score=0.5043646141653727 on epoch=1
+2020-06-10 07:36:21,757 - INFO - Starting 2 epoch...
+2020-06-10 07:42:55,384 - INFO - save model at score=0.5231854573527652 on epoch=2
+2020-06-10 07:42:55,384 - INFO - Starting 3 epoch...
+2020-06-10 07:49:28,721 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 07:49:28,721 - INFO - best score=0.5231854573527652 on epoch=2
+2020-06-10 07:49:28,722 - INFO - [training loop] done in 1183.76 s
+2020-06-10 07:49:28,723 - INFO - #####
+2020-06-10 07:49:28,723 - INFO - #####
+2020-06-10 07:49:28,723 - INFO - Starting fold 1 ...
+2020-06-10 07:49:28,724 - INFO - #####
+2020-06-10 07:49:28,724 - INFO - #####
+2020-06-10 07:49:34,403 - INFO - [load csv data] done in 5.68 s
+2020-06-10 07:49:34,456 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 07:49:34,457 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 07:49:35,243 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 07:49:35,245 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 07:49:35,246 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 07:49:35,248 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 07:49:35,596 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 07:49:35,598 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 07:49:38,515 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 07:49:38,515 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 07:49:38,611 - INFO - [create model] done in 4.15 s
+2020-06-10 07:49:38,611 - INFO - Starting 1 epoch...
+2020-06-10 07:56:12,277 - INFO - save model at score=0.5088324259451833 on epoch=1
+2020-06-10 07:56:12,277 - INFO - Starting 2 epoch...
+2020-06-10 08:02:45,431 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 08:02:45,432 - INFO - Starting 3 epoch...
+2020-06-10 08:04:55,467 - INFO - logger set up
+2020-06-10 08:04:55,468 - INFO - seed=718
+2020-06-10 08:04:55,468 - INFO - #####
+2020-06-10 08:04:55,468 - INFO - #####
+2020-06-10 08:04:55,468 - INFO - Starting fold 0 ...
+2020-06-10 08:04:55,468 - INFO - #####
+2020-06-10 08:04:55,468 - INFO - #####
+2020-06-10 08:05:01,084 - INFO - [load csv data] done in 5.62 s
+2020-06-10 08:05:01,137 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 08:05:02,248 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 08:05:03,162 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 08:05:03,163 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 08:05:03,163 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 08:05:03,165 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 08:05:03,497 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 08:05:03,498 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 08:05:06,302 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 08:05:06,302 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 08:05:09,976 - INFO - [create model] done in 8.84 s
+2020-06-10 08:05:09,976 - INFO - Starting 1 epoch...
+2020-06-10 08:11:46,858 - INFO - save model at score=0.504059177390785 on epoch=1
+2020-06-10 08:11:46,858 - INFO - Starting 2 epoch...
+2020-06-10 08:13:40,331 - INFO - logger set up
+2020-06-10 08:13:40,331 - INFO - seed=718
+2020-06-10 08:13:40,332 - INFO - #####
+2020-06-10 08:13:40,332 - INFO - #####
+2020-06-10 08:13:40,332 - INFO - Starting fold 0 ...
+2020-06-10 08:13:40,332 - INFO - #####
+2020-06-10 08:13:40,332 - INFO - #####
+2020-06-10 08:13:46,358 - INFO - [load csv data] done in 6.03 s
+2020-06-10 08:13:46,412 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 08:13:47,525 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 08:13:48,528 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 08:13:48,529 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 08:13:48,530 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 08:13:48,531 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 08:13:49,057 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 08:13:49,057 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 08:13:51,858 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 08:13:51,859 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 08:13:55,527 - INFO - [create model] done in 9.12 s
+2020-06-10 08:13:55,527 - INFO - Starting 1 epoch...
+2020-06-10 08:25:00,613 - INFO - save model at score=0.7060133229511282 on epoch=1
+2020-06-10 08:25:00,613 - INFO - Starting 2 epoch...
+2020-06-10 08:59:06,989 - INFO - logger set up
+2020-06-10 08:59:06,989 - INFO - seed=718
+2020-06-10 08:59:06,989 - INFO - #####
+2020-06-10 08:59:06,989 - INFO - #####
+2020-06-10 08:59:06,989 - INFO - Starting fold 0 ...
+2020-06-10 08:59:06,989 - INFO - #####
+2020-06-10 08:59:06,989 - INFO - #####
+2020-06-10 08:59:10,387 - INFO - [load csv data] done in 3.4 s
+2020-06-10 08:59:10,443 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 08:59:11,556 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 08:59:12,406 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 08:59:12,407 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 08:59:12,407 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 08:59:12,409 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 08:59:12,756 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 08:59:12,756 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 08:59:15,565 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 08:59:15,565 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 08:59:19,271 - INFO - [create model] done in 8.83 s
+2020-06-10 08:59:19,271 - INFO - Starting 1 epoch...
+2020-06-10 09:06:13,781 - INFO - save model at score=0.503132584173611 on epoch=1
+2020-06-10 09:06:13,781 - INFO - Starting 2 epoch...
+2020-06-10 09:13:05,259 - INFO - save model at score=0.5111551162668815 on epoch=2
+2020-06-10 09:13:05,259 - INFO - Starting 3 epoch...
+2020-06-10 09:24:45,838 - INFO - logger set up
+2020-06-10 09:24:45,838 - INFO - seed=718
+2020-06-10 09:24:45,838 - INFO - #####
+2020-06-10 09:24:45,838 - INFO - #####
+2020-06-10 09:24:45,838 - INFO - Starting fold 0 ...
+2020-06-10 09:24:45,839 - INFO - #####
+2020-06-10 09:24:45,839 - INFO - #####
+2020-06-10 09:24:51,539 - INFO - [load csv data] done in 5.7 s
+2020-06-10 09:24:51,592 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 09:24:52,703 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 09:24:53,424 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 09:24:53,425 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 09:24:53,426 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 09:24:53,427 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 09:24:53,784 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 09:24:53,785 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 09:24:56,586 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 09:24:56,586 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 09:25:00,258 - INFO - [create model] done in 8.67 s
+2020-06-10 09:25:00,258 - INFO - Starting 1 epoch...
+2020-06-10 09:36:05,601 - INFO - save model at score=0.7060133229511282 on epoch=1
+2020-06-10 09:36:05,601 - INFO - Starting 2 epoch...
+2020-06-10 09:47:07,136 - INFO - save model at score=0.7067688475044513 on epoch=2
+2020-06-10 09:47:07,136 - INFO - Starting 3 epoch...
+2020-06-10 09:58:08,122 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 09:58:08,122 - INFO - best score=0.7067688475044513 on epoch=2
+2020-06-10 09:58:08,122 - INFO - [training loop] done in 1987.86 s
+2020-06-10 09:58:08,124 - INFO - #####
+2020-06-10 09:58:08,124 - INFO - #####
+2020-06-10 09:58:08,124 - INFO - Starting fold 1 ...
+2020-06-10 09:58:08,124 - INFO - #####
+2020-06-10 09:58:08,125 - INFO - #####
+2020-06-10 09:58:13,681 - INFO - [load csv data] done in 5.56 s
+2020-06-10 09:58:13,734 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 09:58:13,735 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 09:58:14,437 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 09:58:14,438 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 09:58:14,439 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 09:58:14,439 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 09:58:14,809 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 09:58:14,810 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 09:58:17,611 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 09:58:17,611 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 09:58:17,706 - INFO - [create model] done in 3.97 s
+2020-06-10 09:58:17,707 - INFO - Starting 1 epoch...
+2020-06-10 10:09:19,635 - INFO - save model at score=0.6924324001133604 on epoch=1
+2020-06-10 10:09:19,635 - INFO - Starting 2 epoch...
+2020-06-10 10:20:21,106 - INFO - save model at score=0.6994292157301507 on epoch=2
+2020-06-10 10:20:21,106 - INFO - Starting 3 epoch...
+2020-06-10 10:31:22,642 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 10:31:22,642 - INFO - best score=0.6994292157301507 on epoch=2
+2020-06-10 10:31:22,643 - INFO - [training loop] done in 1984.94 s
+2020-06-10 10:31:22,645 - INFO - #####
+2020-06-10 10:31:22,645 - INFO - #####
+2020-06-10 10:31:22,645 - INFO - Starting fold 2 ...
+2020-06-10 10:31:22,645 - INFO - #####
+2020-06-10 10:31:22,645 - INFO - #####
+2020-06-10 10:31:28,173 - INFO - [load csv data] done in 5.53 s
+2020-06-10 10:31:28,227 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 10:31:28,228 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 10:31:29,022 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 10:31:29,023 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 10:31:29,023 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 10:31:29,024 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 10:31:29,391 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 10:31:29,391 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 10:31:32,142 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 10:31:32,142 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 10:31:32,238 - INFO - [create model] done in 4.01 s
+2020-06-10 10:31:32,238 - INFO - Starting 1 epoch...
+2020-06-10 10:42:34,287 - INFO - save model at score=0.6975030509774589 on epoch=1
+2020-06-10 10:42:34,287 - INFO - Starting 2 epoch...
+2020-06-10 10:53:36,211 - INFO - save model at score=0.7062238997629067 on epoch=2
+2020-06-10 10:53:36,211 - INFO - Starting 3 epoch...
+2020-06-10 11:04:37,986 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 11:04:37,986 - INFO - best score=0.7062238997629067 on epoch=2
+2020-06-10 11:04:37,986 - INFO - [training loop] done in 1985.75 s
+2020-06-10 11:04:37,988 - INFO - #####
+2020-06-10 11:04:37,988 - INFO - #####
+2020-06-10 11:04:37,989 - INFO - Starting fold 3 ...
+2020-06-10 11:04:37,989 - INFO - #####
+2020-06-10 11:04:37,989 - INFO - #####
+2020-06-10 11:04:43,608 - INFO - [load csv data] done in 5.62 s
+2020-06-10 11:04:43,663 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 11:04:43,664 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 11:04:44,382 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 11:04:44,384 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 11:04:44,385 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 11:04:44,387 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 11:04:44,746 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 11:04:44,747 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 11:04:47,612 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 11:04:47,613 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 11:04:47,708 - INFO - [create model] done in 4.05 s
+2020-06-10 11:04:47,708 - INFO - Starting 1 epoch...
+2020-06-10 11:15:49,841 - INFO - save model at score=0.6954262708732764 on epoch=1
+2020-06-10 11:15:49,842 - INFO - Starting 2 epoch...
+2020-06-10 11:26:51,587 - INFO - save model at score=0.7031420279141183 on epoch=2
+2020-06-10 11:26:51,587 - INFO - Starting 3 epoch...
+2020-06-10 11:37:52,841 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 11:37:52,841 - INFO - best score=0.7031420279141183 on epoch=2
+2020-06-10 11:37:52,841 - INFO - [training loop] done in 1985.13 s
+2020-06-10 11:37:52,844 - INFO - #####
+2020-06-10 11:37:52,844 - INFO - #####
+2020-06-10 11:37:52,844 - INFO - Starting fold 4 ...
+2020-06-10 11:37:52,844 - INFO - #####
+2020-06-10 11:37:52,844 - INFO - #####
+2020-06-10 11:37:58,408 - INFO - [load csv data] done in 5.56 s
+2020-06-10 11:37:58,462 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 11:37:58,463 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 11:37:59,444 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 11:37:59,445 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 11:37:59,445 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 11:37:59,446 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 11:37:59,970 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 11:37:59,971 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 11:38:02,683 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 11:38:02,683 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 11:38:02,778 - INFO - [create model] done in 4.32 s
+2020-06-10 11:38:02,779 - INFO - Starting 1 epoch...
+2020-06-10 11:49:05,530 - INFO - save model at score=0.10875415459501125 on epoch=1
+2020-06-10 11:49:05,530 - INFO - Starting 2 epoch...
+2020-06-10 12:00:06,291 - INFO - save model at score=0.08321371802132084 on epoch=2
+2020-06-10 12:00:06,291 - INFO - Starting 3 epoch...
+2020-06-10 12:11:06,077 - INFO - save model at score=0.09298484632722201 on epoch=3
+2020-06-10 12:11:06,078 - INFO - best score=0.09298484632722201 on epoch=3
+2020-06-10 12:11:06,078 - INFO - [training loop] done in 1983.3 s
+2020-06-10 12:25:19,927 - INFO - logger set up
+2020-06-10 12:25:19,927 - INFO - seed=718
+2020-06-10 12:25:19,927 - INFO - #####
+2020-06-10 12:25:19,927 - INFO - #####
+2020-06-10 12:25:19,927 - INFO - Starting fold 0 ...
+2020-06-10 12:25:19,927 - INFO - #####
+2020-06-10 12:25:19,927 - INFO - #####
+2020-06-10 12:25:25,623 - INFO - [load csv data] done in 5.7 s
+2020-06-10 12:25:25,677 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 12:25:26,788 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 12:25:27,851 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 12:25:27,852 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 12:25:27,852 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 12:25:27,854 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 12:25:28,320 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 12:25:28,321 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 12:25:31,127 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 12:25:31,127 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 12:25:34,803 - INFO - [create model] done in 9.13 s
+2020-06-10 12:25:34,803 - INFO - Starting 1 epoch...
+2020-06-10 12:27:53,743 - INFO - logger set up
+2020-06-10 12:27:53,743 - INFO - seed=718
+2020-06-10 12:27:53,743 - INFO - #####
+2020-06-10 12:27:53,743 - INFO - #####
+2020-06-10 12:27:53,744 - INFO - Starting fold 0 ...
+2020-06-10 12:27:53,744 - INFO - #####
+2020-06-10 12:27:53,744 - INFO - #####
+2020-06-10 12:27:59,722 - INFO - [load csv data] done in 5.98 s
+2020-06-10 12:27:59,777 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 12:28:00,885 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 12:28:01,904 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 12:28:01,905 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 12:28:01,906 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 12:28:01,907 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 12:28:02,103 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 12:28:02,103 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 12:28:04,910 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 12:28:04,911 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 12:28:08,575 - INFO - [create model] done in 8.8 s
+2020-06-10 12:28:08,575 - INFO - Starting 1 epoch...
+2020-06-10 12:39:13,272 - INFO - save model at score=0.7015874488867053 on epoch=1
+2020-06-10 12:39:13,272 - INFO - Starting 2 epoch...
+2020-06-10 12:40:29,953 - INFO - logger set up
+2020-06-10 12:40:29,954 - INFO - seed=718
+2020-06-10 12:40:29,954 - INFO - #####
+2020-06-10 12:40:29,954 - INFO - #####
+2020-06-10 12:40:29,954 - INFO - Starting fold 0 ...
+2020-06-10 12:40:29,954 - INFO - #####
+2020-06-10 12:40:29,954 - INFO - #####
+2020-06-10 12:40:35,990 - INFO - [load csv data] done in 6.04 s
+2020-06-10 12:40:36,045 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 12:40:37,158 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 12:40:38,047 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 12:40:38,048 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 12:40:38,048 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 12:40:38,049 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 12:40:38,559 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 12:40:38,560 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 12:40:41,363 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 12:40:41,363 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 12:40:45,046 - INFO - [create model] done in 9.0 s
+2020-06-10 12:40:45,046 - INFO - Starting 1 epoch...
+2020-06-10 12:51:50,779 - INFO - save model at score=0.6989284290774099 on epoch=1
+2020-06-10 12:51:50,779 - INFO - Starting 2 epoch...
+2020-06-10 12:54:09,592 - INFO - logger set up
+2020-06-10 12:54:09,592 - INFO - seed=718
+2020-06-10 12:54:09,592 - INFO - #####
+2020-06-10 12:54:09,593 - INFO - #####
+2020-06-10 12:54:09,593 - INFO - Starting fold 0 ...
+2020-06-10 12:54:09,593 - INFO - #####
+2020-06-10 12:54:09,593 - INFO - #####
+2020-06-10 12:54:15,259 - INFO - [load csv data] done in 5.67 s
+2020-06-10 12:54:15,313 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 12:54:16,425 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 12:54:18,517 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 12:54:18,518 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 12:54:18,518 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 12:54:18,520 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 12:54:19,134 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 12:54:19,135 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 12:54:21,936 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 12:54:21,936 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 12:54:25,604 - INFO - [create model] done in 10.29 s
+2020-06-10 12:54:25,604 - INFO - Starting 1 epoch...
+2020-06-10 13:05:30,246 - INFO - save model at score=0.7015874488867053 on epoch=1
+2020-06-10 13:05:30,246 - INFO - Starting 2 epoch...
+2020-06-10 13:16:31,081 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 13:16:31,081 - INFO - Starting 3 epoch...
+2020-06-10 13:27:32,541 - INFO - save model at score=0.6996278760621711 on epoch=3
+2020-06-10 13:27:32,541 - INFO - best score=0.6996278760621711 on epoch=3
+2020-06-10 13:27:32,542 - INFO - [training loop] done in 1986.94 s
+2020-06-10 13:27:32,544 - INFO - #####
+2020-06-10 13:27:32,544 - INFO - #####
+2020-06-10 13:27:32,544 - INFO - Starting fold 1 ...
+2020-06-10 13:27:32,545 - INFO - #####
+2020-06-10 13:27:32,545 - INFO - #####
+2020-06-10 13:27:37,999 - INFO - [load csv data] done in 5.45 s
+2020-06-10 13:27:38,054 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 13:27:38,055 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 13:27:38,921 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 13:27:38,922 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 13:27:38,922 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 13:27:38,923 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 13:27:39,276 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 13:27:39,276 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 13:27:42,069 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 13:27:42,069 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 13:27:42,165 - INFO - [create model] done in 4.11 s
+2020-06-10 13:27:42,165 - INFO - Starting 1 epoch...
+2020-06-10 13:38:43,723 - INFO - save model at score=0.6969852192139331 on epoch=1
+2020-06-10 13:38:43,723 - INFO - Starting 2 epoch...
+2020-06-10 13:49:44,970 - INFO - save model at score=0.7016012808084362 on epoch=2
+2020-06-10 13:49:44,970 - INFO - Starting 3 epoch...
+2020-06-10 14:00:45,796 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 14:00:45,796 - INFO - best score=0.7016012808084362 on epoch=2
+2020-06-10 14:00:45,796 - INFO - [training loop] done in 1983.63 s
+2020-06-10 14:00:45,799 - INFO - #####
+2020-06-10 14:00:45,799 - INFO - #####
+2020-06-10 14:00:45,799 - INFO - Starting fold 2 ...
+2020-06-10 14:00:45,799 - INFO - #####
+2020-06-10 14:00:45,799 - INFO - #####
+2020-06-10 14:00:51,228 - INFO - [load csv data] done in 5.43 s
+2020-06-10 14:00:51,282 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 14:00:51,283 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 14:00:52,104 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 14:00:52,105 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 14:00:52,105 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 14:00:52,106 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 14:00:52,482 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 14:00:52,482 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 14:00:55,201 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 14:00:55,201 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 14:00:55,297 - INFO - [create model] done in 4.01 s
+2020-06-10 14:00:55,297 - INFO - Starting 1 epoch...
+2020-06-10 14:11:57,321 - INFO - save model at score=0.6956759652599451 on epoch=1
+2020-06-10 14:11:57,321 - INFO - Starting 2 epoch...
+2020-06-10 14:22:59,127 - INFO - save model at score=0.6991073227628061 on epoch=2
+2020-06-10 14:22:59,127 - INFO - Starting 3 epoch...
+2020-06-10 14:34:00,107 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 14:34:00,107 - INFO - best score=0.6991073227628061 on epoch=2
+2020-06-10 14:34:00,108 - INFO - [training loop] done in 1984.81 s
+2020-06-10 14:34:00,110 - INFO - #####
+2020-06-10 14:34:00,110 - INFO - #####
+2020-06-10 14:34:00,110 - INFO - Starting fold 3 ...
+2020-06-10 14:34:00,110 - INFO - #####
+2020-06-10 14:34:00,110 - INFO - #####
+2020-06-10 14:34:04,965 - INFO - [load csv data] done in 4.85 s
+2020-06-10 14:34:05,019 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 14:34:05,020 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 14:34:05,821 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 14:34:05,822 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 14:34:05,823 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 14:34:05,826 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 14:34:06,191 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 14:34:06,192 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 14:34:08,999 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 14:34:09,000 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 14:34:09,095 - INFO - [create model] done in 4.08 s
+2020-06-10 14:34:09,095 - INFO - Starting 1 epoch...
+2020-06-10 14:45:10,672 - INFO - save model at score=0.7034104971918815 on epoch=1
+2020-06-10 14:45:10,673 - INFO - Starting 2 epoch...
+2020-06-10 14:56:11,987 - INFO - save model at score=0.7083899121421615 on epoch=2
+2020-06-10 14:56:11,987 - INFO - Starting 3 epoch...
+2020-06-10 15:07:13,116 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 15:07:13,116 - INFO - best score=0.7083899121421615 on epoch=2
+2020-06-10 15:07:13,116 - INFO - [training loop] done in 1984.02 s
+2020-06-10 15:07:13,118 - INFO - #####
+2020-06-10 15:07:13,118 - INFO - #####
+2020-06-10 15:07:13,118 - INFO - Starting fold 4 ...
+2020-06-10 15:07:13,118 - INFO - #####
+2020-06-10 15:07:13,119 - INFO - #####
+2020-06-10 15:07:18,797 - INFO - [load csv data] done in 5.68 s
+2020-06-10 15:07:18,851 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 15:07:18,852 - DEBUG - Starting new HTTPS connection (1): s3.amazonaws.com:443
+2020-06-10 15:07:19,779 - DEBUG - https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/roberta-base-config.json HTTP/1.1" 200 0
+2020-06-10 15:07:19,780 - INFO - loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-config.json from cache at /usr/src/app/.cache/torch/transformers/e1a2a406b5a05063c31f4dfdee7608986ba7c6393f7f79db5e69dcd197208534.117c81977c5979de8c088352e74ec6e70f5c66096c28b61d3c50101609b39690
+2020-06-10 15:07:19,780 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 15:07:19,781 - DEBUG - Starting new HTTPS connection (1): cdn.huggingface.co:443
+2020-06-10 15:07:20,320 - DEBUG - https://cdn.huggingface.co:443 "HEAD /roberta-base-pytorch_model.bin HTTP/1.1" 200 0
+2020-06-10 15:07:20,321 - INFO - loading weights file https://cdn.huggingface.co/roberta-base-pytorch_model.bin from cache at /usr/src/app/.cache/torch/transformers/80b4a484eddeb259bec2f06a6f2f05d90934111628e0e1c09a33bd4a121358e1.49b88ba7ec2c26a7558dda98ca3884c3b80fa31cf43a1b1f23aef3ff81ba344e
+2020-06-10 15:07:23,031 - INFO - Weights of RobertaForQuestionAnswering not initialized from pretrained model: ['qa_outputs.weight', 'qa_outputs.bias']
+2020-06-10 15:07:23,031 - INFO - Weights from pretrained model not used in RobertaForQuestionAnswering: ['lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight']
+2020-06-10 15:07:23,127 - INFO - [create model] done in 4.28 s
+2020-06-10 15:07:23,127 - INFO - Starting 1 epoch...
+2020-06-10 15:18:24,815 - INFO - save model at score=0.6961392096092823 on epoch=1
+2020-06-10 15:18:24,815 - INFO - Starting 2 epoch...
+2020-06-10 15:29:26,094 - INFO - save model at score=0.7043255270585383 on epoch=2
+2020-06-10 15:29:26,094 - INFO - Starting 3 epoch...
+2020-06-10 15:40:27,132 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 15:40:27,132 - INFO - best score=0.7043255270585383 on epoch=2
+2020-06-10 15:40:27,132 - INFO - [training loop] done in 1984.01 s
