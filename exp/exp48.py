@@ -181,7 +181,6 @@ class TweetDataset:
             'orig_tweet': data["orig_tweet"],
             'orig_selected': data["orig_selected"],
             'sentiment': data["sentiment"],
-            'offsets': torch.tensor(data["offsets"], dtype=torch.long)
         }
 
 

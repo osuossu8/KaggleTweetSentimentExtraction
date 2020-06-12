@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 
-import src.configs.config as config
+import src.configs.config48 as config
 
 
 def loss_fn(start_logits, end_logits, start_positions, end_positions):
@@ -64,7 +64,6 @@ def calculate_jaccard_score(
     sentiment_val, 
     idx_start, 
     idx_end, 
-    offsets,
     verbose=False):
     
     if idx_end < idx_start:
@@ -72,8 +71,8 @@ def calculate_jaccard_score(
         filtered_output = original_tweet
 
     text1 = " "+" ".join(original_tweet.split())
-    enc = tokenizer.encode(text1)
-    filtered_output = tokenizer.decode(enc.ids[a-2:b-1])
+    enc = config.TOKENIZER.encode(text1)
+    filtered_output = config.TOKENIZER.decode(enc.ids[idx_start-2:idx_end-1])
 
     #if sentiment_val == "neutral":
     #    filtered_output = original_tweet
@@ -102,7 +101,6 @@ def train_fn(data_loader, model, optimizer, device, scheduler=None):
         orig_tweet = d["orig_tweet"]
         targets_start = d["targets_start"].to(device, dtype=torch.long)
         targets_end = d["targets_end"].to(device, dtype=torch.long)
-        offsets = d["offsets"]
 
         model.zero_grad()
         outputs_start, outputs_end = model(
@@ -128,7 +126,6 @@ def train_fn(data_loader, model, optimizer, device, scheduler=None):
                 sentiment_val=tweet_sentiment,
                 idx_start=np.argmax(outputs_start[px, :]),
                 idx_end=np.argmax(outputs_end[px, :]),
-                offsets=offsets[px]
             )
             jaccard_scores.append(jaccard_score)
 
@@ -153,7 +150,6 @@ def eval_fn(data_loader, model, device):
             orig_tweet = d["orig_tweet"]
             targets_start = d["targets_start"].to(device, dtype=torch.long)
             targets_end = d["targets_end"].to(device, dtype=torch.long)
-            offsets = d["offsets"].numpy()
 
             outputs_start, outputs_end = model(
                 ids=ids,
@@ -175,7 +171,6 @@ def eval_fn(data_loader, model, device):
                     sentiment_val=tweet_sentiment,
                     idx_start=np.argmax(outputs_start[px, :]),
                     idx_end=np.argmax(outputs_end[px, :]),
-                    offsets=offsets[px]
                 )
                 jaccard_scores.append(jaccard_score)
 
