@@ -5,48 +5,6 @@ import transformers
 import src.configs.config as config
 
 
-class Attention(nn.Module):
-    def __init__(self, feature_dim, step_dim, bias=True, **kwargs):
-        super(Attention, self).__init__(**kwargs)
-        
-        self.supports_masking = True
-
-        self.bias = bias
-        self.feature_dim = feature_dim
-        self.step_dim = step_dim
-        self.features_dim = 0
-        
-        weight = torch.zeros(feature_dim, 1)
-        nn.init.xavier_uniform_(weight)
-        self.weight = nn.Parameter(weight)
-        
-        if bias:
-            self.b = nn.Parameter(torch.zeros(step_dim))
-        
-    def forward(self, x, mask=None):
-        feature_dim = self.feature_dim
-        step_dim = self.step_dim
-
-        eij = torch.mm(
-            x.contiguous().view(-1, feature_dim), 
-            self.weight
-        ).view(-1, step_dim)
-        
-        if self.bias:
-            eij = eij + self.b
-            
-        eij = torch.tanh(eij)
-        a = torch.exp(eij)
-        
-        if mask is not None:
-            a = a * mask
-
-        a = a / torch.sum(a, 1, keepdim=True) + 1e-10
-
-        weighted_input = x * torch.unsqueeze(a, -1)
-        return torch.sum(weighted_input, 1)
-
-
 class BERTBaseUncased(nn.Module):
     def __init__(self):
         super(BERTBaseUncased, self).__init__()
@@ -107,14 +65,9 @@ class TweetRoBERTaModelSimple(nn.Module):
         model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
         model_config.output_hidden_states = True
         self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
-        self.drop_out = nn.Dropout(0.1)
-        self.l0 = nn.Linear(768, 128)
-        torch.nn.init.normal_(self.l0.weight, std=0.02)
-        self.l1 = nn.Linear(128, 2)
-        torch.nn.init.normal_(self.l1.weight, std=0.02)
-
-        self.qa_outputs = nn.Linear(768, 2)
+        self.qa_outputs = nn.Linear(768*2, 2)
         torch.nn.init.normal_(self.qa_outputs.weight, std=0.02)
+
 
     def forward(self, ids, mask, token_type_ids):
         sequence_output, pooled_output, out = self.roberta(
@@ -123,22 +76,98 @@ class TweetRoBERTaModelSimple(nn.Module):
             token_type_ids=token_type_ids
         )
 
-        # out = out[-1] # torch.cat((out[-1], out[-2]), dim=-1)
-        # out = torch.stack([out[-1], out[-2]]) 
-        # out, _ = torch.max(out, 0)
+        # out = out[-1]
+        out = torch.cat((out[-1], out[-2]), dim=-1)
 
         # out = self.drop_out(out)
-        # out = self.l0(out)
-        # logits = self.l1(out)
+        # out = self.relu(self.l0(out))
 
-        # sequence_output = self.drop_out(sequence_output)
-        logits = self.qa_outputs(sequence_output)
+        # logits = self.qa_outputs(sequence_output)
+        logits = self.qa_outputs(out)
 
         start_logits, end_logits = logits.split(1, dim=-1)
 
         start_logits = start_logits.squeeze(-1)
         end_logits = end_logits.squeeze(-1)
 
+        return start_logits, end_logits
+
+
+class Conv1dBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, filter_size, dilation=1, dropout=0):
+        super().__init__()
+        self.model = nn.Sequential(
+            nn.Conv1d(in_channels, out_channels, filter_size, dilation=dilation),
+            nn.BatchNorm1d(out_channels),
+            nn.ReLU(inplace=True),
+            nn.Dropout(dropout),
+        )
+    def forward(self, x):
+        return self.model(x)
+
+
+class TweetRoBERTaModelConv1d(nn.Module):
+    def __init__(self, roberta_path):
+        super(TweetRoBERTaModelConv1d, self).__init__()
+        model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
+        model_config.output_hidden_states = True
+        self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
+        self.drop_out = nn.Dropout(0.1)
+        self.l0 = nn.Linear(4584, 1024)
+        torch.nn.init.normal_(self.l0.weight, std=0.02)
+
+        self.l1 = nn.Linear(1024, 256)
+        torch.nn.init.normal_(self.l1.weight, std=0.02)
+
+        self.l2 = nn.Linear(256, 2)
+        torch.nn.init.normal_(self.l2.weight, std=0.02)        
+
+        self.relu = nn.ReLU(inplace=True)
+
+        self.filters = [3, 5, 7]
+        for filter_size in self.filters:
+            setattr(
+                self,
+                f"seq{filter_size}", 
+                nn.Sequential(
+                    Conv1dBlock(128, 64, filter_size, dropout=0.1),
+                    Conv1dBlock(64, 128, filter_size, dropout=0.1),
+                ),
+            )
+            
+        for n, m in self.named_modules():
+            if isinstance(m, nn.Conv1d):
+                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
+            elif isinstance(m, nn.BatchNorm1d):
+                nn.init.constant_(m.weight, 1.)
+                nn.init.constant_(m.bias, 0.)
+                
+    
+    def forward(self, ids, mask, token_type_ids):
+        _, _, hs = self.roberta(
+            ids,
+            attention_mask=mask,
+            token_type_ids=token_type_ids
+        )
+
+        hs = torch.cat((hs[-1], hs[-2]), dim=-1)
+        hs = self.drop_out(hs)
+        
+        outs = []
+        for filter_size in self.filters:
+            out = getattr(self, f"seq{filter_size}")(hs)
+            outs.append(out)
+            
+        out = torch.cat(outs, axis=-1)
+        
+        out = self.relu(self.l0(out))
+        out = self.relu(self.l1(out))
+        logits = self.l2(out)
+
+        start_logits, end_logits = logits.split(1, dim=-1)
+
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
         return start_logits, end_logits
 
 

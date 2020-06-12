@@ -1,0 +1,2518 @@
+2020-06-10 18:20:10,269 - INFO - logger set up
+2020-06-10 18:20:10,269 - INFO - seed=718
+2020-06-10 18:20:10,270 - INFO - #####
+2020-06-10 18:20:10,270 - INFO - #####
+2020-06-10 18:20:10,270 - INFO - Starting fold 0 ...
+2020-06-10 18:20:10,270 - INFO - #####
+2020-06-10 18:20:10,270 - INFO - #####
+2020-06-10 18:20:10,419 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:20:10,473 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:20:11,584 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:20:11,584 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:20:11,585 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:20:17,559 - INFO - [create model] done in 7.09 s
+2020-06-10 18:20:17,559 - INFO - Starting 1 epoch...
+2020-06-10 18:21:11,212 - INFO - logger set up
+2020-06-10 18:21:11,212 - INFO - seed=718
+2020-06-10 18:21:11,213 - INFO - #####
+2020-06-10 18:21:11,213 - INFO - #####
+2020-06-10 18:21:11,213 - INFO - Starting fold 0 ...
+2020-06-10 18:21:11,213 - INFO - #####
+2020-06-10 18:21:11,213 - INFO - #####
+2020-06-10 18:21:11,363 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:21:11,418 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:21:12,525 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:21:12,526 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:21:12,527 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:21:18,514 - INFO - [create model] done in 7.1 s
+2020-06-10 18:21:18,514 - INFO - Starting 1 epoch...
+2020-06-10 18:21:41,397 - INFO - logger set up
+2020-06-10 18:21:41,397 - INFO - seed=718
+2020-06-10 18:21:41,397 - INFO - #####
+2020-06-10 18:21:41,397 - INFO - #####
+2020-06-10 18:21:41,397 - INFO - Starting fold 0 ...
+2020-06-10 18:21:41,397 - INFO - #####
+2020-06-10 18:21:41,397 - INFO - #####
+2020-06-10 18:21:41,548 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:21:41,602 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:21:42,713 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:21:42,713 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:21:42,714 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:21:48,678 - INFO - [create model] done in 7.08 s
+2020-06-10 18:21:48,679 - INFO - Starting 1 epoch...
+2020-06-10 18:22:50,855 - INFO - logger set up
+2020-06-10 18:22:50,855 - INFO - seed=718
+2020-06-10 18:22:50,856 - INFO - #####
+2020-06-10 18:22:50,856 - INFO - #####
+2020-06-10 18:22:50,856 - INFO - Starting fold 0 ...
+2020-06-10 18:22:50,856 - INFO - #####
+2020-06-10 18:22:50,856 - INFO - #####
+2020-06-10 18:22:51,006 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:22:51,060 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:22:52,175 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:22:52,176 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:22:52,177 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:22:58,186 - INFO - [create model] done in 7.13 s
+2020-06-10 18:22:58,186 - INFO - Starting 1 epoch...
+2020-06-10 18:24:29,265 - INFO - logger set up
+2020-06-10 18:24:29,265 - INFO - seed=718
+2020-06-10 18:24:29,265 - INFO - #####
+2020-06-10 18:24:29,266 - INFO - #####
+2020-06-10 18:24:29,266 - INFO - Starting fold 0 ...
+2020-06-10 18:24:29,266 - INFO - #####
+2020-06-10 18:24:29,266 - INFO - #####
+2020-06-10 18:24:29,419 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:24:29,473 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:24:30,583 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:24:30,584 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:24:30,584 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:24:36,595 - INFO - [create model] done in 7.12 s
+2020-06-10 18:24:36,595 - INFO - Starting 1 epoch...
+2020-06-10 18:27:07,346 - INFO - logger set up
+2020-06-10 18:27:07,347 - INFO - seed=718
+2020-06-10 18:27:07,347 - INFO - #####
+2020-06-10 18:27:07,347 - INFO - #####
+2020-06-10 18:27:07,347 - INFO - Starting fold 0 ...
+2020-06-10 18:27:07,347 - INFO - #####
+2020-06-10 18:27:07,347 - INFO - #####
+2020-06-10 18:27:07,498 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:27:07,552 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:27:08,662 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:27:08,663 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:27:08,664 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:27:14,620 - INFO - [create model] done in 7.07 s
+2020-06-10 18:27:14,620 - INFO - Starting 1 epoch...
+2020-06-10 18:35:13,337 - INFO - logger set up
+2020-06-10 18:35:13,337 - INFO - seed=718
+2020-06-10 18:35:13,337 - INFO - #####
+2020-06-10 18:35:13,338 - INFO - #####
+2020-06-10 18:35:13,338 - INFO - Starting fold 0 ...
+2020-06-10 18:35:13,338 - INFO - #####
+2020-06-10 18:35:13,338 - INFO - #####
+2020-06-10 18:35:13,491 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:35:13,545 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:35:14,658 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:35:14,658 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:35:14,659 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:35:20,666 - INFO - [create model] done in 7.12 s
+2020-06-10 18:35:20,667 - INFO - Starting 1 epoch...
+2020-06-10 18:35:52,825 - INFO - logger set up
+2020-06-10 18:35:52,825 - INFO - seed=718
+2020-06-10 18:35:52,825 - INFO - #####
+2020-06-10 18:35:52,826 - INFO - #####
+2020-06-10 18:35:52,826 - INFO - Starting fold 0 ...
+2020-06-10 18:35:52,826 - INFO - #####
+2020-06-10 18:35:52,826 - INFO - #####
+2020-06-10 18:35:52,975 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:35:53,029 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:35:54,141 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:35:54,141 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:35:54,142 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:36:00,104 - INFO - [create model] done in 7.08 s
+2020-06-10 18:36:00,105 - INFO - Starting 1 epoch...
+2020-06-10 18:55:51,035 - INFO - logger set up
+2020-06-10 18:55:51,035 - INFO - seed=718
+2020-06-10 18:55:51,035 - INFO - #####
+2020-06-10 18:55:51,036 - INFO - #####
+2020-06-10 18:55:51,036 - INFO - Starting fold 0 ...
+2020-06-10 18:55:51,036 - INFO - #####
+2020-06-10 18:55:51,036 - INFO - #####
+2020-06-10 18:55:51,187 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:55:51,241 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:55:52,351 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:55:52,351 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:55:52,352 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:55:58,377 - INFO - [create model] done in 7.14 s
+2020-06-10 18:55:58,377 - INFO - Starting 1 epoch...
+2020-06-10 18:58:52,803 - INFO - logger set up
+2020-06-10 18:58:52,803 - INFO - seed=718
+2020-06-10 18:58:52,803 - INFO - #####
+2020-06-10 18:58:52,803 - INFO - #####
+2020-06-10 18:58:52,804 - INFO - Starting fold 0 ...
+2020-06-10 18:58:52,804 - INFO - #####
+2020-06-10 18:58:52,804 - INFO - #####
+2020-06-10 18:58:52,955 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:58:53,009 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:58:54,121 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:58:54,122 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:58:54,123 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:59:00,099 - INFO - [create model] done in 7.09 s
+2020-06-10 18:59:00,099 - INFO - Starting 1 epoch...
+2020-06-10 18:59:20,098 - INFO - logger set up
+2020-06-10 18:59:20,099 - INFO - seed=718
+2020-06-10 18:59:20,099 - INFO - #####
+2020-06-10 18:59:20,099 - INFO - #####
+2020-06-10 18:59:20,099 - INFO - Starting fold 0 ...
+2020-06-10 18:59:20,099 - INFO - #####
+2020-06-10 18:59:20,099 - INFO - #####
+2020-06-10 18:59:20,253 - INFO - [load csv data] done in 0.15 s
+2020-06-10 18:59:20,307 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 18:59:21,416 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 18:59:21,416 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 18:59:21,417 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 18:59:27,400 - INFO - [create model] done in 7.09 s
+2020-06-10 18:59:27,400 - INFO - Starting 1 epoch...
+2020-06-10 19:00:27,047 - INFO - logger set up
+2020-06-10 19:00:27,047 - INFO - seed=718
+2020-06-10 19:00:27,047 - INFO - #####
+2020-06-10 19:00:27,047 - INFO - #####
+2020-06-10 19:00:27,048 - INFO - Starting fold 0 ...
+2020-06-10 19:00:27,048 - INFO - #####
+2020-06-10 19:00:27,048 - INFO - #####
+2020-06-10 19:00:27,196 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:00:27,250 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:00:28,362 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:00:28,362 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:00:28,363 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:00:34,388 - INFO - [create model] done in 7.14 s
+2020-06-10 19:00:34,388 - INFO - Starting 1 epoch...
+2020-06-10 19:02:38,202 - INFO - logger set up
+2020-06-10 19:02:38,202 - INFO - seed=718
+2020-06-10 19:02:38,202 - INFO - #####
+2020-06-10 19:02:38,202 - INFO - #####
+2020-06-10 19:02:38,202 - INFO - Starting fold 0 ...
+2020-06-10 19:02:38,202 - INFO - #####
+2020-06-10 19:02:38,202 - INFO - #####
+2020-06-10 19:02:38,352 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:02:38,406 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:02:39,530 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:02:39,531 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:02:39,533 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:02:45,582 - INFO - [create model] done in 7.18 s
+2020-06-10 19:02:45,582 - INFO - Starting 1 epoch...
+2020-06-10 19:06:41,872 - INFO - logger set up
+2020-06-10 19:06:41,873 - INFO - seed=718
+2020-06-10 19:06:41,873 - INFO - #####
+2020-06-10 19:06:41,873 - INFO - #####
+2020-06-10 19:06:41,873 - INFO - Starting fold 0 ...
+2020-06-10 19:06:41,873 - INFO - #####
+2020-06-10 19:06:41,873 - INFO - #####
+2020-06-10 19:06:42,023 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:06:42,077 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:06:43,189 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:06:43,189 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:06:43,190 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:06:49,188 - INFO - [create model] done in 7.11 s
+2020-06-10 19:06:49,188 - INFO - Starting 1 epoch...
+2020-06-10 19:07:29,152 - INFO - logger set up
+2020-06-10 19:07:29,153 - INFO - seed=718
+2020-06-10 19:07:29,153 - INFO - #####
+2020-06-10 19:07:29,153 - INFO - #####
+2020-06-10 19:07:29,153 - INFO - Starting fold 0 ...
+2020-06-10 19:07:29,153 - INFO - #####
+2020-06-10 19:07:29,153 - INFO - #####
+2020-06-10 19:07:29,305 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:07:29,359 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:07:30,469 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:07:30,470 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:07:30,470 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:07:36,460 - INFO - [create model] done in 7.1 s
+2020-06-10 19:07:36,461 - INFO - Starting 1 epoch...
+2020-06-10 19:09:08,866 - INFO - logger set up
+2020-06-10 19:09:08,867 - INFO - seed=718
+2020-06-10 19:09:08,867 - INFO - #####
+2020-06-10 19:09:08,867 - INFO - #####
+2020-06-10 19:09:08,867 - INFO - Starting fold 0 ...
+2020-06-10 19:09:08,867 - INFO - #####
+2020-06-10 19:09:08,867 - INFO - #####
+2020-06-10 19:09:09,020 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:09:09,073 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:09:10,183 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:09:10,184 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:09:10,184 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:09:16,195 - INFO - [create model] done in 7.12 s
+2020-06-10 19:09:16,195 - INFO - Starting 1 epoch...
+2020-06-10 19:11:00,188 - INFO - logger set up
+2020-06-10 19:11:00,188 - INFO - seed=718
+2020-06-10 19:11:00,189 - INFO - #####
+2020-06-10 19:11:00,189 - INFO - #####
+2020-06-10 19:11:00,189 - INFO - Starting fold 0 ...
+2020-06-10 19:11:00,189 - INFO - #####
+2020-06-10 19:11:00,189 - INFO - #####
+2020-06-10 19:11:00,339 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:11:00,393 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:11:01,506 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:11:01,506 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:11:01,507 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:11:07,472 - INFO - [create model] done in 7.08 s
+2020-06-10 19:11:07,472 - INFO - Starting 1 epoch...
+2020-06-10 19:23:39,471 - INFO - logger set up
+2020-06-10 19:23:39,471 - INFO - seed=718
+2020-06-10 19:23:39,471 - INFO - #####
+2020-06-10 19:23:39,471 - INFO - #####
+2020-06-10 19:23:39,472 - INFO - Starting fold 0 ...
+2020-06-10 19:23:39,472 - INFO - #####
+2020-06-10 19:23:39,472 - INFO - #####
+2020-06-10 19:23:39,627 - INFO - [load csv data] done in 0.16 s
+2020-06-10 19:23:39,681 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:23:40,792 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:23:40,793 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:23:40,794 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:23:46,743 - INFO - [create model] done in 7.06 s
+2020-06-10 19:23:46,743 - INFO - Starting 1 epoch...
+2020-06-10 19:26:10,236 - INFO - logger set up
+2020-06-10 19:26:10,237 - INFO - seed=718
+2020-06-10 19:26:10,237 - INFO - #####
+2020-06-10 19:26:10,237 - INFO - #####
+2020-06-10 19:26:10,237 - INFO - Starting fold 0 ...
+2020-06-10 19:26:10,237 - INFO - #####
+2020-06-10 19:26:10,237 - INFO - #####
+2020-06-10 19:26:10,395 - INFO - [load csv data] done in 0.16 s
+2020-06-10 19:26:10,453 - INFO - [prepare validation data] done in 0.06 s
+2020-06-10 19:26:11,562 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:26:11,563 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:26:11,563 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:26:17,536 - INFO - [create model] done in 7.08 s
+2020-06-10 19:26:17,536 - INFO - Starting 1 epoch...
+2020-06-10 19:29:24,954 - INFO - logger set up
+2020-06-10 19:29:24,954 - INFO - seed=718
+2020-06-10 19:29:24,955 - INFO - #####
+2020-06-10 19:29:24,955 - INFO - #####
+2020-06-10 19:29:24,955 - INFO - Starting fold 0 ...
+2020-06-10 19:29:24,955 - INFO - #####
+2020-06-10 19:29:24,955 - INFO - #####
+2020-06-10 19:29:25,105 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:29:25,160 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:29:26,272 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:29:26,273 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:29:26,273 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:29:32,272 - INFO - [create model] done in 7.11 s
+2020-06-10 19:29:32,273 - INFO - Starting 1 epoch...
+2020-06-10 19:50:43,688 - INFO - logger set up
+2020-06-10 19:50:43,688 - INFO - seed=718
+2020-06-10 19:50:43,689 - INFO - #####
+2020-06-10 19:50:43,689 - INFO - #####
+2020-06-10 19:50:43,689 - INFO - Starting fold 0 ...
+2020-06-10 19:50:43,689 - INFO - #####
+2020-06-10 19:50:43,689 - INFO - #####
+2020-06-10 19:50:43,841 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:50:43,895 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:50:45,033 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:50:45,034 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:50:45,036 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:50:51,319 - INFO - [create model] done in 7.42 s
+2020-06-10 19:50:51,319 - INFO - Starting 1 epoch...
+2020-06-10 19:55:08,590 - INFO - logger set up
+2020-06-10 19:55:08,591 - INFO - seed=718
+2020-06-10 19:55:08,591 - INFO - #####
+2020-06-10 19:55:08,591 - INFO - #####
+2020-06-10 19:55:08,591 - INFO - Starting fold 0 ...
+2020-06-10 19:55:08,591 - INFO - #####
+2020-06-10 19:55:08,591 - INFO - #####
+2020-06-10 19:55:08,747 - INFO - [load csv data] done in 0.16 s
+2020-06-10 19:55:08,805 - INFO - [prepare validation data] done in 0.06 s
+2020-06-10 19:55:09,916 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:55:09,917 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:55:09,917 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:55:15,998 - INFO - [create model] done in 7.19 s
+2020-06-10 19:55:15,999 - INFO - Starting 1 epoch...
+2020-06-10 19:55:39,530 - INFO - logger set up
+2020-06-10 19:55:39,530 - INFO - seed=718
+2020-06-10 19:55:39,530 - INFO - #####
+2020-06-10 19:55:39,530 - INFO - #####
+2020-06-10 19:55:39,530 - INFO - Starting fold 0 ...
+2020-06-10 19:55:39,530 - INFO - #####
+2020-06-10 19:55:39,530 - INFO - #####
+2020-06-10 19:55:39,681 - INFO - [load csv data] done in 0.15 s
+2020-06-10 19:55:39,735 - INFO - [prepare validation data] done in 0.05 s
+2020-06-10 19:55:40,861 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 19:55:40,862 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 19:55:40,864 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 19:55:47,022 - INFO - [create model] done in 7.29 s
+2020-06-10 19:55:47,022 - INFO - Starting 1 epoch...
+2020-06-10 20:08:09,728 - INFO - save model at score=0.5759542090418092 on epoch=1
+2020-06-10 20:08:09,728 - INFO - Starting 2 epoch...
+2020-06-10 20:20:31,197 - INFO - save model at score=0.5803363297212929 on epoch=2
+2020-06-10 20:20:31,197 - INFO - Starting 3 epoch...
+2020-06-10 20:32:52,547 - INFO - save model at score=0.5878779111559717 on epoch=3
+2020-06-10 20:32:52,547 - INFO - Starting 4 epoch...
+2020-06-10 20:45:13,879 - INFO - save model at score=0.5892361536656857 on epoch=4
+2020-06-10 20:45:13,880 - INFO - Starting 5 epoch...
+2020-06-10 20:57:36,116 - INFO - save model at score=0.5886458685924341 on epoch=5
+2020-06-10 20:57:36,116 - INFO - best score=0.5886458685924341 on epoch=5
+2020-06-10 20:57:36,116 - INFO - [training loop] done in 3709.09 s
+2020-06-10 20:57:36,119 - INFO - #####
+2020-06-10 20:57:36,119 - INFO - #####
+2020-06-10 20:57:36,119 - INFO - Starting fold 1 ...
+2020-06-10 20:57:36,119 - INFO - #####
+2020-06-10 20:57:36,119 - INFO - #####
+2020-06-10 20:57:36,256 - INFO - [load csv data] done in 0.14 s
+2020-06-10 20:57:36,323 - INFO - [prepare validation data] done in 0.07 s
+2020-06-10 20:57:36,323 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 20:57:36,323 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 20:57:36,324 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 20:57:38,762 - INFO - [create model] done in 2.44 s
+2020-06-10 20:57:38,763 - INFO - Starting 1 epoch...
+2020-06-10 21:09:56,026 - INFO - save model at score=0.5278232102581172 on epoch=1
+2020-06-10 21:09:56,026 - INFO - Starting 2 epoch...
+2020-06-10 21:22:12,391 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 21:22:12,391 - INFO - Starting 3 epoch...
+2020-06-10 21:34:29,604 - INFO - save model at score=0.5278232102581172 on epoch=3
+2020-06-10 21:34:29,604 - INFO - Starting 4 epoch...
+2020-06-10 21:46:46,026 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 21:46:46,026 - INFO - Starting 5 epoch...
+2020-06-10 21:59:04,139 - INFO - save model at score=0.5386714931239616 on epoch=5
+2020-06-10 21:59:04,139 - INFO - best score=0.5386714931239616 on epoch=5
+2020-06-10 21:59:04,139 - INFO - [training loop] done in 3685.38 s
+2020-06-10 21:59:04,142 - INFO - #####
+2020-06-10 21:59:04,142 - INFO - #####
+2020-06-10 21:59:04,142 - INFO - Starting fold 2 ...
+2020-06-10 21:59:04,142 - INFO - #####
+2020-06-10 21:59:04,142 - INFO - #####
+2020-06-10 21:59:04,280 - INFO - [load csv data] done in 0.14 s
+2020-06-10 21:59:04,348 - INFO - [prepare validation data] done in 0.07 s
+2020-06-10 21:59:04,348 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 21:59:04,348 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 21:59:04,349 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 21:59:06,604 - INFO - [create model] done in 2.26 s
+2020-06-10 21:59:06,604 - INFO - Starting 1 epoch...
+2020-06-10 22:11:27,105 - INFO - save model at score=0.5869531270211052 on epoch=1
+2020-06-10 22:11:27,105 - INFO - Starting 2 epoch...
+2020-06-10 22:23:47,583 - INFO - save model at score=0.5962685909924004 on epoch=2
+2020-06-10 22:23:47,583 - INFO - Starting 3 epoch...
+2020-06-10 22:36:07,374 - INFO - save model at score=0.613687106423249 on epoch=3
+2020-06-10 22:36:07,374 - INFO - Starting 4 epoch...
+2020-06-10 22:48:26,572 - INFO - save model at score=0.6385560058063458 on epoch=4
+2020-06-10 22:48:26,572 - INFO - Starting 5 epoch...
+2020-06-10 23:00:46,286 - INFO - save model at score=0.6510147904408771 on epoch=5
+2020-06-10 23:00:46,286 - INFO - best score=0.6510147904408771 on epoch=5
+2020-06-10 23:00:46,287 - INFO - [training loop] done in 3699.68 s
+2020-06-10 23:00:46,289 - INFO - #####
+2020-06-10 23:00:46,289 - INFO - #####
+2020-06-10 23:00:46,289 - INFO - Starting fold 3 ...
+2020-06-10 23:00:46,289 - INFO - #####
+2020-06-10 23:00:46,290 - INFO - #####
+2020-06-10 23:00:46,426 - INFO - [load csv data] done in 0.14 s
+2020-06-10 23:00:46,494 - INFO - [prepare validation data] done in 0.07 s
+2020-06-10 23:00:46,494 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-10 23:00:46,494 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-10 23:00:46,495 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-10 23:00:48,679 - INFO - [create model] done in 2.19 s
+2020-06-10 23:00:48,680 - INFO - Starting 1 epoch...
+2020-06-10 23:13:06,565 - INFO - save model at score=0.5481920854719684 on epoch=1
+2020-06-10 23:13:06,565 - INFO - Starting 2 epoch...
+2020-06-10 23:25:27,390 - INFO - save model at score=0.5705169448776678 on epoch=2
+2020-06-10 23:25:27,391 - INFO - Starting 3 epoch...
+2020-06-10 23:37:49,217 - INFO - save model at score=0.5841958550841096 on epoch=3
+2020-06-10 23:37:49,217 - INFO - Starting 4 epoch...
+2020-06-10 23:50:10,279 - INFO - min loss is not updated while 1 epochs of training
+2020-06-10 23:50:10,279 - INFO - Starting 5 epoch...
+2020-06-11 00:02:31,459 - INFO - save model at score=0.5862481562580254 on epoch=5
+2020-06-11 00:02:31,459 - INFO - best score=0.5862481562580254 on epoch=5
+2020-06-11 00:02:31,459 - INFO - [training loop] done in 3702.78 s
+2020-06-11 00:02:31,462 - INFO - #####
+2020-06-11 00:02:31,462 - INFO - #####
+2020-06-11 00:02:31,462 - INFO - Starting fold 4 ...
+2020-06-11 00:02:31,462 - INFO - #####
+2020-06-11 00:02:31,462 - INFO - #####
+2020-06-11 00:02:31,598 - INFO - [load csv data] done in 0.14 s
+2020-06-11 00:02:31,665 - INFO - [prepare validation data] done in 0.07 s
+2020-06-11 00:02:31,665 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 00:02:31,666 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 00:02:31,666 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 00:02:33,816 - INFO - [create model] done in 2.15 s
+2020-06-11 00:02:33,816 - INFO - Starting 1 epoch...
+2020-06-11 00:14:53,242 - INFO - save model at score=0.5639486571417691 on epoch=1
+2020-06-11 00:14:53,243 - INFO - Starting 2 epoch...
+2020-06-11 00:27:14,929 - INFO - save model at score=0.574373138649381 on epoch=2
+2020-06-11 00:27:14,929 - INFO - Starting 3 epoch...
+2020-06-11 00:39:36,711 - INFO - save model at score=0.5818024818443155 on epoch=3
+2020-06-11 00:39:36,711 - INFO - Starting 4 epoch...
+2020-06-11 00:53:50,116 - INFO - logger set up
+2020-06-11 00:53:50,116 - INFO - seed=718
+2020-06-11 00:53:50,116 - INFO - #####
+2020-06-11 00:53:50,116 - INFO - #####
+2020-06-11 00:53:50,116 - INFO - Starting fold 0 ...
+2020-06-11 00:53:50,116 - INFO - #####
+2020-06-11 00:53:50,116 - INFO - #####
+2020-06-11 00:53:50,269 - INFO - [load csv data] done in 0.15 s
+2020-06-11 00:53:50,323 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 00:53:51,436 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 00:53:51,436 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 00:53:51,437 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 00:53:57,515 - INFO - [create model] done in 7.19 s
+2020-06-11 00:53:57,515 - INFO - Starting 1 epoch...
+2020-06-11 01:05:40,046 - INFO - save model at score=0.6999190691282766 on epoch=1
+2020-06-11 01:05:40,046 - INFO - Starting 2 epoch...
+2020-06-11 01:17:19,174 - INFO - save model at score=0.7072487739087584 on epoch=2
+2020-06-11 01:17:19,174 - INFO - Starting 3 epoch...
+2020-06-11 01:28:57,918 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 01:28:57,919 - INFO - Starting 4 epoch...
+2020-06-11 01:33:41,856 - INFO - logger set up
+2020-06-11 01:33:41,856 - INFO - seed=718
+2020-06-11 01:33:41,856 - INFO - #####
+2020-06-11 01:33:41,856 - INFO - #####
+2020-06-11 01:33:41,856 - INFO - Starting fold 0 ...
+2020-06-11 01:33:41,856 - INFO - #####
+2020-06-11 01:33:41,856 - INFO - #####
+2020-06-11 01:33:42,006 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:33:42,060 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:33:43,170 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:33:43,171 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:33:43,171 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:33:49,182 - INFO - [create model] done in 7.12 s
+2020-06-11 01:33:49,182 - INFO - Starting 1 epoch...
+2020-06-11 01:34:42,995 - INFO - logger set up
+2020-06-11 01:34:42,995 - INFO - seed=718
+2020-06-11 01:34:42,995 - INFO - #####
+2020-06-11 01:34:42,996 - INFO - #####
+2020-06-11 01:34:42,996 - INFO - Starting fold 0 ...
+2020-06-11 01:34:42,996 - INFO - #####
+2020-06-11 01:34:42,996 - INFO - #####
+2020-06-11 01:34:43,147 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:34:43,201 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:34:44,312 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:34:44,312 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:34:44,313 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:34:50,334 - INFO - [create model] done in 7.13 s
+2020-06-11 01:34:50,334 - INFO - Starting 1 epoch...
+2020-06-11 01:36:22,888 - INFO - logger set up
+2020-06-11 01:36:22,888 - INFO - seed=718
+2020-06-11 01:36:22,889 - INFO - #####
+2020-06-11 01:36:22,889 - INFO - #####
+2020-06-11 01:36:22,889 - INFO - Starting fold 0 ...
+2020-06-11 01:36:22,889 - INFO - #####
+2020-06-11 01:36:22,889 - INFO - #####
+2020-06-11 01:36:23,041 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:36:23,095 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:36:24,204 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:36:24,204 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:36:24,205 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:36:30,198 - INFO - [create model] done in 7.1 s
+2020-06-11 01:36:30,199 - INFO - Starting 1 epoch...
+2020-06-11 01:40:11,075 - INFO - logger set up
+2020-06-11 01:40:11,075 - INFO - seed=718
+2020-06-11 01:40:11,075 - INFO - #####
+2020-06-11 01:40:11,075 - INFO - #####
+2020-06-11 01:40:11,075 - INFO - Starting fold 0 ...
+2020-06-11 01:40:11,076 - INFO - #####
+2020-06-11 01:40:11,076 - INFO - #####
+2020-06-11 01:40:11,227 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:40:11,281 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:40:12,393 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:40:12,393 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:40:12,394 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:40:18,415 - INFO - [create model] done in 7.13 s
+2020-06-11 01:40:18,415 - INFO - Starting 1 epoch...
+2020-06-11 01:42:14,724 - INFO - logger set up
+2020-06-11 01:42:14,725 - INFO - seed=718
+2020-06-11 01:42:14,725 - INFO - #####
+2020-06-11 01:42:14,725 - INFO - #####
+2020-06-11 01:42:14,725 - INFO - Starting fold 0 ...
+2020-06-11 01:42:14,725 - INFO - #####
+2020-06-11 01:42:14,725 - INFO - #####
+2020-06-11 01:42:14,876 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:42:14,930 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:42:16,038 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:42:16,038 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:42:16,039 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:42:22,062 - INFO - [create model] done in 7.13 s
+2020-06-11 01:42:22,062 - INFO - Starting 1 epoch...
+2020-06-11 01:43:09,671 - INFO - logger set up
+2020-06-11 01:43:09,671 - INFO - seed=718
+2020-06-11 01:43:09,671 - INFO - #####
+2020-06-11 01:43:09,672 - INFO - #####
+2020-06-11 01:43:09,672 - INFO - Starting fold 0 ...
+2020-06-11 01:43:09,672 - INFO - #####
+2020-06-11 01:43:09,672 - INFO - #####
+2020-06-11 01:43:09,825 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:43:09,879 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:43:10,989 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:43:10,989 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:43:10,990 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:43:17,021 - INFO - [create model] done in 7.14 s
+2020-06-11 01:43:17,021 - INFO - Starting 1 epoch...
+2020-06-11 01:43:53,254 - INFO - logger set up
+2020-06-11 01:43:53,255 - INFO - seed=718
+2020-06-11 01:43:53,255 - INFO - #####
+2020-06-11 01:43:53,255 - INFO - #####
+2020-06-11 01:43:53,255 - INFO - Starting fold 0 ...
+2020-06-11 01:43:53,255 - INFO - #####
+2020-06-11 01:43:53,255 - INFO - #####
+2020-06-11 01:43:53,406 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:43:53,460 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:43:54,570 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:43:54,570 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:43:54,571 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:44:00,608 - INFO - [create model] done in 7.15 s
+2020-06-11 01:44:00,608 - INFO - Starting 1 epoch...
+2020-06-11 01:46:27,447 - INFO - logger set up
+2020-06-11 01:46:27,447 - INFO - seed=718
+2020-06-11 01:46:27,447 - INFO - #####
+2020-06-11 01:46:27,447 - INFO - #####
+2020-06-11 01:46:27,447 - INFO - Starting fold 0 ...
+2020-06-11 01:46:27,447 - INFO - #####
+2020-06-11 01:46:27,447 - INFO - #####
+2020-06-11 01:46:27,598 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:46:27,652 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:46:28,763 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:46:28,764 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:46:28,764 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:46:34,774 - INFO - [create model] done in 7.12 s
+2020-06-11 01:46:34,774 - INFO - Starting 1 epoch...
+2020-06-11 01:47:55,089 - INFO - logger set up
+2020-06-11 01:47:55,090 - INFO - seed=718
+2020-06-11 01:47:55,090 - INFO - #####
+2020-06-11 01:47:55,090 - INFO - #####
+2020-06-11 01:47:55,090 - INFO - Starting fold 0 ...
+2020-06-11 01:47:55,090 - INFO - #####
+2020-06-11 01:47:55,090 - INFO - #####
+2020-06-11 01:47:55,242 - INFO - [load csv data] done in 0.15 s
+2020-06-11 01:47:55,296 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 01:47:56,408 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 01:47:56,408 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 01:47:56,409 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 01:48:02,392 - INFO - [create model] done in 7.1 s
+2020-06-11 01:48:02,392 - INFO - Starting 1 epoch...
+2020-06-11 01:59:46,299 - INFO - save model at score=0.696619082404858 on epoch=1
+2020-06-11 01:59:46,300 - INFO - Starting 2 epoch...
+2020-06-11 02:11:27,343 - INFO - save model at score=0.7072337239318688 on epoch=2
+2020-06-11 02:11:27,343 - INFO - Starting 3 epoch...
+2020-06-11 02:23:07,882 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 02:23:07,882 - INFO - Starting 4 epoch...
+2020-06-11 02:34:48,515 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 02:34:48,515 - INFO - Starting 5 epoch...
+2020-06-11 02:35:31,256 - INFO - logger set up
+2020-06-11 02:35:31,256 - INFO - seed=718
+2020-06-11 02:35:31,256 - INFO - #####
+2020-06-11 02:35:31,256 - INFO - #####
+2020-06-11 02:35:31,257 - INFO - Starting fold 0 ...
+2020-06-11 02:35:31,257 - INFO - #####
+2020-06-11 02:35:31,257 - INFO - #####
+2020-06-11 02:35:31,409 - INFO - [load csv data] done in 0.15 s
+2020-06-11 02:35:31,463 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 02:35:32,574 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 02:35:32,575 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 02:35:32,575 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 02:35:38,525 - INFO - [create model] done in 7.06 s
+2020-06-11 02:35:38,525 - INFO - Starting 1 epoch...
+2020-06-11 02:47:23,873 - INFO - save model at score=0.6595281034076378 on epoch=1
+2020-06-11 02:47:23,873 - INFO - Starting 2 epoch...
+2020-06-11 02:59:05,956 - INFO - save model at score=0.671970621133406 on epoch=2
+2020-06-11 02:59:05,956 - INFO - Starting 3 epoch...
+2020-06-11 03:10:47,292 - INFO - save model at score=0.6807968154506145 on epoch=3
+2020-06-11 03:10:47,292 - INFO - Starting 4 epoch...
+2020-06-11 03:22:28,553 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 03:22:28,553 - INFO - Starting 5 epoch...
+2020-06-11 03:27:47,110 - INFO - logger set up
+2020-06-11 03:27:47,110 - INFO - seed=718
+2020-06-11 03:27:47,110 - INFO - #####
+2020-06-11 03:27:47,110 - INFO - #####
+2020-06-11 03:27:47,110 - INFO - Starting fold 0 ...
+2020-06-11 03:27:47,110 - INFO - #####
+2020-06-11 03:27:47,111 - INFO - #####
+2020-06-11 03:27:47,268 - INFO - [load csv data] done in 0.16 s
+2020-06-11 03:27:47,326 - INFO - [prepare validation data] done in 0.06 s
+2020-06-11 03:29:17,871 - INFO - logger set up
+2020-06-11 03:29:17,871 - INFO - seed=718
+2020-06-11 03:29:17,871 - INFO - #####
+2020-06-11 03:29:17,871 - INFO - #####
+2020-06-11 03:29:17,871 - INFO - Starting fold 0 ...
+2020-06-11 03:29:17,871 - INFO - #####
+2020-06-11 03:29:17,871 - INFO - #####
+2020-06-11 03:29:18,023 - INFO - [load csv data] done in 0.15 s
+2020-06-11 03:29:18,077 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 03:29:19,189 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 03:29:19,190 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 03:29:19,190 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 03:29:25,194 - INFO - [create model] done in 7.12 s
+2020-06-11 03:29:25,194 - INFO - Starting 1 epoch...
+2020-06-11 03:41:12,756 - INFO - save model at score=0.6933838616133872 on epoch=1
+2020-06-11 03:41:12,757 - INFO - Starting 2 epoch...
+2020-06-11 03:52:57,488 - INFO - save model at score=0.6963482251235478 on epoch=2
+2020-06-11 03:52:57,488 - INFO - Starting 3 epoch...
+2020-06-11 04:04:41,944 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 04:04:41,944 - INFO - Starting 4 epoch...
+2020-06-11 04:06:39,033 - INFO - logger set up
+2020-06-11 04:06:39,033 - INFO - seed=718
+2020-06-11 04:06:39,033 - INFO - #####
+2020-06-11 04:06:39,033 - INFO - #####
+2020-06-11 04:06:39,033 - INFO - Starting fold 0 ...
+2020-06-11 04:06:39,033 - INFO - #####
+2020-06-11 04:06:39,033 - INFO - #####
+2020-06-11 04:06:39,185 - INFO - [load csv data] done in 0.15 s
+2020-06-11 04:06:39,239 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 04:06:40,374 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 04:06:40,375 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 04:06:40,377 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 04:06:46,460 - INFO - [create model] done in 7.22 s
+2020-06-11 04:06:46,460 - INFO - Starting 1 epoch...
+2020-06-11 04:18:31,529 - INFO - save model at score=0.6876006205730897 on epoch=1
+2020-06-11 04:18:31,529 - INFO - Starting 2 epoch...
+2020-06-11 04:30:13,233 - INFO - save model at score=0.7059985595634333 on epoch=2
+2020-06-11 04:30:13,234 - INFO - Starting 3 epoch...
+2020-06-11 04:41:54,467 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 04:41:54,467 - INFO - Starting 4 epoch...
+2020-06-11 04:44:49,747 - INFO - logger set up
+2020-06-11 04:44:49,747 - INFO - seed=718
+2020-06-11 04:44:49,747 - INFO - #####
+2020-06-11 04:44:49,747 - INFO - #####
+2020-06-11 04:44:49,747 - INFO - Starting fold 0 ...
+2020-06-11 04:44:49,747 - INFO - #####
+2020-06-11 04:44:49,747 - INFO - #####
+2020-06-11 04:44:49,898 - INFO - [load csv data] done in 0.15 s
+2020-06-11 04:44:49,953 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 04:44:51,085 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 04:44:51,086 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 04:44:51,087 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 04:45:01,730 - INFO - logger set up
+2020-06-11 04:45:01,730 - INFO - seed=718
+2020-06-11 04:45:01,730 - INFO - #####
+2020-06-11 04:45:01,730 - INFO - #####
+2020-06-11 04:45:01,731 - INFO - Starting fold 0 ...
+2020-06-11 04:45:01,731 - INFO - #####
+2020-06-11 04:45:01,731 - INFO - #####
+2020-06-11 04:45:01,881 - INFO - [load csv data] done in 0.15 s
+2020-06-11 04:45:01,935 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 04:45:03,045 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 04:45:03,046 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 04:45:03,046 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 04:45:09,040 - INFO - [create model] done in 7.1 s
+2020-06-11 04:45:09,040 - INFO - Starting 1 epoch...
+2020-06-11 04:56:53,956 - INFO - save model at score=0.6876006205730897 on epoch=1
+2020-06-11 04:56:53,956 - INFO - Starting 2 epoch...
+2020-06-11 05:08:35,532 - INFO - save model at score=0.7058166752418618 on epoch=2
+2020-06-11 05:08:35,532 - INFO - Starting 3 epoch...
+2020-06-11 05:20:16,843 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 05:20:16,843 - INFO - Starting 4 epoch...
+2020-06-11 05:31:57,708 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 05:31:57,708 - INFO - Starting 5 epoch...
+2020-06-11 05:43:39,748 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 05:43:39,748 - INFO - Early Stopping
+2020-06-11 05:43:39,748 - INFO - best score=0.7058166752418618 on epoch=2
+2020-06-11 05:43:39,748 - INFO - [training loop] done in 3510.71 s
+2020-06-11 05:43:39,750 - INFO - #####
+2020-06-11 05:43:39,751 - INFO - #####
+2020-06-11 05:43:39,751 - INFO - Starting fold 1 ...
+2020-06-11 05:43:39,751 - INFO - #####
+2020-06-11 05:43:39,751 - INFO - #####
+2020-06-11 05:43:39,884 - INFO - [load csv data] done in 0.13 s
+2020-06-11 05:43:39,938 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 05:43:39,939 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 05:43:39,939 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 05:43:39,939 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 05:43:42,378 - INFO - [create model] done in 2.44 s
+2020-06-11 05:43:42,378 - INFO - Starting 1 epoch...
+2020-06-11 05:55:24,616 - INFO - save model at score=0.6931705418556611 on epoch=1
+2020-06-11 05:55:24,616 - INFO - Starting 2 epoch...
+2020-06-11 06:07:07,786 - INFO - save model at score=0.7094069359956562 on epoch=2
+2020-06-11 06:07:07,787 - INFO - Starting 3 epoch...
+2020-06-11 06:18:51,579 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 06:18:51,579 - INFO - Starting 4 epoch...
+2020-06-11 06:30:37,070 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 06:30:37,070 - INFO - Starting 5 epoch...
+2020-06-11 06:42:23,290 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 06:42:23,290 - INFO - Early Stopping
+2020-06-11 06:42:23,290 - INFO - best score=0.7094069359956562 on epoch=2
+2020-06-11 06:42:23,290 - INFO - [training loop] done in 3520.91 s
+2020-06-11 06:42:23,293 - INFO - #####
+2020-06-11 06:42:23,293 - INFO - #####
+2020-06-11 06:42:23,293 - INFO - Starting fold 2 ...
+2020-06-11 06:42:23,293 - INFO - #####
+2020-06-11 06:42:23,293 - INFO - #####
+2020-06-11 06:42:23,426 - INFO - [load csv data] done in 0.13 s
+2020-06-11 06:42:23,480 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 06:42:23,481 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 06:42:23,481 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 06:42:23,481 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 06:42:25,892 - INFO - [create model] done in 2.41 s
+2020-06-11 06:42:25,892 - INFO - Starting 1 epoch...
+2020-06-11 06:54:10,342 - INFO - save model at score=0.7013874670056595 on epoch=1
+2020-06-11 06:54:10,342 - INFO - Starting 2 epoch...
+2020-06-11 07:05:53,052 - INFO - save model at score=0.6943652453219721 on epoch=2
+2020-06-11 07:05:53,052 - INFO - Starting 3 epoch...
+2020-06-11 07:17:34,692 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 07:17:34,692 - INFO - Starting 4 epoch...
+2020-06-11 07:29:15,930 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 07:29:15,931 - INFO - Starting 5 epoch...
+2020-06-11 07:40:57,735 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 07:40:57,735 - INFO - Early Stopping
+2020-06-11 07:40:57,735 - INFO - best score=0.6943652453219721 on epoch=2
+2020-06-11 07:40:57,735 - INFO - [training loop] done in 3511.84 s
+2020-06-11 07:40:57,737 - INFO - #####
+2020-06-11 07:40:57,737 - INFO - #####
+2020-06-11 07:40:57,737 - INFO - Starting fold 3 ...
+2020-06-11 07:40:57,738 - INFO - #####
+2020-06-11 07:40:57,738 - INFO - #####
+2020-06-11 07:40:57,869 - INFO - [load csv data] done in 0.13 s
+2020-06-11 07:40:57,922 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 07:40:57,922 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 07:40:57,922 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 07:40:57,923 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 07:41:00,231 - INFO - [create model] done in 2.31 s
+2020-06-11 07:41:00,231 - INFO - Starting 1 epoch...
+2020-06-11 07:52:41,726 - INFO - save model at score=0.696236907377247 on epoch=1
+2020-06-11 07:52:41,726 - INFO - Starting 2 epoch...
+2020-06-11 08:04:24,002 - INFO - save model at score=0.6987681494427505 on epoch=2
+2020-06-11 08:04:24,003 - INFO - Starting 3 epoch...
+2020-06-11 08:16:05,765 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 08:16:05,765 - INFO - Starting 4 epoch...
+2020-06-11 08:27:47,408 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 08:27:47,408 - INFO - Starting 5 epoch...
+2020-06-11 08:39:29,016 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 08:39:29,016 - INFO - Early Stopping
+2020-06-11 08:39:29,016 - INFO - best score=0.6987681494427505 on epoch=2
+2020-06-11 08:39:29,016 - INFO - [training loop] done in 3508.79 s
+2020-06-11 08:39:29,021 - INFO - #####
+2020-06-11 08:39:29,021 - INFO - #####
+2020-06-11 08:39:29,021 - INFO - Starting fold 4 ...
+2020-06-11 08:39:29,021 - INFO - #####
+2020-06-11 08:39:29,022 - INFO - #####
+2020-06-11 08:39:29,177 - INFO - [load csv data] done in 0.15 s
+2020-06-11 08:39:29,230 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 08:39:29,230 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 08:39:29,231 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 08:39:29,231 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 08:39:31,532 - INFO - [create model] done in 2.3 s
+2020-06-11 08:39:31,532 - INFO - Starting 1 epoch...
+2020-06-11 08:51:13,869 - INFO - save model at score=0.6942705382278438 on epoch=1
+2020-06-11 08:51:13,869 - INFO - Starting 2 epoch...
+2020-06-11 09:02:56,151 - INFO - save model at score=0.695980550634377 on epoch=2
+2020-06-11 09:02:56,152 - INFO - Starting 3 epoch...
+2020-06-11 09:14:37,471 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 09:14:37,471 - INFO - Starting 4 epoch...
+2020-06-11 09:26:19,266 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 09:26:19,266 - INFO - Starting 5 epoch...
+2020-06-11 09:38:01,325 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 09:38:01,325 - INFO - Early Stopping
+2020-06-11 09:38:01,325 - INFO - best score=0.695980550634377 on epoch=2
+2020-06-11 09:38:01,325 - INFO - [training loop] done in 3509.79 s
+2020-06-11 10:27:23,636 - INFO - logger set up
+2020-06-11 10:27:23,636 - INFO - seed=718
+2020-06-11 10:27:23,636 - INFO - #####
+2020-06-11 10:27:23,636 - INFO - #####
+2020-06-11 10:27:23,636 - INFO - Starting fold 0 ...
+2020-06-11 10:27:23,636 - INFO - #####
+2020-06-11 10:27:23,636 - INFO - #####
+2020-06-11 10:27:23,853 - INFO - [load csv data] done in 0.22 s
+2020-06-11 10:27:23,907 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 10:27:25,017 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 10:27:25,018 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 10:27:25,018 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 10:27:58,827 - INFO - logger set up
+2020-06-11 10:27:58,827 - INFO - seed=718
+2020-06-11 10:27:58,827 - INFO - #####
+2020-06-11 10:27:58,827 - INFO - #####
+2020-06-11 10:27:58,827 - INFO - Starting fold 0 ...
+2020-06-11 10:27:58,827 - INFO - #####
+2020-06-11 10:27:58,827 - INFO - #####
+2020-06-11 10:27:59,046 - INFO - [load csv data] done in 0.22 s
+2020-06-11 10:27:59,100 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 10:28:00,211 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 10:28:00,212 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 10:28:00,213 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 10:28:06,216 - INFO - [create model] done in 7.12 s
+2020-06-11 10:28:06,217 - INFO - Starting 1 epoch...
+2020-06-11 10:37:20,450 - INFO - logger set up
+2020-06-11 10:37:20,450 - INFO - seed=718
+2020-06-11 10:37:20,450 - INFO - #####
+2020-06-11 10:37:20,450 - INFO - #####
+2020-06-11 10:37:20,450 - INFO - Starting fold 0 ...
+2020-06-11 10:37:20,450 - INFO - #####
+2020-06-11 10:37:20,450 - INFO - #####
+2020-06-11 10:37:20,602 - INFO - [load csv data] done in 0.15 s
+2020-06-11 10:37:20,656 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 10:37:21,767 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 10:37:21,767 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 10:37:21,768 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 10:37:27,847 - INFO - [create model] done in 7.19 s
+2020-06-11 10:37:27,847 - INFO - Starting 1 epoch...
+2020-06-11 10:49:11,685 - INFO - save model at score=0.6878631034436496 on epoch=1
+2020-06-11 10:49:11,686 - INFO - Starting 2 epoch...
+2020-06-11 10:50:04,722 - INFO - logger set up
+2020-06-11 10:50:04,722 - INFO - seed=718
+2020-06-11 10:50:04,722 - INFO - #####
+2020-06-11 10:50:04,722 - INFO - #####
+2020-06-11 10:50:04,722 - INFO - Starting fold 0 ...
+2020-06-11 10:50:04,723 - INFO - #####
+2020-06-11 10:50:04,723 - INFO - #####
+2020-06-11 10:50:04,873 - INFO - [load csv data] done in 0.15 s
+2020-06-11 10:50:04,926 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 10:50:06,037 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 10:50:06,038 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 10:50:06,039 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 10:50:12,051 - INFO - [create model] done in 7.12 s
+2020-06-11 10:50:12,051 - INFO - Starting 1 epoch...
+2020-06-11 11:01:57,797 - INFO - save model at score=0.6959150206500151 on epoch=1
+2020-06-11 11:01:57,797 - INFO - Starting 2 epoch...
+2020-06-11 11:02:52,167 - INFO - logger set up
+2020-06-11 11:02:52,167 - INFO - seed=718
+2020-06-11 11:02:52,167 - INFO - #####
+2020-06-11 11:02:52,167 - INFO - #####
+2020-06-11 11:02:52,167 - INFO - Starting fold 0 ...
+2020-06-11 11:02:52,168 - INFO - #####
+2020-06-11 11:02:52,168 - INFO - #####
+2020-06-11 11:02:52,318 - INFO - [load csv data] done in 0.15 s
+2020-06-11 11:02:52,373 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 11:02:53,485 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 11:02:53,485 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 11:02:53,486 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 11:02:59,536 - INFO - [create model] done in 7.16 s
+2020-06-11 11:02:59,536 - INFO - Starting 1 epoch...
+2020-06-11 11:14:45,606 - INFO - save model at score=0.6914874717275782 on epoch=1
+2020-06-11 11:14:45,606 - INFO - Starting 2 epoch...
+2020-06-11 11:15:38,329 - INFO - logger set up
+2020-06-11 11:15:38,329 - INFO - seed=718
+2020-06-11 11:15:38,329 - INFO - #####
+2020-06-11 11:15:38,329 - INFO - #####
+2020-06-11 11:15:38,329 - INFO - Starting fold 0 ...
+2020-06-11 11:15:38,330 - INFO - #####
+2020-06-11 11:15:38,330 - INFO - #####
+2020-06-11 11:15:38,482 - INFO - [load csv data] done in 0.15 s
+2020-06-11 11:15:38,536 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 11:15:39,647 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 11:15:39,648 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 11:15:39,649 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 11:15:45,673 - INFO - [create model] done in 7.14 s
+2020-06-11 11:15:45,673 - INFO - Starting 1 epoch...
+2020-06-11 11:27:31,664 - INFO - save model at score=0.6896656414949437 on epoch=1
+2020-06-11 11:27:31,664 - INFO - Starting 2 epoch...
+2020-06-11 11:30:06,284 - INFO - logger set up
+2020-06-11 11:30:06,284 - INFO - seed=718
+2020-06-11 11:30:06,285 - INFO - #####
+2020-06-11 11:30:06,285 - INFO - #####
+2020-06-11 11:30:06,285 - INFO - Starting fold 0 ...
+2020-06-11 11:30:06,285 - INFO - #####
+2020-06-11 11:30:06,285 - INFO - #####
+2020-06-11 11:30:06,451 - INFO - [load csv data] done in 0.17 s
+2020-06-11 11:30:06,505 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 11:30:07,613 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 11:30:07,614 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 11:30:07,615 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 11:30:13,644 - INFO - [create model] done in 7.14 s
+2020-06-11 11:30:13,644 - INFO - Starting 1 epoch...
+2020-06-11 11:30:52,085 - INFO - logger set up
+2020-06-11 11:30:52,085 - INFO - seed=718
+2020-06-11 11:30:52,085 - INFO - #####
+2020-06-11 11:30:52,086 - INFO - #####
+2020-06-11 11:30:52,086 - INFO - Starting fold 0 ...
+2020-06-11 11:30:52,086 - INFO - #####
+2020-06-11 11:30:52,086 - INFO - #####
+2020-06-11 11:30:52,253 - INFO - [load csv data] done in 0.17 s
+2020-06-11 11:30:52,307 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 11:30:53,418 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 11:30:53,419 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 11:30:53,420 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 11:30:59,412 - INFO - [create model] done in 7.1 s
+2020-06-11 11:30:59,412 - INFO - Starting 1 epoch...
+2020-06-11 11:42:45,103 - INFO - save model at score=0.696456439217398 on epoch=1
+2020-06-11 11:42:45,103 - INFO - Starting 2 epoch...
+2020-06-11 11:54:27,297 - INFO - save model at score=0.7039002159571092 on epoch=2
+2020-06-11 11:54:27,297 - INFO - Starting 3 epoch...
+2020-06-11 12:06:08,969 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 12:06:08,969 - INFO - Starting 4 epoch...
+2020-06-11 12:17:51,180 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 12:17:51,180 - INFO - Starting 5 epoch...
+2020-06-11 12:19:31,428 - INFO - logger set up
+2020-06-11 12:19:31,428 - INFO - seed=718
+2020-06-11 12:19:31,428 - INFO - #####
+2020-06-11 12:19:31,428 - INFO - #####
+2020-06-11 12:19:31,428 - INFO - Starting fold 0 ...
+2020-06-11 12:19:31,429 - INFO - #####
+2020-06-11 12:19:31,429 - INFO - #####
+2020-06-11 12:19:31,601 - INFO - [load csv data] done in 0.17 s
+2020-06-11 12:19:31,655 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 12:19:32,765 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 12:19:32,765 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 12:19:32,766 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 12:19:38,817 - INFO - [create model] done in 7.16 s
+2020-06-11 12:19:38,817 - INFO - Starting 1 epoch...
+2020-06-11 12:20:50,545 - INFO - logger set up
+2020-06-11 12:20:50,546 - INFO - seed=718
+2020-06-11 12:20:50,546 - INFO - #####
+2020-06-11 12:20:50,546 - INFO - #####
+2020-06-11 12:20:50,546 - INFO - Starting fold 0 ...
+2020-06-11 12:20:50,546 - INFO - #####
+2020-06-11 12:20:50,546 - INFO - #####
+2020-06-11 12:20:50,722 - INFO - [load csv data] done in 0.18 s
+2020-06-11 12:20:50,776 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 12:20:51,887 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 12:20:51,888 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 12:20:51,888 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 12:20:57,940 - INFO - [create model] done in 7.16 s
+2020-06-11 12:20:57,940 - INFO - Starting 1 epoch...
+2020-06-11 12:25:47,948 - INFO - logger set up
+2020-06-11 12:25:47,948 - INFO - seed=718
+2020-06-11 12:25:47,948 - INFO - #####
+2020-06-11 12:25:47,948 - INFO - #####
+2020-06-11 12:25:47,948 - INFO - Starting fold 0 ...
+2020-06-11 12:25:47,949 - INFO - #####
+2020-06-11 12:25:47,949 - INFO - #####
+2020-06-11 12:25:48,121 - INFO - [load csv data] done in 0.17 s
+2020-06-11 12:25:48,174 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 12:25:49,279 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 12:25:49,279 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 12:25:49,280 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 12:25:55,349 - INFO - [create model] done in 7.17 s
+2020-06-11 12:25:55,349 - INFO - Starting 1 epoch...
+2020-06-11 12:29:59,555 - INFO - logger set up
+2020-06-11 12:29:59,555 - INFO - seed=718
+2020-06-11 12:29:59,556 - INFO - #####
+2020-06-11 12:29:59,556 - INFO - #####
+2020-06-11 12:29:59,556 - INFO - Starting fold 0 ...
+2020-06-11 12:29:59,556 - INFO - #####
+2020-06-11 12:29:59,556 - INFO - #####
+2020-06-11 12:29:59,725 - INFO - [load csv data] done in 0.17 s
+2020-06-11 12:29:59,779 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 12:30:00,890 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 12:30:00,891 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 12:30:00,892 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 12:30:06,936 - INFO - [create model] done in 7.16 s
+2020-06-11 12:30:06,936 - INFO - Starting 1 epoch...
+2020-06-11 12:41:49,515 - INFO - save model at score=0.6887937848501138 on epoch=1
+2020-06-11 12:41:49,515 - INFO - Starting 2 epoch...
+2020-06-11 12:42:29,390 - INFO - logger set up
+2020-06-11 12:42:29,390 - INFO - seed=718
+2020-06-11 12:42:29,390 - INFO - #####
+2020-06-11 12:42:29,391 - INFO - #####
+2020-06-11 12:42:29,391 - INFO - Starting fold 0 ...
+2020-06-11 12:42:29,391 - INFO - #####
+2020-06-11 12:42:29,391 - INFO - #####
+2020-06-11 12:42:29,542 - INFO - [load csv data] done in 0.15 s
+2020-06-11 12:42:29,596 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 12:42:30,705 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 12:42:30,705 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 12:42:30,706 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 12:42:36,772 - INFO - [create model] done in 7.18 s
+2020-06-11 12:42:36,772 - INFO - Starting 1 epoch...
+2020-06-11 12:54:19,837 - INFO - save model at score=0.6892441800641331 on epoch=1
+2020-06-11 12:54:19,837 - INFO - Starting 2 epoch...
+2020-06-11 12:54:44,194 - INFO - logger set up
+2020-06-11 12:54:44,194 - INFO - seed=718
+2020-06-11 12:54:44,194 - INFO - #####
+2020-06-11 12:54:44,194 - INFO - #####
+2020-06-11 12:54:44,194 - INFO - Starting fold 0 ...
+2020-06-11 12:54:44,194 - INFO - #####
+2020-06-11 12:54:44,194 - INFO - #####
+2020-06-11 12:54:44,345 - INFO - [load csv data] done in 0.15 s
+2020-06-11 12:54:44,399 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 12:54:45,509 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 12:54:45,509 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 12:54:45,510 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 12:54:51,584 - INFO - [create model] done in 7.19 s
+2020-06-11 12:54:51,584 - INFO - Starting 1 epoch...
+2020-06-11 13:06:34,742 - INFO - save model at score=0.6973142412507971 on epoch=1
+2020-06-11 13:06:34,742 - INFO - Starting 2 epoch...
+2020-06-11 13:09:31,907 - INFO - logger set up
+2020-06-11 13:09:31,907 - INFO - seed=718
+2020-06-11 13:09:31,908 - INFO - #####
+2020-06-11 13:09:31,908 - INFO - #####
+2020-06-11 13:09:31,908 - INFO - Starting fold 0 ...
+2020-06-11 13:09:31,908 - INFO - #####
+2020-06-11 13:09:31,908 - INFO - #####
+2020-06-11 13:09:32,061 - INFO - [load csv data] done in 0.15 s
+2020-06-11 13:09:32,115 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 13:09:33,228 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 13:09:33,229 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 13:09:33,229 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 13:09:39,285 - INFO - [create model] done in 7.17 s
+2020-06-11 13:09:39,286 - INFO - Starting 1 epoch...
+2020-06-11 13:21:25,363 - INFO - save model at score=0.6950800650630639 on epoch=1
+2020-06-11 13:21:25,363 - INFO - Starting 2 epoch...
+2020-06-11 13:33:07,087 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 13:33:07,087 - INFO - Starting 3 epoch...
+2020-06-11 13:44:49,281 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 13:44:49,281 - INFO - Starting 4 epoch...
+2020-06-11 13:52:44,714 - INFO - logger set up
+2020-06-11 13:52:44,714 - INFO - seed=718
+2020-06-11 13:52:44,714 - INFO - #####
+2020-06-11 13:52:44,714 - INFO - #####
+2020-06-11 13:52:44,715 - INFO - Starting fold 0 ...
+2020-06-11 13:52:44,715 - INFO - #####
+2020-06-11 13:52:44,715 - INFO - #####
+2020-06-11 13:52:44,871 - INFO - [load csv data] done in 0.16 s
+2020-06-11 13:52:44,930 - INFO - [prepare validation data] done in 0.06 s
+2020-06-11 13:52:46,041 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 13:52:46,042 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 13:52:46,043 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 13:52:52,088 - INFO - [create model] done in 7.16 s
+2020-06-11 13:52:52,088 - INFO - Starting 1 epoch...
+2020-06-11 14:04:37,623 - INFO - save model at score=0.6946777293936821 on epoch=1
+2020-06-11 14:04:37,623 - INFO - Starting 2 epoch...
+2020-06-11 14:16:19,303 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 14:16:19,303 - INFO - Starting 3 epoch...
+2020-06-11 14:28:00,686 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 14:28:00,686 - INFO - Starting 4 epoch...
+2020-06-11 14:39:42,254 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 14:39:42,254 - INFO - Early Stopping
+2020-06-11 14:39:42,254 - INFO - best score=0.6946777293936821 on epoch=1
+2020-06-11 14:39:42,255 - INFO - [training loop] done in 2810.17 s
+2020-06-11 14:39:42,257 - INFO - #####
+2020-06-11 14:39:42,257 - INFO - #####
+2020-06-11 14:39:42,257 - INFO - Starting fold 1 ...
+2020-06-11 14:39:42,257 - INFO - #####
+2020-06-11 14:39:42,257 - INFO - #####
+2020-06-11 14:39:42,395 - INFO - [load csv data] done in 0.14 s
+2020-06-11 14:39:42,453 - INFO - [prepare validation data] done in 0.06 s
+2020-06-11 14:39:42,454 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 14:39:42,454 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 14:39:42,454 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 14:39:44,873 - INFO - [create model] done in 2.42 s
+2020-06-11 14:39:44,874 - INFO - Starting 1 epoch...
+2020-06-11 14:51:26,535 - INFO - save model at score=0.699246182476034 on epoch=1
+2020-06-11 14:51:26,536 - INFO - Starting 2 epoch...
+2020-06-11 15:03:08,210 - INFO - save model at score=0.7073439829964168 on epoch=2
+2020-06-11 15:03:08,210 - INFO - Starting 3 epoch...
+2020-06-11 15:14:49,666 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 15:14:49,666 - INFO - Starting 4 epoch...
+2020-06-11 15:26:30,804 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 15:26:30,804 - INFO - Starting 5 epoch...
+2020-06-11 15:38:12,064 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 15:38:12,064 - INFO - Early Stopping
+2020-06-11 15:38:12,064 - INFO - best score=0.7073439829964168 on epoch=2
+2020-06-11 15:38:12,064 - INFO - [training loop] done in 3507.19 s
+2020-06-11 15:38:12,067 - INFO - #####
+2020-06-11 15:38:12,067 - INFO - #####
+2020-06-11 15:38:12,067 - INFO - Starting fold 2 ...
+2020-06-11 15:38:12,067 - INFO - #####
+2020-06-11 15:38:12,067 - INFO - #####
+2020-06-11 15:38:12,199 - INFO - [load csv data] done in 0.13 s
+2020-06-11 15:38:12,253 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 15:38:12,254 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 15:38:12,254 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 15:38:12,254 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 15:38:14,558 - INFO - [create model] done in 2.31 s
+2020-06-11 15:38:14,559 - INFO - Starting 1 epoch...
+2020-06-11 15:49:56,640 - INFO - save model at score=0.7033896372417469 on epoch=1
+2020-06-11 15:49:56,640 - INFO - Starting 2 epoch...
+2020-06-11 16:01:38,135 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 16:01:38,135 - INFO - Starting 3 epoch...
+2020-06-11 16:13:19,252 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 16:13:19,253 - INFO - Starting 4 epoch...
+2020-06-11 16:25:00,923 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 16:25:00,923 - INFO - Early Stopping
+2020-06-11 16:25:00,923 - INFO - best score=0.7033896372417469 on epoch=1
+2020-06-11 16:25:00,923 - INFO - [training loop] done in 2806.36 s
+2020-06-11 16:25:00,925 - INFO - #####
+2020-06-11 16:25:00,925 - INFO - #####
+2020-06-11 16:25:00,925 - INFO - Starting fold 3 ...
+2020-06-11 16:25:00,926 - INFO - #####
+2020-06-11 16:25:00,926 - INFO - #####
+2020-06-11 16:25:01,057 - INFO - [load csv data] done in 0.13 s
+2020-06-11 16:25:01,110 - INFO - [prepare validation data] done in 0.05 s
+2020-06-11 16:25:01,111 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 16:25:01,111 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 16:25:01,111 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 16:25:03,398 - INFO - [create model] done in 2.29 s
+2020-06-11 16:25:03,398 - INFO - Starting 1 epoch...
+2020-06-11 16:36:45,540 - INFO - save model at score=0.6954720006210207 on epoch=1
+2020-06-11 16:36:45,540 - INFO - Starting 2 epoch...
+2020-06-11 16:48:27,761 - INFO - save model at score=0.7064600360033154 on epoch=2
+2020-06-11 16:48:27,761 - INFO - Starting 3 epoch...
+2020-06-11 17:00:09,394 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 17:00:09,394 - INFO - Starting 4 epoch...
+2020-06-11 17:11:50,909 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 17:11:50,909 - INFO - Starting 5 epoch...
+2020-06-11 17:23:32,990 - INFO - min loss is not updated while 3 epochs of training
+2020-06-11 17:23:32,990 - INFO - Early Stopping
+2020-06-11 17:23:32,990 - INFO - best score=0.7064600360033154 on epoch=2
+2020-06-11 17:23:32,990 - INFO - [training loop] done in 3509.59 s
+2020-06-11 17:23:32,992 - INFO - #####
+2020-06-11 17:23:32,992 - INFO - #####
+2020-06-11 17:23:32,993 - INFO - Starting fold 4 ...
+2020-06-11 17:23:32,993 - INFO - #####
+2020-06-11 17:23:32,993 - INFO - #####
+2020-06-11 17:23:33,122 - INFO - [load csv data] done in 0.13 s
+2020-06-11 17:23:33,179 - INFO - [prepare validation data] done in 0.06 s
+2020-06-11 17:23:33,180 - INFO - loading configuration file inputs/roberta-base/config.json
+2020-06-11 17:23:33,180 - INFO - Model config RobertaConfig {
+  "architectures": [
+    "RobertaForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-05,
+  "max_position_embeddings": 514,
+  "model_type": "roberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "type_vocab_size": 1,
+  "vocab_size": 50265
+}
+
+2020-06-11 17:23:33,180 - INFO - loading weights file inputs/roberta-base/pytorch_model.bin
+2020-06-11 17:23:35,495 - INFO - [create model] done in 2.32 s
+2020-06-11 17:23:35,495 - INFO - Starting 1 epoch...
+2020-06-11 17:35:17,562 - INFO - save model at score=0.6960235766971135 on epoch=1
+2020-06-11 17:35:17,562 - INFO - Starting 2 epoch...
+2020-06-11 17:46:59,395 - INFO - save model at score=0.7024713985396968 on epoch=2
+2020-06-11 17:46:59,395 - INFO - Starting 3 epoch...
+2020-06-11 17:58:41,287 - INFO - save model at score=0.7071255034676434 on epoch=3
+2020-06-11 17:58:41,287 - INFO - Starting 4 epoch...
+2020-06-11 18:10:22,892 - INFO - min loss is not updated while 1 epochs of training
+2020-06-11 18:10:22,892 - INFO - Starting 5 epoch...
+2020-06-11 18:22:04,737 - INFO - min loss is not updated while 2 epochs of training
+2020-06-11 18:22:04,737 - INFO - best score=0.7071255034676434 on epoch=3
+2020-06-11 18:22:04,737 - INFO - [training loop] done in 3509.24 s
