@@ -8,7 +8,7 @@ sys.path.append("/usr/src/app/kaggle/tweet-sentiment-extraction")
 MAX_LEN = 96
 TRAIN_BATCH_SIZE = 32
 VALID_BATCH_SIZE = 16
-EPOCHS = 3
+EPOCHS = 4
 NUM_FOLDS = 5
 ROBERTA_PATH = "inputs/roberta-base"
 

@@ -76,14 +76,14 @@ class TweetRoBERTaModelSimple(nn.Module):
             token_type_ids=token_type_ids
         )
 
-        out = out[-1]
+        # out = out[-1]
         # out = torch.cat((out[-1], out[-2]), dim=-1)
 
         # out = self.drop_out(out)
         # out = self.relu(self.l0(out))
 
-        # logits = self.qa_outputs(sequence_output)
-        logits = self.qa_outputs(out)
+        logits = self.qa_outputs(sequence_output)
+        # logits = self.qa_outputs(out)
 
         start_logits, end_logits = logits.split(1, dim=-1)
 
@@ -93,81 +93,36 @@ class TweetRoBERTaModelSimple(nn.Module):
         return start_logits, end_logits
 
 
-class Conv1dBlock(nn.Module):
-    def __init__(self, in_channels, out_channels, filter_size, dilation=1, dropout=0):
-        super().__init__()
-        self.model = nn.Sequential(
-            nn.Conv1d(in_channels, out_channels, filter_size, dilation=dilation),
-            nn.BatchNorm1d(out_channels),
-            nn.ReLU(inplace=True),
-            nn.Dropout(dropout),
-        )
-    def forward(self, x):
-        return self.model(x)
-
-
-class TweetRoBERTaModelConv1d(nn.Module):
+class TweetRoBERTaModelConv1dHead(nn.Module):
     def __init__(self, roberta_path):
-        super(TweetRoBERTaModelConv1d, self).__init__()
+        super(TweetRoBERTaModelConv1dHead, self).__init__()
         model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
         model_config.output_hidden_states = True
         self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
         self.drop_out = nn.Dropout(0.1)
-        self.l0 = nn.Linear(4584, 1024)
-        torch.nn.init.normal_(self.l0.weight, std=0.02)
+        self.conv1d = nn.Conv1d(768, 1, 1)
+        
+        self.qa_outputs = nn.Linear(768, 2)
+        torch.nn.init.normal_(self.qa_outputs.weight, std=0.02)
 
-        self.l1 = nn.Linear(1024, 256)
-        torch.nn.init.normal_(self.l1.weight, std=0.02)
 
-        self.l2 = nn.Linear(256, 2)
-        torch.nn.init.normal_(self.l2.weight, std=0.02)        
-
-        self.relu = nn.ReLU(inplace=True)
-
-        self.filters = [3, 5, 7]
-        for filter_size in self.filters:
-            setattr(
-                self,
-                f"seq{filter_size}", 
-                nn.Sequential(
-                    Conv1dBlock(128, 64, filter_size, dropout=0.1),
-                    Conv1dBlock(64, 128, filter_size, dropout=0.1),
-                ),
-            )
-            
-        for n, m in self.named_modules():
-            if isinstance(m, nn.Conv1d):
-                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
-            elif isinstance(m, nn.BatchNorm1d):
-                nn.init.constant_(m.weight, 1.)
-                nn.init.constant_(m.bias, 0.)
-                
-    
     def forward(self, ids, mask, token_type_ids):
-        _, _, hs = self.roberta(
+        sequence_output, pooled_output, out = self.roberta(
             ids,
             attention_mask=mask,
             token_type_ids=token_type_ids
         )
 
-        hs = torch.cat((hs[-1], hs[-2]), dim=-1)
-        hs = self.drop_out(hs)
+        x1 = self.drop_out(sequence_output)
+        x1 = x1.transpose(2,1)
+        x1 = self.conv1d(x1)
+        start_logits = torch.squeeze(x1, 1)
         
-        outs = []
-        for filter_size in self.filters:
-            out = getattr(self, f"seq{filter_size}")(hs)
-            outs.append(out)
-            
-        out = torch.cat(outs, axis=-1)
-        
-        out = self.relu(self.l0(out))
-        out = self.relu(self.l1(out))
-        logits = self.l2(out)
+        x2 = self.drop_out(sequence_output)
+        x2 = x2.transpose(2,1)
+        x2 = self.conv1d(x2)
+        end_logits = torch.squeeze(x2, 1)
 
-        start_logits, end_logits = logits.split(1, dim=-1)
-
-        start_logits = start_logits.squeeze(-1)
-        end_logits = end_logits.squeeze(-1)
         return start_logits, end_logits
 
 

@@ -58,7 +58,7 @@ EXP_ID = "exp48"
 import src.configs.config48 as config
 import src.engine48 as engine
 from src.machine_learning_util import seed_everything, prepare_labels, timer, to_pickle, unpickle
-from src.model2 import TweetRoBERTaModel, TweetRoBERTaModelSimple, TweetRoBERTaModelConv1d
+from src.model2 import TweetRoBERTaModel, TweetRoBERTaModelSimple, TweetRoBERTaModelConv1dHead
 
 
 #import io
@@ -262,7 +262,8 @@ def run_one_fold(fold_id):
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
         # model = TweetRoBERTaModel(config.ROBERTA_PATH)
-        model = TweetRoBERTaModelSimple(config.ROBERTA_PATH)
+        # model = TweetRoBERTaModelSimple(config.ROBERTA_PATH)
+        model = TweetRoBERTaModelConv1dHead(config.ROBERTA_PATH)
         model = model.to(device)
 
         param_optimizer = list(model.named_parameters())
