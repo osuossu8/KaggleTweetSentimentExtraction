@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import re
 import torch
 import torch.nn as nn
 from tqdm import tqdm
@@ -7,13 +8,38 @@ from tqdm import tqdm
 import src.configs.config48 as config
 
 
+def remove_special_beginner(x):
+    if x.startswith('_'):
+        return ' '.join(x.split()[1:])
+    if x.startswith('-'):
+        return ' '.join(x.split()[1:])
+    if x.startswith(':'):
+        return ' '.join(x.split()[1:])
+    if x.startswith(';'):
+        return ' '.join(x.split()[1:])
+    return x
+
+def remove_urls(x):
+    x = str(x)
+    x = re.sub(r"(https?|ftp)(:\/\/[-_\.!~*\'()a-zA-Z0-9;\/?:\@&=\+$,%#]+)", "" ,x)
+    return x
+
+def remove_mention(x):
+    x = str(x)
+    return ' '.join([i for i in x.split() if '@' not in i])
+
+def remove_special(x):
+    for i in ['[-O]', ' </3', '???????', '?????????', '????']:
+        x = x.replace(i, '')
+    return x
+
+
 def loss_fn(start_logits, end_logits, start_positions, end_positions):
     # loss_fct = nn.CrossEntropyLoss()
     loss_fct = nn.CrossEntropyLoss(ignore_index=start_logits.size(1))
     start_loss = loss_fct(start_logits, start_positions)
     end_loss = loss_fct(end_logits, end_positions)
-    # total_loss = (start_loss + end_loss)
-    total_loss = (start_loss + end_loss)/2
+    total_loss = (start_loss + end_loss)
     return total_loss
 
 
@@ -67,10 +93,15 @@ def calculate_jaccard_score(
     filtered_output = config.TOKENIZER.decode(enc.ids[idx_start-2:idx_end-1])
 
     if sentiment_val == "neutral":
-        filtered_output = original_tweet
+        x = original_tweet
+        x = remove_special_beginner(x)
+        x = remove_urls(x)
+        x = remove_mention(x)
+        x = remove_special(x)
+        filtered_output = x
 
-    if len(original_tweet.split()) < 2:
-        filtered_output = original_tweet
+    #if len(original_tweet.split()) < 2:
+    #    filtered_output = original_tweet
 
     jac = jaccard(target_string.strip(), filtered_output.strip())
     return jac, filtered_output
@@ -100,8 +131,8 @@ def train_fn(data_loader, model, optimizer, device, scheduler=None):
             mask=mask,
             token_type_ids=token_type_ids,
         )
-        loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end)
-        # loss = (KSLoss(outputs_start, targets_start) + KSLoss(outputs_end, targets_end)) * 0.5
+        loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end) \
+             + (KSLoss(outputs_start, targets_start) + KSLoss(outputs_end, targets_end)) * 0.5
         loss.backward()
         optimizer.step()
         scheduler.step()
@@ -148,8 +179,8 @@ def eval_fn(data_loader, model, device):
                 mask=mask,
                 token_type_ids=token_type_ids
             )
-            loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end)
-            # loss = (KSLoss(outputs_start, targets_start) + KSLoss(outputs_end, targets_end))*0.5
+            loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end) \
+                 + (KSLoss(outputs_start, targets_start) + KSLoss(outputs_end, targets_end))*0.5
 
             outputs_start = torch.softmax(outputs_start, dim=1).cpu().detach().numpy()
             outputs_end = torch.softmax(outputs_end, dim=1).cpu().detach().numpy()

@@ -113,6 +113,8 @@ class TweetRoBERTaModelConv1dHead(nn.Module):
             token_type_ids=token_type_ids
         )
 
+        # out = out[0]
+
         x1 = self.drop_out(sequence_output)
         x1 = x1.transpose(2,1)
         x1 = self.conv1d(x1)
@@ -122,6 +124,44 @@ class TweetRoBERTaModelConv1dHead(nn.Module):
         x2 = x2.transpose(2,1)
         x2 = self.conv1d(x2)
         end_logits = torch.squeeze(x2, 1)
+
+        return start_logits, end_logits
+
+
+class TweetRoBERTaModelConv1dHeadV2(nn.Module):
+    def __init__(self, roberta_path):
+        super(TweetRoBERTaModelConv1dHeadV2, self).__init__()
+        model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
+        model_config.output_hidden_states = True
+        self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
+        self.drop_out = nn.Dropout(0.1)
+        self.conv1d_1 = nn.Conv1d(768, 2, kernel_size = 2, stride = 1)
+        # self.conv1d_2 = nn.Conv1d(64, 2, kernel_size = 2, stride = 1)
+        
+        self.leakey_relu = nn.LeakyReLU(inplace=True)
+        self.dense = nn.Linear(96, 96)
+        torch.nn.init.normal_(self.dense.weight, std=0.02)
+
+
+    def forward(self, ids, mask, token_type_ids):
+        sequence_output, pooled_output, out = self.roberta(
+            ids,
+            attention_mask=mask,
+            token_type_ids=token_type_ids
+        )
+
+        x1 = self.drop_out(sequence_output)
+        x1 = x1.transpose(2,1)
+        x1 = self.conv1d_1(x1)
+        x1 = torch.nn.functional.pad(x1, (0, 1), 'constant', 0)
+        x1 = self.leakey_relu(x1)
+        x1 = self.dense(x1)
+        x1 = x1.transpose(2,1)
+        
+        start_logits, end_logits = x1.split(1, dim=-1)
+        
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
 
         return start_logits, end_logits
 
