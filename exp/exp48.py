@@ -261,10 +261,8 @@ def run_one_fold(fold_id):
     with timer('create model'):
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-        # model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
-        # model = transformers.RobertaForQuestionAnswering.from_pretrained('roberta-base')
-        model = TweetRoBERTaModel(config.ROBERTA_PATH)
-        # model = TweetRoBERTaModelSimple(config.ROBERTA_PATH)
+        # model = TweetRoBERTaModel(config.ROBERTA_PATH)
+        model = TweetRoBERTaModelSimple(config.ROBERTA_PATH)
         model = model.to(device)
 
         param_optimizer = list(model.named_parameters())
@@ -290,7 +288,6 @@ def run_one_fold(fold_id):
 
 
     with timer('training loop'):
-        min_loss = 999
         best_score = -999
         best_epoch = 0
         patience = 3
@@ -302,8 +299,7 @@ def run_one_fold(fold_id):
             engine.train_fn(train_loader, model, optimizer, device, scheduler)
             score, val_loss = engine.eval_fn(val_loader, model, device)
 
-            if val_loss < min_loss:
-                min_loss = val_loss
+            if score > best_score:
                 best_score = score
                 best_epoch = epoch
                 torch.save(model.state_dict(), os.path.join(config.OUT_DIR, '{}_fold{}.pth'.format(EXP_ID, fold_id)))
@@ -311,7 +307,7 @@ def run_one_fold(fold_id):
                 p = 0
             
             if p > 0: 
-                LOGGER.info(f'min loss is not updated while {p} epochs of training')
+                LOGGER.info(f'best score is not updated while {p} epochs of training')
             p += 1
             if p > patience:
                 LOGGER.info(f'Early Stopping')

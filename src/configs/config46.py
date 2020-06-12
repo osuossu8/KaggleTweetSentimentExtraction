@@ -5,7 +5,7 @@ import tokenizers
 sys.path.append("/usr/src/app/kaggle/tweet-sentiment-extraction")
 
 
-MAX_LEN = 98
+MAX_LEN = 96
 TRAIN_BATCH_SIZE = 16
 VALID_BATCH_SIZE = 8
 EPOCHS = 3

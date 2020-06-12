@@ -25,13 +25,6 @@ def KSLoss(preds, target):
     return torch.mean(error)
 
 
-#def jaccard(str1, str2): 
-#    a = set(str1.lower().split()) 
-#    b = set(str2.lower().split())
-#    c = a.intersection(b)
-#    return float(len(c)) / (len(a) + len(b) - len(c))
-
-
 def jaccard(str1, str2): 
     a = set(str1.lower().split()) 
     b = set(str2.lower().split())
@@ -67,18 +60,17 @@ def calculate_jaccard_score(
     verbose=False):
     
     if idx_end < idx_start:
-        # idx_end = idx_start
         filtered_output = original_tweet
 
     text1 = " "+" ".join(original_tweet.split())
     enc = config.TOKENIZER.encode(text1)
     filtered_output = config.TOKENIZER.decode(enc.ids[idx_start-2:idx_end-1])
 
-    #if sentiment_val == "neutral":
-    #    filtered_output = original_tweet
+    if sentiment_val == "neutral":
+        filtered_output = original_tweet
 
-    #if len(original_tweet.split()) < 2:
-    #    filtered_output = original_tweet
+    if len(original_tweet.split()) < 2:
+        filtered_output = original_tweet
 
     jac = jaccard(target_string.strip(), filtered_output.strip())
     return jac, filtered_output

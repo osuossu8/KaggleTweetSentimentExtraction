@@ -65,7 +65,7 @@ class TweetRoBERTaModelSimple(nn.Module):
         model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
         model_config.output_hidden_states = True
         self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
-        self.qa_outputs = nn.Linear(768*2, 2)
+        self.qa_outputs = nn.Linear(768, 2)
         torch.nn.init.normal_(self.qa_outputs.weight, std=0.02)
 
 
@@ -76,8 +76,8 @@ class TweetRoBERTaModelSimple(nn.Module):
             token_type_ids=token_type_ids
         )
 
-        # out = out[-1]
-        out = torch.cat((out[-1], out[-2]), dim=-1)
+        out = out[-1]
+        # out = torch.cat((out[-1], out[-2]), dim=-1)
 
         # out = self.drop_out(out)
         # out = self.relu(self.l0(out))

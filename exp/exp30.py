@@ -221,7 +221,7 @@ def run_one_fold(fold_id):
             df_train = df_train.sample(1000, random_state=SEED).dropna().reset_index(drop=True)
 
         # https://www.kaggle.com/c/tweet-sentiment-extraction/discussion/142011
-        df_train.loc[df_train['sentiment']=='neutral', 'selected_text'] = df_train[df_train['sentiment']=='neutral']['text']
+        # df_train.loc[df_train['sentiment']=='neutral', 'selected_text'] = df_train[df_train['sentiment']=='neutral']['text']
 
         num_folds = config.NUM_FOLDS
         kf = StratifiedKFold(n_splits = num_folds, random_state = SEED)
