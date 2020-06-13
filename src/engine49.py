@@ -105,14 +105,14 @@ def calculate_jaccard_score(
         if (ix+1) < len(offsets) and offsets[ix][1] < offsets[ix+1][0]:
             filtered_output += " "
 
-    if sentiment_val == "neutral":
-        x = original_tweet
-        x = remove_special_beginner(x)
-        x = remove_urls(x)
-        x = remove_mention(x)
-        x = remove_hashtag(x)
-        x = remove_special(x)
-        filtered_output = x
+    #if sentiment_val == "neutral":
+    #    x = original_tweet
+    #    x = remove_special_beginner(x)
+    #    x = remove_urls(x)
+    #    x = remove_mention(x)
+    #    x = remove_hashtag(x)
+    #    x = remove_special(x)
+    #    filtered_output = x
 
     if len(original_tweet.split()) < 2:
         filtered_output = original_tweet

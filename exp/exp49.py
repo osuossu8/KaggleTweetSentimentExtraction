@@ -222,16 +222,17 @@ def run_one_fold(fold_id):
         neutral_df_a = df_train[(df_train['text_equal_selected_text']==0)&(df_train['is_text_start_with_white_space']==1)]
         neutral_df_b = df_train[(df_train['text_equal_selected_text']==1)&(df_train['is_text_start_with_white_space']==0)]
 
-        df_train = pd.concat([not_neutral_df, neutral_df_a, neutral_df_b])
-
+        df_train = pd.concat([not_neutral_df, neutral_df_a, neutral_df_b]).reset_index(drop=True)
+        len_df_train = len(df_train)
+        df_train = pd.concat([df_train, special_df]).reset_index(drop=True)
 
         num_folds = config.NUM_FOLDS
         kf = StratifiedKFold(n_splits = num_folds, random_state = SEED)
-        splits = list(kf.split(X=df_train, y=df_train[['sentiment']]))
+        splits = list(kf.split(X=df_train[:len_df_train], y=df_train[:len_df_train][['sentiment']]))
         train_idx = splits[fold_id][0]
         val_idx = splits[fold_id][1]
 
-        train_idx = np.concatenate([train_idx, np.array(special_df.index)])
+        train_idx = np.concatenate([train_idx, np.array([i for i in range(len_df_train, len_df_train+len(special_df))])])
         print(len(train_idx), len(val_idx))
 
         gc.collect()
