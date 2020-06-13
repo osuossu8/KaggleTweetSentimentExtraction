@@ -93,6 +93,35 @@ class TweetRoBERTaModelSimple(nn.Module):
         return start_logits, end_logits
 
 
+class TweetModel(nn.Module):
+    def __init__(self, roberta_path):
+        super(TweetModel, self).__init__()
+        model_config = transformers.RobertaConfig.from_pretrained(roberta_path)
+        model_config.output_hidden_states = True
+        self.roberta = transformers.RobertaModel.from_pretrained(roberta_path, config=model_config)
+        self.dropout = nn.Dropout(0.1)
+        self.fc = nn.Linear(model_config.hidden_size, 2)
+        nn.init.normal_(self.fc.weight, std=0.02)
+        nn.init.normal_(self.fc.bias, 0)
+
+
+    def forward(self, ids, mask, token_type_ids):
+        sequence_output, pooled_output, hs = self.roberta(
+            ids,
+            attention_mask=mask
+        )
+
+        x = torch.stack([hs[-1], hs[-2], hs[-3], hs[-4]])
+        x = torch.mean(x, 0)
+        # x = self.dropout(x)
+        x = self.fc(x)
+        start_logits, end_logits = x.split(1, dim=-1)
+        start_logits = start_logits.squeeze(-1)
+        end_logits = end_logits.squeeze(-1)
+
+        return start_logits, end_logits
+
+
 class TweetRoBERTaModelConv1dHead(nn.Module):
     def __init__(self, roberta_path):
         super(TweetRoBERTaModelConv1dHead, self).__init__()
