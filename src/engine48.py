@@ -28,8 +28,12 @@ def remove_mention(x):
     x = str(x)
     return ' '.join([i for i in x.split() if '@' not in i])
 
+def remove_hashtag(x):
+    x = str(x)
+    return ' '.join([i for i in x.split() if '#' not in i])
+
 def remove_special(x):
-    for i in ['[-O]', ' </3', '???????', '?????????', '????']:
+    for i in ['[-O]', ' </3', '???????', '?????????', '????', '<---', 'ï¿½']:
         x = x.replace(i, '')
     return x
 
@@ -97,6 +101,7 @@ def calculate_jaccard_score(
         x = remove_special_beginner(x)
         x = remove_urls(x)
         x = remove_mention(x)
+        x = remove_hashtag(x)
         x = remove_special(x)
         filtered_output = x
 
@@ -131,8 +136,8 @@ def train_fn(data_loader, model, optimizer, device, scheduler=None):
             mask=mask,
             token_type_ids=token_type_ids,
         )
-        loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end) \
-             + (KSLoss(outputs_start, targets_start) + KSLoss(outputs_end, targets_end)) * 0.5
+        loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end)
+        # + (KSLoss(outputs_start, targets_start) + KSLoss(outputs_end, targets_end)) * 0.5
         loss.backward()
         optimizer.step()
         scheduler.step()
@@ -179,8 +184,8 @@ def eval_fn(data_loader, model, device):
                 mask=mask,
                 token_type_ids=token_type_ids
             )
-            loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end) \
-                 + (KSLoss(outputs_start, targets_start) + KSLoss(outputs_end, targets_end))*0.5
+            loss = loss_fn(outputs_start, outputs_end, targets_start, targets_end)
+            # + (KSLoss(outputs_start, targets_start) + KSLoss(outputs_end, targets_end))*0.5
 
             outputs_start = torch.softmax(outputs_start, dim=1).cpu().detach().numpy()
             outputs_end = torch.softmax(outputs_end, dim=1).cpu().detach().numpy()
